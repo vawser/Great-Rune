@@ -1,0 +1,1 @@
+copy /b/v/y "regulation.bin" "C:\Program Files (x86)\Steam\steamapps\common\ELDEN RING\Game\regulation.bin"

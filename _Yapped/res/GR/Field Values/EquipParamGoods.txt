@@ -1,0 +1,45 @@
+Row ID,Row Name,Unk26
+207000,Mimic Tear Ashes,-1
+207001,Mimic Tear Ashes +1,-1
+207002,Mimic Tear Ashes +2,-1
+207003,Mimic Tear Ashes +3,-1
+207004,Mimic Tear Ashes +4,-1
+207005,Mimic Tear Ashes +5,-1
+207006,Mimic Tear Ashes +6,-1
+207007,Mimic Tear Ashes +7,-1
+207008,Mimic Tear Ashes +8,-1
+207009,Mimic Tear Ashes +9,-1
+207010,Mimic Tear Ashes +10,-1
+244000,Land Squirt Ashes,-1
+244001,Land Squirt Ashes +1,-1
+244002,Land Squirt Ashes +2,-1
+244003,Land Squirt Ashes +3,-1
+244004,Land Squirt Ashes +4,-1
+244005,Land Squirt Ashes +5,-1
+244006,Land Squirt Ashes +6,-1
+244007,Land Squirt Ashes +7,-1
+244008,Land Squirt Ashes +8,-1
+244009,Land Squirt Ashes +9,-1
+244010,Land Squirt Ashes +10,-1
+245000,Miranda Sprout Ashes,-1
+245001,Miranda Sprout Ashes +1,-1
+245002,Miranda Sprout Ashes +2,-1
+245003,Miranda Sprout Ashes +3,-1
+245004,Miranda Sprout Ashes +4,-1
+245005,Miranda Sprout Ashes +5,-1
+245006,Miranda Sprout Ashes +6,-1
+245007,Miranda Sprout Ashes +7,-1
+245008,Miranda Sprout Ashes +8,-1
+245009,Miranda Sprout Ashes +9,-1
+245010,Miranda Sprout Ashes +10,-1
+246000,Soldjars of Fortune Ashes,-1
+246001,Soldjars of Fortune Ashes +1,-1
+246002,Soldjars of Fortune Ashes +2,-1
+246003,Soldjars of Fortune Ashes +3,-1
+246004,Soldjars of Fortune Ashes +4,-1
+246005,Soldjars of Fortune Ashes +5,-1
+246006,Soldjars of Fortune Ashes +6,-1
+246007,Soldjars of Fortune Ashes +7,-1
+246008,Soldjars of Fortune Ashes +8,-1
+246009,Soldjars of Fortune Ashes +9,-1
+246010,Soldjars of Fortune Ashes +10,-1

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout>
+  <entry>
+    <name>Max Amount</name>
+    <type>u8</type>
+    <default>1</default>
+  </entry>
+  <entry>
+    <name>Unk0</name>
+    <type>u8</type>
+    <default>1</default>
+  </entry>
+  <!-- Confirmed empty -->
+  <entry>
+    <name>pad1</name>
+    <type>dummy8</type>
+    <size>30</size>
+  </entry>
+  <!-- Confirmed empty -->
+</layout>
