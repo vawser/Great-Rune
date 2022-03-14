@@ -60,4 +60,4 @@
     Bull-Goat Set # 140000
     Fire Prelate Set # 360000
     Lionel's Set # 640000
-    Omen Set # 970000
+    Omen Set # 970000 
