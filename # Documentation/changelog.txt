@@ -1,0 +1,41 @@
+#------------------------------------------
+# 1.00
+#------------------------------------------
+# Area Scaling
+- Increased baseline rune gain for each tier of area scaling. Ranges from *3 (early) to *2 (late).
+- Reduced the HP multiplier for each tier of area scaling. Now ranges from *1 to *3.9 (was *1 to *8).
+
+# Weapons
+- Occult weapons will now deal 5% additional damage to Undead and prevent resurrection.
+
+# Armor
+- Increased all absorptions on the armor pieces by 10% of their original value.
+- Added weak stagger resistance for armor chestpieces that weigh between 10.0 and 14.9.
+- Added medium stagger resistance for armor chestpieces that weigh between 15.0 and 19.9.
+- Added strong stagger resistance for armor chestpieces that weigh between 20.0 and above.
+
+# Spirit Summons
+- Mimic Tear: reduced damage multiplier from reinforcement to {1 -> 1.5} (was {1 -> 2.5}).
+
+# Bugfixes
+- Fixed the following weapon so they now scale correctly:
+ - Regalia of Eochaid
+ - Marais Executioner's Sword
+ - Rivers of Blood
+ - Eleonora's Poleblade
+ - Mohgwyn's Sacred Spear
+ - Clinging Bone
+
+#------------------------------------------
+# Notes
+#------------------------------------------
+Rings:
+ Increase X Defense
+ Grant Bonus Damage %
+ Kills grant X stacking effect
+ Confusion aura
+ Apply aux on hit
+ Roll damage
+ Weapon Stamina Consumption
+ Attack Type damage
+ 
