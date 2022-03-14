@@ -1,12 +1,16 @@
 #------------------------------------------
 # 1.00
 #------------------------------------------
+# General
+- Added explicit values in the descriptions for talismans.
+
 # Area Scaling
 - Increased baseline rune gain for each tier of area scaling. Ranges from *3 (early) to *2 (late).
 - Reduced the HP multiplier for each tier of area scaling. Now ranges from *1 to *3.9 (was *1 to *8).
 
 # Weapons
-- Occult weapons will now deal 5% additional damage to Undead and prevent resurrection.
+- Sacred weapons will now deal 5% additional damage to Undead enemies and prevent resurrection.
+- Occult weapons will now deal 15% additional damage to Void enemies.
 
 # Armor
 - Increased all absorptions on the armor pieces by 10% of their original value.
@@ -29,13 +33,22 @@
 #------------------------------------------
 # Notes
 #------------------------------------------
-Rings:
- Increase X Defense
- Grant Bonus Damage %
- Kills grant X stacking effect
- Confusion aura
- Apply aux on hit
- Roll damage
- Weapon Stamina Consumption
- Attack Type damage
+# Talismans
+Increase X Defense
+Grant Bonus Damage %
+Kills grant X stacking effect
+Confusion aura
+Apply aux on hit
+Roll damage
+Weapon Stamina Consumption
+Attack Type damage
  
+# Icons
+10841 Venomous Fang
+10807 Iron Ball
+12093 One Eyed Shield
+12094 Visage Shield
+11246 Erdtree Seal
+11248 Dragon Communion Seal
+11249 Frenzied Flame Seal
+

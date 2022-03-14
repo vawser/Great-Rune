@@ -389,3 +389,7 @@
 # Ancestral Spirit's Horn
 - Weight: 1.2
 - +0 Effect: Restore 3 FP upon defeating enemies.
+
+#-------------------------------------
+# Additions
+#-------------------------------------
