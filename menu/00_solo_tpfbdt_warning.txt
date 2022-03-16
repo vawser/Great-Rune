@@ -1,0 +1,3 @@
+00_solo.tpfbdt and 00_solo.tpfbhd are not included in the github repository due to it's size. It will only be included in the Nexus download.
+
+00_solo.tpfbdt and 00_solo.tpfbhd contains the large icons.
