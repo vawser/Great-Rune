@@ -146,9 +146,7 @@
  - Mohgwyn's Sacred Spear
  - Clinging Bone
 
-#------------------------------------------
-# REIMPLEMENT
-#------------------------------------------
+- Fixed weapons that used the Special Keen and Heavy reinforcement type, which was bugged at +25.
 
 #------------------------------------------
 # Notes
