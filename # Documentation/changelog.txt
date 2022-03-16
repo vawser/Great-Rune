@@ -4,22 +4,138 @@
 # General
 - Added explicit values in the descriptions for talismans.
 
-# Area Scaling
-- Increased baseline rune gain for each tier of area scaling. Ranges from *3 (early) to *2 (late).
-- Reduced the HP multiplier for each tier of area scaling. Now ranges from *1 to *3.9 (was *1 to *8).
-
 # Weapons
 - Sacred weapons will now deal 5% additional damage to Undead enemies and prevent resurrection.
-- Occult weapons will now deal 15% additional damage to Void enemies.
 
 # Armor
-- Increased all absorptions on the armor pieces by 10% of their original value.
 - Added weak stagger resistance for armor chestpieces that weigh between 10.0 and 14.9.
 - Added medium stagger resistance for armor chestpieces that weigh between 15.0 and 19.9.
 - Added strong stagger resistance for armor chestpieces that weigh between 20.0 and above.
 
+# Rings
+- Crimson Amber Medallion
+    - +0 Effect: Boosts maximum HP by 10%.
+    - +1 Effect: Boosts maximum HP by 15%.
+    - +2 Effect: Boosts maximum HP by 20%.
+
+- Cerulean Amber Medallion
+    - +0 Effect: Boosts maximum FP by 10%.
+    - +1 Effect: Boosts maximum FP by 15%.
+    - +2 Effect: Boosts maximum FP by 20%.
+
+- Viridian Amber Medallion
+    - +0 Effect: Boosts maximum stamina by 10%.
+    - +1 Effect: Boosts maximum stamina by 15%.
+    - +2 Effect: Boosts maximum stamina by 20%.
+
+- Arsenal Charm
+    - +0 Effect: Boosts maximum equipment load by 15%.
+    - +1 Effect: Boosts maximum equipment load by 20%.
+
+- Great-Jar's Arsenal
+    - +0 Effect: Boosts maximum equipment load by 25%.
+
+- Erdtree's Favor
+    - +0 Effect: Raises maximum HP, stamina, and equip load by 5%.
+    - +1 Effect: Raises maximum HP, stamina, and equip load by 7.5%.
+    - +2 Effect: Raises maximum HP, stamina, and equip load by 10%.
+
+- Green Turtle Talisman
+    - +0 Effect: Raises stamina recovery speed by 10.
+
+- Stalwart Horn Charm
+    - +0 Effect: Raises robustness by 250.
+    - +1 Effect: Raises robustness by 500.
+
+- Immunizing Horn Charm
+    - +0 Effect: Raises immunity by 250.
+    - +1 Effect: Raises immunity by 500.
+
+- Clarifying Horn Charm
+    - +0 Effect: Raises focus by 250.
+    - +1 Effect: Raises focus by 500.
+
+- Prince of Death's Pustule
+    - +0 Effect: Raises vitality by 250.
+
+- Prince of Death's Cyst
+    - +0 Effect: Raises vitality by 500.
+
+- Mottled Necklace
+    - +0 Effect: Raises immunity, robustness, and focus by 150.
+    - +1 Effect: Raises immunity, robustness, and focus by 300.
+
+- Millicent's Prosthesis
+    - +0 Effect: Boosts dexterity by 5 and raises attack power with successive attacks, up to 15% additional damage.
+
+- Magic Scorpion Charm
+    - +0 Effect: Raises magic attack power by 15%, but lowers physical damage negation by 15%.
+
+- Lightning Scorpion Charm
+    - +0 Effect: Raises lightning attack power by 15%, but lowers physical damage negation by 15%.
+
+- Fire Scorpion Charm
+    - +0 Effect: Raises fire attack power by 15%, but lowers physical damage negation by 15%.
+
+- Sacred Scorpion Charm
+    - +0 Effect: Raises holy attack power by 15%, but lowers physical damage negation by 15%.
+
+- Rotten Winged Sword Insignia
+    - +0 Effect: Raises attack power with successive attacks, up to 15% additional attack power.
+
+- Graven-School Talisman
+    - +0 Effect: Raises potency of sorceries by 5%.
+
+- Graven-Mass Talisman
+    - +0 Effect: Raises potency of sorceries by 10%.
+
+- Faithful's Canvas Talisman
+    - +0 Effect: Raises potency of incantations by 5%.
+
+- Flock's Canvas Talisman
+    - +0 Effect: GRaises potency of incantations by 10%.
+
+- Dragoncrest Shield Talisman
+    - +0 Effect: Boosts physical damage negation by 5%.
+    - +1 Effect: Boosts physical damage negation by 10%.
+    - +2 Effect: Boosts physical damage negation by 15%.
+
+- Dragoncrest Greatshield Talisman
+    - +0 Effect: Boosts physical damage negation by 20%.
+
+- Spelldrake Talisman
+    - +0 Effect: Boosts magic damage negation by 10%.
+    - +1 Effect: Boosts magic damage negation by 15%.
+    - +2 Effect: Boosts magic damage negation by 20%.
+
+- Flamedrake Talisman
+    - +0 Effect: Boosts fire damage negation by 10%.
+    - +1 Effect: Boosts fire damage negation by 15%.
+    - +2 Effect: Boosts fire damage negation by 20%.
+
+- Boltdrake Talisman
+    - +0 Effect: Boosts lightning damage negation by 10%.
+    - +1 Effect: Boosts lightning damage negation by 15%.
+    - +2 Effect: Boosts lightning damage negation by 20%.
+
+- Haligdrake Talisman
+    - +0 Effect: Boosts holy damage negation by 10%.
+    - +1 Effect: Boosts holy damage negation by 15%.
+    - +2 Effect: Boosts holy damage negation by 20%. 
+
+- Pearldrake Talisman
+    - +0 Effect: Boosts non-physical damage negation by 5%.
+    - +1 Effect: Boosts non-physical damage negation by 7.5%.
+    - +2 Effect: Boosts non-physical damage negation by 10%.
+
 # Spirit Summons
 - Mimic Tear: reduced damage multiplier from reinforcement to {1 -> 1.5} (was {1 -> 2.5}).
+- Mimic Tear: reduced HP multiplier from reinforcement to {1 -> 2} (was {1 -> 3.7}).
+
+# Area Scaling
+- Reduced the HP multiplier for each tier of area scaling. Now ranges from *1 to *3.3 (was *1 to *7.9).
+- Increased baseline rune gain for each tier of area scaling to 2.0 (was 1.0).
+- Reduced the damage multiplier for each tier of area scaling. Now ranges from *1 to *2.8 (was *1 to *3.7).
 
 # Bugfixes
 - Fixed the following weapon so they now scale correctly:
@@ -29,6 +145,10 @@
  - Eleonora's Poleblade
  - Mohgwyn's Sacred Spear
  - Clinging Bone
+
+#------------------------------------------
+# REIMPLEMENT
+#------------------------------------------
 
 #------------------------------------------
 # Notes
