@@ -132,7 +132,9 @@
 # Spirit Summons
 - Mimic Tear: reduced damage multiplier from reinforcement to {1 -> 1.5} (was {1 -> 2.5}).
 - Mimic Tear: reduced HP multiplier from reinforcement to {1 -> 2} (was {1 -> 3.7}).
+- Mimic Tear: now costs 200 FP and 500 HP to summon.
 - Reduced the poise of some of the spirit summons so they stagger more often.
+- Ancestral Follower: now spawns 2 Ancestral Followers.
 
 # Area Scaling
 - Reduced the HP multiplier for each tier of area scaling. Now ranges from *1 to *3.3 (was *1 to *7.9).
