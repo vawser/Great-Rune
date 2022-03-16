@@ -13,7 +13,7 @@
 - Added medium stagger resistance for armor chestpieces that weigh between 15.0 and 19.9.
 - Added strong stagger resistance for armor chestpieces that weigh between 20.0 and above.
 
-# Rings
+# Talismans
 - Crimson Amber Medallion
     - +0 Effect: Boosts maximum HP by 10%.
     - +1 Effect: Boosts maximum HP by 15%.
@@ -129,6 +129,22 @@
     - +1 Effect: Boosts non-physical damage negation by 7.5%.
     - +2 Effect: Boosts non-physical damage negation by 10%.
 
+# New Talismans
+- Voidbane Talisman
+    - Weight: 1.2
+    - +0 Effect: Raises attack power against Void enemies by 20%.
+    - Found in Nokron, Night's Sacred Ground.
+    
+- Deathbane Talisman
+    - Weight: 1.2
+    - +0 Effect: Raises attack power against Undead enemies by 20%.
+    - Sold by D, Hunter of The Dead.
+
+- Dragonbane Talisman
+    - Weight: 1.2
+    - +0 Effect: Raises attack power against Dragon enemies by 20%.
+    - Found in Caelid, Gael Tunnel
+
 # Spirit Summons
 - Mimic Tear: reduced damage multiplier from reinforcement to {1 -> 1.5} (was {1 -> 2.5}).
 - Mimic Tear: reduced HP multiplier from reinforcement to {1 -> 2} (was {1 -> 3.7}).
@@ -151,6 +167,7 @@
  - Clinging Bone
 
 - Fixed weapons that used the Special Keen and Heavy reinforcement type, which was bugged at +25.
+- Added invisible enemies fix.
 
 #------------------------------------------
 # Notes

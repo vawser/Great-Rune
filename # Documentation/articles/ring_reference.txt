@@ -1,0 +1,407 @@
+﻿#------------------------
+# Ring Reference
+#------------------------
+# Crimson Amber Medallion
+- Weight: 0.3
+- +0 Effect: Boosts maximum HP by 10%.
+- +1 Effect: Boosts maximum HP by 15%.
+- +2 Effect: Boosts maximum HP by 20%.
+
+# Cerulean Amber Medallion
+- Weight: 0.3
+- +0 Effect: Boosts maximum FP by 10%.
+- +1 Effect: Boosts maximum FP by 15%.
+- +2 Effect: Boosts maximum FP by 20%.
+
+# Viridian Amber Medallion
+- Weight: 0.3
+- +0 Effect: Boosts maximum stamina by 10%.
+- +1 Effect: Boosts maximum stamina by 15%.
+- +2 Effect: Boosts maximum stamina by 20%.
+
+# Arsenal Charm
+- Weight: 1.5
+- +0 Effect: Boosts maximum equipment load by 15%.
+- +1 Effect: Boosts maximum equipment load by 20%.
+
+# Great-Jar's Arsenal
+- Weight: 1.5
+- +0 Effect: Boosts maximum equipment load by 25%.
+
+# Erdtree's Favor
+- Weight: 1.5
+- +0 Effect: Raises maximum HP, stamina, and equip load by 5%.
+- +1 Effect: Raises maximum HP, stamina, and equip load by 7.5%.
+- +2 Effect: Raises maximum HP, stamina, and equip load by 10%.
+
+# Radagon's Scarseal
+- Weight: 0.8
+- +0 Effect: Raises vigor, endurance, strength, and dexterity by 3, but also increases damage taken by 10%.
+
+# Radagon's Soreseal
+- Weight: 0.8
+- +0 Effect: Greatly raises vigor, endurance, strength, and dexterity by 5, but also increases damage taken by 15%.
+
+# Starscourge Heirloom
+- Weight: 0.8
+- +0 Effect: Raises strength by 5.
+
+# Prosthesis-Wearer Heirloom
+- Weight: 0.8
+- +0 Effect: Raises dexterity by 5.
+
+# Stargazer Heirloom
+- Weight: 0.6
+- +0 Effect: Raises intelligence by 5.
+
+# Two Fingers Heirloom
+- Weight: 0.6
+- +0 Effect: Raises faith by 5.
+
+# Silver Scarab
+- Weight: 1.2
+- +0 Effect: Enhances item discovery by 75.
+
+# Gold Scarab
+- Weight: 1.2
+- +0 Effect: Increases the amount of runes obtained from defeating enemies by 20%.
+
+# Moon of Nokstella
+- Weight: 0.8
+- +0 Effect: Increases memory slots by 2.
+
+# Green Turtle Talisman
+- Weight: 0.7
+- +0 Effect: Raises stamina recovery speed by 10.
+
+# Stalwart Horn Charm
+- Weight: 0.6
+- +0 Effect: Raises robustness by 250.
+- +1 Effect: Raises robustness by 500.
+
+# Immunizing Horn Charm
+- Weight: 0.6
+- +0 Effect: Raises immunity by 250.
+- +1 Effect: Raises immunity by 500.
+
+# Clarifying Horn Charm
+- Weight: 0.6
+- +0 Effect: Raises focus by 250.
+- +1 Effect: Raises focus by 500.
+
+# Prince of Death's Pustule
+- Weight: 0.6
+- +0 Effect: Raises vitality by 250.
+
+# Prince of Death's Cyst
+- Weight: 0.6
+- +0 Effect: Raises vitality by 500.
+
+# Mottled Necklace
+- Weight: 0.9
+- +0 Effect: Raises immunity, robustness, and focus by 150.
+- +1 Effect: Raises immunity, robustness, and focus by 300.
+
+# Bull-Goat's Talisman
+- Weight: 0.5
+- +0 Effect: Raises poise by 25.
+
+# Marika's Scarseal
+- Weight: 0.8
+- +0 Effect: Raises mind, intelligence, faith, and arcane by 3, but also increases damage taken by 10%.
+
+# Marika's Soreseal
+- Weight: 0.8
+- +0 Effect: Raises mind, intelligence, faith, and arcane by 5, but also increases damage taken by 15%.
+
+# Warrior Jar Shard
+- Weight: 0.9
+- +0 Effect: Boosts the attack power of skills by 10%.
+
+# Shard of Alexander
+- Weight: 0.9
+- +0 Effect: Boosts the attack power of skills by 15%.
+
+# Millicent's Prosthesis
+- Weight: 1.6
+- +0 Effect: Boosts dexterity by 5 and raises attack power with successive attacks, up to 15% additional damage.
+
+# Magic Scorpion Charm
+- Weight: 0.8
+- +0 Effect: Raises magic attack power by 15%, but lowers physical damage negation by 15%.
+
+# Lightning Scorpion Charm
+- Weight: 0.8
+- +0 Effect: Raises lightning attack power by 15%, but lowers physical damage negation by 15%.
+
+# Fire Scorpion Charm
+- Weight: 0.8
+- +0 Effect: Raises fire attack power by 15%, but lowers physical damage negation by 15%.
+
+# Sacred Scorpion Charm
+- Weight: 0.8
+- +0 Effect: Raises holy attack power by 15%, but lowers physical damage negation by 15%.
+
+# Red-Feathered Branchsword
+- Weight: 1.4
+- +0 Effect: Raises attack power by 20% when HP is low.
+
+# Ritual Sword Talisman
+- Weight: 0.9
+- +0 Effect: Raises attack power by 10% when HP is at maximum.
+
+# Spear Talisman
+- Weight: 0.5
+- +0 Effect: Enhances the attack power of counterattacks that are unique to thrusting weapons by 15%.
+
+# Hammer Talisman
+- Weight: 0.9
+- +0 Effect: Enhances stamina-reducing attacks by 20% against a blocking opponent.
+
+# Winged Sword Insignia
+- Weight: 1.4
+- +0 Effect: Raises attack power with successive attacks, up to 10% additional attack power.
+
+# Rotten Winged Sword Insignia
+- Weight: 1.4
+- +0 Effect: Raises attack power with successive attacks, up to 15% additional attack power.
+
+# Dagger Talisman
+- Weight: 1.1
+- +0 Effect: Enhances critical hits by 20%.
+
+# Arrow's Reach Talisman
+- Weight: 0.7
+- +0 Effect: Increases the effective range of bows by 65 meters.
+
+# Blue Dancer Charm
+- Weight: 0.9
+- +0 Effect: Raises attack power with lower equipment load, up to 15% additional attack power at zero equipment load.
+
+# Twinblade Talisman
+- Weight: 0.7
+- +0 Effect: Enhances the final hit ending a chain of attacks by 20%.
+
+# Axe Talisman
+- Weight: 0.8
+- +0 Effect: Enhances charge attacks by 10%.
+
+# Lance Talisman
+- Weight: 0.7
+- +0 Effect: Enhances attacks while on horseback by 15%.
+
+# Arrow's Sting Talisman
+- Weight: 0.7
+- +0 Effect: Raises attack power of arrows and bolts by 10%.
+
+# Lord of Blood's Exultation
+- Weight: 0.9
+- +0 Effect: Raises attack power by 20% when blood loss occurs in the vicinity.
+
+# Kindred of Rot's Exultation
+- Weight: 0.9
+- +0 Effect: Raises attack power by 20% when poisoning or rot occurs in the vicinity.
+
+# Claw Talisman
+- Weight: 0.7
+- +0 Effect: Enhances jump attacks by 15%.
+
+# Roar Medallion
+- Weight: 0.7
+- +0 Effect: Enhances roars and breath attacks by 15%.
+
+# Curved Sword Talisman
+- Weight: 0.7
+- +0 Effect: Enhances guard counters by 20%.
+
+# Companion Jar
+- Weight: 0.6
+- +0 Effect: Raises potency of thrown jars by 20%.
+
+# Perfumer's Talisman
+- Weight: 0.6
+- +0 Effect: Raises potency of perfume items by 20%.
+
+# Graven-School Talisman
+- Weight: 0.7
+- +0 Effect: Raises potency of sorceries by 5%.
+
+# Graven-Mass Talisman
+- Weight: 1.0
+- +0 Effect: Raises potency of sorceries by 10%.
+
+# Faithful's Canvas Talisman
+- Weight: 0.7
+- +0 Effect: Raises potency of incantations by 5%.
+
+# Flock's Canvas Talisman
+- Weight: 1.0
+- +0 Effect: GRaises potency of incantations by 10%.
+
+# Old Lord's Talisman
+- Weight: 0.5
+- +0 Effect: Extends the duration of sorceries and incantations by 30%.
+
+# Radagon Icon
+- Weight: 0.7
+- +0 Effect: Shortens the casting time of sorceries and incantations by 30%.
+
+# Primal Glintstone Blade
+- Weight: 0.6
+- +0 Effect: Reduces FP consumption of sorceries and incantations by 25% at the cost of 15% of maximum HP.
+
+# Godfrey Icon
+- Weight: 0.8
+- +0 Effect: Raises charge attack power of sorceries, incantations, and skills by 15%.
+
+# Dragoncrest Shield Talisman
+- Weight: 0.8
+- +0 Effect: Boosts physical damage negation by 5%.
+- +1 Effect: Boosts physical damage negation by 10%.
+- +2 Effect: Boosts physical damage negation by 15%.
+
+# Dragoncrest Greatshield Talisman
+- Weight: 0.8
+- +0 Effect: Boosts physical damage negation by 20%.
+
+# Spelldrake Talisman
+- Weight: 0.6
+- +0 Effect: Boosts magic damage negation by 10%.
+- +1 Effect: Boosts magic damage negation by 15%.
+- +2 Effect: Boosts magic damage negation by 20%.
+
+# Flamedrake Talisman
+- Weight: 0.6
+- +0 Effect: Boosts fire damage negation by 10%.
+- +1 Effect: Boosts fire damage negation by 15%.
+- +2 Effect: Boosts fire damage negation by 20%.
+
+# Boltdrake Talisman
+- Weight: 0.6
+- +0 Effect: Boosts lightning damage negation by 10%.
+- +1 Effect: Boosts lightning damage negation by 15%.
+- +2 Effect: Boosts lightning damage negation by 20%.
+
+# Haligdrake Talisman
+- Weight: 0.6
+- +0 Effect: Boosts holy damage negation by 10%.
+- +1 Effect: Boosts holy damage negation by 15%.
+- +2 Effect: Boosts holy damage negation by 20%. 
+
+# Pearldrake Talisman
+- Weight: 0.6
+- +0 Effect: Boosts non-physical damage negation by 5%.
+- +1 Effect: Boosts non-physical damage negation by 7.5%.
+- +2 Effect: Boosts non-physical damage negation by 10%.
+
+# Crucible Scale Talisman
+- Weight: 1.1
+- +0 Effect: Reduces damage taken from critical hits by 30%.
+
+# Crucible Feather Talisman
+- Weight: 0.8
+- +0 Effect: Improves the effectiveness of dodge rolls, but increases damage taken by 30%.
+
+# Blue-Feathered Branchsword
+- Weight: 1.1
+- +0 Effect: Raises damage negation by 50% when HP is low.
+
+# Ritual Shield Talisman
+- Weight: 0.9
+- +0 Effect: Raises damage negation by 30% when HP is at maximum.
+
+# Greatshield Talisman
+- Weight: 0.9
+- +0 Effect: Boosts guarding ability by 10%.
+
+# Crucible Knot Talisman
+- Weight: 0.5
+- +0 Effect: Reduces damage and impact of headshots taken.
+
+# Crimson Seed Talisman
+- Weight: 0.8
+- +0 Effect: Boosts HP restoration from the Flask of Crimson Tears by 20%.
+
+# Cerulean Seed Talisman
+- Weight: 0.8
+- +0 Effect: Boosts FP restoration from the Flask of Cerulean Tears by 20%.
+
+# Blessed Dew Talisman
+- Weight: 0.6
+- +0 Effect: Gradually restores 2 HP every 1 second.
+
+# Taker's Cameo
+- Weight: 1.0
+- +0 Effect: Restores HP upon defeating enemies. HP restored is 3% of max HP plus 30.
+
+# Godskin Swaddling Cloth
+- Weight: 0.9
+- +0 Effect: Successive attacks restore HP. HP restored is 3% of max HP plus 30.
+
+# Assassin's Crimson Dagger
+- Weight: 0.8
+- +0 Effect: Critical hits restore HP. HP restored is 10% of max HP plus 85.
+
+# Assassin's Cerulean Dagger
+- Weight: 0.8
+- +0 Effect: Critical hits restore 15 FP.
+
+# Crepus's Vial
+- Weight: 0.7
+- +0 Effect: Eliminates all sound made by the wearer during movement.
+
+# Concealing Veil
+- Weight: 0.9
+- +0 Effect: Completely conceals the wearer's presence while crouching at a distance from foes.
+
+# Carian Filigreed Crest
+- Weight: 0.8
+- +0 Effect: Lowers FP consumed by skills by 25%.
+
+# Longtail Cat Talisman
+- Weight: 0.6
+- +0 Effect: Renders the wearer immune to fall damage.
+
+# Shabriri's Woe
+- Weight: 0.6
+- +0 Effect: Constantly attracts enemies' aggression.
+
+# Daedicar's Woe
+- Weight: 0.8
+- +0 Effect: Increases damage taken by 100%.
+
+# Sacrificial Twig
+- Weight: 1.0
+- +0 Effect: Prevents rune loss upon death, but will be lost itself in exchange.
+
+# Furled Finger's Trick-Mirror
+- Weight: 0.7
+- +0 Effect: Makes the bearer take on the appearance of a Host of Fingers.
+
+# Host's Trick-Mirror
+- Weight: 0.7
+- +0 Effect: Makes the bearer take on the appearance of a summoned cooperator.
+
+# Entwining Umbilical Cord
+- Weight: 0.5
+- +0 Effect: Changes the demeanour of the wearer's actions.
+
+# Ancestral Spirit's Horn
+- Weight: 1.2
+- +0 Effect: Restore 3 FP upon defeating enemies.
+
+#-------------------------------------
+# Additions
+#-------------------------------------
+# Voidbane Talisman
+- Weight: 1.2
+- +0 Effect: Raises attack power against Void enemies by 20%.
+
+# Deathbane Talisman
+- Weight: 1.2
+- +0 Effect: Raises attack power against Undead enemies by 20%.
+
+# Dragonbane Talisman
+- Weight: 1.2
+- +0 Effect: Raises attack power against Dragon enemies by 20%.
+
