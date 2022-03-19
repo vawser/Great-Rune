@@ -4,8 +4,14 @@
 # General
 - Added explicit values in the descriptions for talismans.
 
+# Stats
+- Changed Equip Load from Endurance to: {1:50, 20:80, 40:100, 60:140, 99:180}
+- Changed Item Discovery from Arcane to: {0:1, 20:1.5, 30:1.75, 50:2, 99:3}
+
 # Weapons
 - Sacred weapons will now deal 5% additional damage to Undead enemies and prevent resurrection.
+- Dragon Communion Seal now scales mostly off Arcane.
+- Increased scaling of bows.
 
 # Armor
 - Added weak stagger resistance for armor chestpieces that weigh between 10.0 and 14.9.
@@ -144,12 +150,21 @@
     - +0 Effect: Raises attack power against Dragon enemies by 20%.
     - Found in Caelid, Gael Tunnel
 
+# Spells
+- Changed the Dragon Communion spells to only require Arcane.
+- Increased Black Flame Blade duration to 30 seconds.
+
+# Crafting
+- Increased the ammunition produced via crafting to 25 per craft.
+
 # Spirit Summons
 - Mimic Tear: now costs 200 FP and 500 HP to summon.
 - Ancestral Follower: now spawns 2 Ancestral Followers.
 
 # Enemies
 - Increased the rune gain from various enemies.
+- Increased the drop rate of equipment significantly. Mostly 10%, whereas before it was 4 to 0.5%. 
+- Silver Tear: now drops Larvel Tear rarely (in addition to the guaranteed drops).
 
 # Area Scaling
 - Reduced the HP multiplier for each tier of area scaling. Now ranges from *1 to *3.5 (was *1 to *7.9).
@@ -169,4 +184,4 @@ Apply aux on hit
 Roll damage
 Weapon Stamina Consumption
 Attack Type damage
- 
+
