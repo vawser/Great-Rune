@@ -12,6 +12,9 @@
 - Sacred weapons will now deal 5% additional damage to Undead enemies and prevent resurrection.
 - Dragon Communion Seal now scales mostly off Arcane.
 - Increased scaling of bows.
+- Unique bows can change their Ash of War.
+- Shattershard arrows now bypass enemy guard.
+- Increased the effective range of bows, greatbows and crossbows.
 
 # Armor
 - Added weak stagger resistance for armor chestpieces that weigh between 10.0 and 14.9.
@@ -165,6 +168,7 @@
 - Increased the rune gain from various enemies.
 - Increased the drop rate of equipment significantly. Mostly 10%, whereas before it was 4 to 0.5%. 
 - Silver Tear: now drops Larvel Tear rarely (in addition to the guaranteed drops).
+- Increased the material drop amounts from the neutral creatures.
 
 # Area Scaling
 - Reduced the HP multiplier for each tier of area scaling. Now ranges from *1 to *3.5 (was *1 to *7.9).
