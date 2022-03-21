@@ -153,6 +153,16 @@
     - +0 Effect: Raises attack power against Dragon enemies by 20%.
     - Found in Caelid, Gael Tunnel
 
+- Godskin Ward
+    - Weight: 3
+    - +0 Effect: Increases Physical defence by 100.
+    - Found in Crumbling Farum Azula.
+
+- Marika's Golden Sigil
+    - Weight: 1.5
+    - +0 Effect: Increases Elemental defence by 100.
+    - Found in Leyndell, Royal Capital.
+
 # Spells
 - Changed the Dragon Communion spells to only require Arcane.
 - Increased Black Flame Blade duration to 30 seconds.
@@ -181,7 +191,7 @@
 # Notes
 #------------------------------------------
 # Talismans
-Increase X Defense
+
 Kills grant X stacking effect
 Confusion aura
 Apply aux on hit

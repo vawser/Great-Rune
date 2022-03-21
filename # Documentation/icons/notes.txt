@@ -20,3 +20,6 @@ SB_Icon_06 - Talismans/Armor/Ammunition
 MENU_ItemIcon_18900 Voidbane Talisman
 MENU_ItemIcon_18901 Deathbane Talisman
 MENU_ItemIcon_18902 Dragonbane Talisman
+
+MENU_ItemIcon_18910 Godskin Ward
+MENU_ItemIcon_18911 Marika's Golden Sigil

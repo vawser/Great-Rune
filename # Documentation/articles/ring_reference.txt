@@ -405,3 +405,10 @@
 - Weight: 1.2
 - +0 Effect: Raises attack power against Dragon enemies by 20%.
 
+# Godskin Ward
+- Weight: 3
+- +0 Effect: Increases Physical defence by 100.
+
+# Marika's Golden Sigil
+- Weight: 1.5
+- +0 Effect: Increases Elemental defence by 100.
