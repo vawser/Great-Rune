@@ -169,7 +169,21 @@
 
 # Crafting
 - Increased the ammunition produced via crafting to 25 per craft.
-
+- Made various in-world materials grant more of their material on pickup.
+- Made some non-respawning materials respawn.
+- Condensed the cookbooks and made several recipes available by default.
+ - New cookbooks:
+  - Fetid Warrior's Cookbook
+  - Bloodied Warrior's Cookbook
+  - Burnt Warrior's Cookbook
+  - Ancient Dragon Apostle's Cookbook
+  - Missionary's Cookbook
+  - Glintstone Craftsman's Cookbook
+  - St. Trina's Cookbook
+  - Frenzied Disciple's Cookbook
+  - Perfumer's Cookbook
+ - All others have been removed.
+ 
 # Spirit Summons
 - Mimic Tear: now costs 200 FP and 500 HP to summon.
 - Ancestral Follower: now spawns 2 Ancestral Followers.
@@ -198,4 +212,5 @@ Apply aux on hit
 Roll damage
 Weapon Stamina Consumption
 Attack Type damage
+
 
