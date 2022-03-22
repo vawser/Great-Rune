@@ -211,6 +211,14 @@
 - Silver Tear: now drops Larvel Tear rarely (in addition to the guaranteed drops).
 - Increased the material drop amounts from the neutral creatures.
 
+# Classes
+- Added new classes:
+ - Battlemage
+ - Assassin
+ - Monk
+ - Hound
+ - Celebrant
+ 
 # Area Scaling
 - Reduced the HP multiplier for each tier of area scaling. Now ranges from *1 to *3.5 (was *1 to *7.9).
 - Reduced the damage multiplier for each tier of area scaling. Now ranges from *1 to *3.2 (was *1 to *3.7).
@@ -229,4 +237,8 @@ Apply aux on hit
 Roll damage
 Weapon Stamina Consumption
 Attack Type damage
+
+# Yapped
+Fix bad recovery when exception occurs in Field Exporter
+Fix Field Adjuster inability to change x8, x16, x32
 
