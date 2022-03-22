@@ -184,6 +184,23 @@
   - Perfumer's Cookbook
  - All others have been removed.
  
+- Added the following to the crafting menu:
+ - Rune Arc (Default)
+ - Starlight Shards (Glintstone Craftsman's Cookbook)
+ - Glintstone Scrap (Glintstone Craftsman's Cookbook)
+ - Large Glintstone Scrap (Glintstone Craftsman's Cookbook)
+ - Poisoned Stone Clump (Fetid Warrior's Cookbook)
+ - Poisoned Stone (Fetid Warrior's Cookbook)
+ - Explosive Stone Clump (Burnt Warrior's Cookbook)
+ - Explosive Stone (Burnt Warrior's Cookbook)
+ - Celestial Dew (Rennala)
+ - Larval Tear (Rennala)
+ - Imbued Sword Key (Radahn)
+ - Stonesword Key (Default)
+ 
+# Items
+- Added the Holding Rune: a craftable rune you can craft to store runes. Costs 1,200 runes, will reward 1,000 when used, therefore incurring a 20% cost for using it to store runes.
+ 
 # Spirit Summons
 - Mimic Tear: now costs 200 FP and 500 HP to summon.
 - Ancestral Follower: now spawns 2 Ancestral Followers.
@@ -212,5 +229,4 @@ Apply aux on hit
 Roll damage
 Weapon Stamina Consumption
 Attack Type damage
-
 
