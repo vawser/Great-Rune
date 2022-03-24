@@ -216,12 +216,14 @@
 # Classes
 - Added new classes:
  - Battlemage
- - Assassin
- - Monk
- - Hound
+ - Assassin (Black Knife Assassin)
+ - Monk (Blackflame Monk)
+ - Hound (Bloodhound Knight)
  - Celebrant
  - Malenia's Chosen (Cleanrot Knight)
  - Ancient Knight (Crucible Knight)
+ - Perfumer
+ - Deathbed Companion
  
 # Area Scaling
 - Reduced the HP multiplier for each tier of area scaling. Now ranges from *1 to *3.5 (was *1 to *7.9).
