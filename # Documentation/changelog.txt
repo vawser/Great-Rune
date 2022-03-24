@@ -224,6 +224,7 @@
  - Ancient Knight (Crucible Knight)
  - Perfumer
  - Deathbed Companion
+ - Fingerprint Knight
  
 # Area Scaling
 - Reduced the HP multiplier for each tier of area scaling. Now ranges from *1 to *3.5 (was *1 to *7.9).
@@ -244,3 +245,15 @@ Roll damage
 Weapon Stamina Consumption
 Attack Type damage
 
+- Fingerprint Knight
+ 17050000
+ 30120000
+ 950000
+ 950100
+ 950200
+ 950300
+
+ STR 16
+ DEX 20
+ FTH 18
+ 
