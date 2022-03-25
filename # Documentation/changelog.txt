@@ -209,7 +209,7 @@
 
 # Enemies
 - Increased the rune gain from various enemies.
-- Increased the drop rate of equipment significantly. Mostly 10%, whereas before it was 4 to 0.5%. 
+- Increased the drop rate of equipment significantly. Mostly 5%, whereas before it was 4% to 0.5%. 
 - Silver Tear: now drops Larvel Tear rarely (in addition to the guaranteed drops).
 - Increased the material drop amounts from the neutral creatures.
 
@@ -248,3 +248,44 @@ Roll damage
 Weapon Stamina Consumption
 Attack Type damage
 
+- Add fauna unique rare drops, i.e. Tear of Muriel, Hawkfeather, etc
+
+Hawk
+    Feather
+    icon: 1047
+    
+Deer
+    Leaf
+    icon: 533
+    
+Bear
+    Liver
+    icon: 507
+    
+Owl
+    Egg
+    icon: 518
+    
+Boar    
+    Fang
+    icon: 510
+    
+Goat
+    Horn
+    icon: 511
+    
+Gull
+    Foot
+    icon: 514
+    
+Dragonfly
+    Yellow Ember
+    icon: 1046
+
+Turtle
+    Sacred Tear
+    icon: 384
+    
+Rabbitgaroo
+    Lump 
+    icon: 508
