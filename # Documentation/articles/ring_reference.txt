@@ -412,3 +412,19 @@
 # Marika's Golden Sigil
 - Weight: 1.5
 - +0 Effect: Increases Elemental defence by 100.
+
+# Feather of Khandros
+- Weight: 1.0
+- +0 Effect: Reduces weapon stamina consumption by 25%.
+
+# Fang of Madhros
+- Weight: 2.0
+- +0 Effect: Increases guard counter posture damage by 500%.
+
+# Horn of Cernulos
+- Weight: 2.0
+- +0 Effect: Colliding with enemies while rolling harms them, dealng 100 damage.
+
+# Tear of Miriel
+- Weight: 3.0
+- +0 Effect: Grants immunity to Scarlet Rot, but reduces damage negation by 25%.

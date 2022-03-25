@@ -165,6 +165,27 @@
     - +0 Effect: Increases Elemental defence by 100.
     - Found in Leyndell, Royal Capital.
 
+- Feather of Khandros
+    - Weight: 1.0
+    - +0 Effect: Reduces weapon stamina consumption by 25%.
+    - Dropped very rarely by Hawks, Owls and Gulls.
+
+- Fang of Madhros
+    - Weight: 2.0
+    - +0 Effect: Increases guard counter posture damage by 500%.
+    - Dropped very rarely by Bears and Boars.
+
+- Horn of Cernulos
+    - Weight: 2.0
+    - +0 Effect: Colliding with enemies while rolling harms them, dealng 100 damage.
+    - Dropped very rarely by Deer and Goats.
+    
+- Tear of Miriel
+    - Weight: 3.0
+    - +0 Effect: Grants immunity to Scarlet Rot, but reduces damage negation by 25%.
+    - Dropped very rarely by Turtles.
+    - Dropped by Miriel, Pastor of Vows.
+    
 # Spells
 - Changed the Dragon Communion spells to only require Arcane.
 - Increased Black Flame Blade duration to 30 seconds.
@@ -251,41 +272,21 @@ Attack Type damage
 - Add fauna unique rare drops, i.e. Tear of Muriel, Hawkfeather, etc
 
 Hawk
-    Feather
+    Feather of Khandros
     icon: 1047
-    
-Deer
-    Leaf
-    icon: 533
-    
-Bear
-    Liver
-    icon: 507
-    
-Owl
-    Egg
-    icon: 518
+    Reduce weapon stamina consumption by 25%.
     
 Boar    
-    Fang
+    Fang of Madhros
     icon: 510
+    Increases stamina damage of guard counters
     
 Goat
-    Horn
+    Horn of Cernulos
     icon: 511
+    Rolling deals damage.
     
-Gull
-    Foot
-    icon: 514
-    
-Dragonfly
-    Yellow Ember
-    icon: 1046
-
 Turtle
-    Sacred Tear
+    Tear of Miriel
     icon: 384
-    
-Rabbitgaroo
-    Lump 
-    icon: 508
+    Grants immunity to Scarlet Rot but increases damage taken by 25%.
