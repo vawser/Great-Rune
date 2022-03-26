@@ -9,6 +9,10 @@
 - Changed Item Discovery from Arcane to: {0:1, 20:1.5, 30:1.75, 50:2, 99:3}
 - Added passive 1 FP per second.
 
+# Aux
+- Changed most sources of Hemorrhage from 15% to 8% HP loss. Includes both player and enemies.
+- Changed most sources of Hemorrhage from 10% to 6% HP loss. Includes both player and enemies.
+
 # Weapons
 - Sacred weapons will now deal 5% additional damage to Undead enemies and prevent resurrection.
 - Dragon Communion Seal now scales mostly off Arcane.
@@ -246,11 +250,18 @@
 - Mimic Tear: now costs 200 FP and 500 HP to summon.
 - Ancestral Follower: now spawns 2 Ancestral Followers.
 
+# Area Scaling:
+- Adjusted the area scaling to reduce lategame HP inflation and to curb lategame damage. See article for full details.
+
 # Enemies
 - Increased the rune gain from various enemies.
 - Increased the drop rate of equipment significantly. Mostly 5%, whereas before it was 4% to 0.5%. 
 - Silver Tear: now drops Larvel Tear rarely (in addition to the guaranteed drops).
 - Increased the material drop amounts from the neutral creatures.
+
+# Bosses
+- Increased boss HP for various bosses to account for the reduction in area HP scaling.
+- Made Radagon tankier and the Elden Beast squisher.
 
 # Classes
 - Added new classes:
@@ -268,10 +279,6 @@
  - Marionette
  - Knight of the Night
  
-# Area Scaling
-- Reduced the HP multiplier for each tier of area scaling. Now ranges from *1 to *3.5 (was *1 to *7.9).
-- Reduced the damage multiplier for each tier of area scaling. Now ranges from *1 to *3.2 (was *1 to *3.7).
-
 # Bugfixes
 - Added invisible enemies fix.
 
@@ -285,3 +292,18 @@ Confusion aura
 Apply aux on hit
 Attack Type damage
 
+
+
+#------------------------------------------
+# Yapped
+#------------------------------------------
+- Add reference view (Right-click menu to switch to, and/or show name in secondary cell
+- Test multiple selection, add method to simultaneously edit selected cell fields?
+- Add comprehensive param view toggles
+- Add diff export: export only different rows from selected target
+ - Need unique case for removal of rows
+  - Value in row that indicates type:
+   0: Change
+   1: Add
+   2: Remove
+- Add diff import

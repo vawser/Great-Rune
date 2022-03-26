@@ -1,0 +1,63 @@
+﻿Rennala, Queen of the Full Moon
+ - HP: 1452 -> 2000
+ 
+Beast Clergyman / Gurranq, Beast Clergyman
+ - HP: 1588 -> 2500
+ 
+Malenia, Blade of Miquella
+ - HP: 2489 -> 3400
+ 
+Margit, the Fell Omen
+ - HP: 2521 -> 2600
+ 
+Morgott, the Omen King
+ - HP: 2521 -> 3000
+ 
+Radagon
+ - HP: 1893 -> 4000
+ 
+Elden Beast
+ - HP: 3000 -> 1600
+ 
+Elemer of the Briar
+ - HP: 1507 -> 1900
+ 
+Red Wolf of Radagon
+ - HP: 973 -> 1600
+ 
+Draconic Tree Sentinel
+ - HP: 2036 -> 2500
+ 
+Tree Sentinel
+ - HP: 1745 -> 2000
+ 
+Fallen Tree Sentinel
+ - HP: 1860 -> 2200
+ 
+Alabaster Lord
+ - HP: 755 -> 1400
+ 
+Lichdragon Fortissax
+ - HP: 3128 -> 4000
+ 
+Dragonlord Placidusax
+ - HP: 3782 -> 4500
+ 
+Astel, Stars of Darkness
+ - HP: 2708 -> 3500
+ 
+Godfrey, First Elden Lord
+ - HP: 1721 -> 2600
+ 
+Hoarah Loux
+ - HP: 2356 -> 3500
+ 
+Fire Giant
+ - HP: 3489 -> 4000
+ 
+Gargoyle
+ - HP: 1745 -> 2000
+ 
+Mohg, The Omen
+ - HP: 2553 -> 3500
+ 
