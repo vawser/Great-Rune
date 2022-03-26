@@ -1,26 +1,38 @@
 ﻿Rennala, Queen of the Full Moon
  - HP: 1452 -> 2000
+ - Magic Absorption: 0.2 -> 0.5
+ 
+Black Knife Assassin
+ - Holy Absorption: 0.6 -> 1.0
  
 Beast Clergyman / Gurranq, Beast Clergyman
  - HP: 1588 -> 2500
+ - Holy Absorption: 0.2 -> 0.6
  
 Malenia, Blade of Miquella
  - HP: 2489 -> 3400
  
 Margit, the Fell Omen
  - HP: 2521 -> 2600
+ - Holy Absorption: 0.6 -> 1.0
  
 Morgott, the Omen King
  - HP: 2521 -> 3000
+ - Holy Absorption: 0.6 -> 1.0
  
 Radagon
  - HP: 1893 -> 4000
+ - Holy Absorption: 0.2 -> 0.5
  
 Elden Beast
  - HP: 3000 -> 1600
+ - Holy Absorption: 0.2 -> 0.5
  
 Elemer of the Briar
  - HP: 1507 -> 1900
+ 
+Night's Cavalry
+ - Holy Absorption: 0.6 -> 0.9
  
 Red Wolf of Radagon
  - HP: 973 -> 1600
@@ -34,8 +46,18 @@ Tree Sentinel
 Fallen Tree Sentinel
  - HP: 1860 -> 2200
  
+Godskin Apostle
+ - Holy Absorption: 0.6 -> 1.0
+ 
+Godskin Noble
+ - Holy Absorption: 0.6 -> 1.0
+ 
 Alabaster Lord
  - HP: 755 -> 1400
+ - Holy Absorption: 0.8 -> 1.2
+ 
+Godskin Monk
+ - Holy Absorption: 0.8 -> 1.2
  
 Lichdragon Fortissax
  - HP: 3128 -> 4000
@@ -43,8 +65,14 @@ Lichdragon Fortissax
 Dragonlord Placidusax
  - HP: 3782 -> 4500
  
+Wormface
+ - Holy Absorption: 0.6 -> 1.2
+ 
 Astel, Stars of Darkness
  - HP: 2708 -> 3500
+ 
+Fallingstar Beast
+ - Holy Absorption: 0.8 -> 1.2
  
 Godfrey, First Elden Lord
  - HP: 1721 -> 2600
@@ -60,4 +88,7 @@ Gargoyle
  
 Mohg, The Omen
  - HP: 2553 -> 3500
+ - Fire Absorption: 0.2 -> 0.5
  
+Magma Wyrm
+ - Fire Absorption: 0.2 -> 0.5

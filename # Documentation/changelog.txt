@@ -261,7 +261,8 @@
 
 # Bosses
 - Increased boss HP for various bosses to account for the reduction in area HP scaling.
-- Made Radagon tankier and the Elden Beast squisher.
+- Made Radagon tankier and the Elden Beast squishier.
+- Minor bosses now drop reinforcement material.
 
 # Classes
 - Added new classes:
@@ -292,7 +293,28 @@ Confusion aura
 Apply aux on hit
 Attack Type damage
 
+# Regular
+10100 1 # Limgrave
+10101 2 # Limgrave
+10102 3 # Liurnia
+10103 4 # Liurnia
+10104 5 # Altus Plateau
+10105 6 # Altus Plateau
+10106 7 # Caelid / Leyndell
+10107 8 # Caelid / Leyndell
+10140 10 # Late-game
 
+# Unique
+10160 1  # Limgrave
+10161 2  # Limgrave
+10162 3  # Liurnia
+10163 4  # Liurnia
+10164 5  # Altus Plateau
+10165 6  # Altus Plateau
+10166 7  # Caelid / Leyndell
+10167 8  # Caelid / Leyndell
+10200 9  # Late-game
+10168 10 # Late-gmae
 
 #------------------------------------------
 # Yapped
