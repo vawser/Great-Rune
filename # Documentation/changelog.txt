@@ -186,6 +186,24 @@
     - Dropped very rarely by Turtles.
     - Dropped by Miriel, Pastor of Vows.
     
+# Great Runes
+- Godrick's Great Rune
+ - Reduced bonus to 3 in all stats.
+    
+- Radahn's Great Rune
+ - Now boosts immunity by 200 in addition to its normal effect.
+ 
+- Morgott's Great Rune
+ - Now adds 1% HP regen per second in addition to its normal effect.
+    
+- Rykard's Great Rune
+ - Now grants a stacking bonus: Serpent's Hunger, upon defeating enemies. 
+ - Serpent's Hunger is a stacking bonus. Each stack lasts 120 seconds and boosts damage by 1%.
+ - Replaces original effect.
+    
+- Mohg's Great Rune
+ - Now grants immunity to Hemorrhage.
+    
 # Spells
 - Changed the Dragon Communion spells to only require Arcane.
 - Increased Black Flame Blade duration to 30 seconds.
@@ -265,28 +283,5 @@
 Kills grant X stacking effect
 Confusion aura
 Apply aux on hit
-Roll damage
-Weapon Stamina Consumption
 Attack Type damage
 
-- Add fauna unique rare drops, i.e. Tear of Muriel, Hawkfeather, etc
-
-Hawk
-    Feather of Khandros
-    icon: 1047
-    Reduce weapon stamina consumption by 25%.
-    
-Boar    
-    Fang of Madhros
-    icon: 510
-    Increases stamina damage of guard counters
-    
-Goat
-    Horn of Cernulos
-    icon: 511
-    Rolling deals damage.
-    
-Turtle
-    Tear of Miriel
-    icon: 384
-    Grants immunity to Scarlet Rot but increases damage taken by 25%.
