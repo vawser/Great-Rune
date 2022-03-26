@@ -423,7 +423,7 @@
 
 # Horn of Cernulos
 - Weight: 2.0
-- +0 Effect: Colliding with enemies while rolling harms them, dealng 100 damage.
+- +0 Effect: Increases max stamina by 30% whilst at full health.
 
 # Tear of Miriel
 - Weight: 3.0
