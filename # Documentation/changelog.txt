@@ -7,7 +7,9 @@
 # Stats
 - Changed Equip Load from Endurance to: {1:50, 20:80, 40:100, 60:140, 99:180}
 - Changed Item Discovery from Arcane to: {0:1, 20:1.5, 30:1.75, 50:2, 99:3}
+- Changed FP from Mind to: {1:50, 20:150, 50:300, 60:400, 99:500}
 - Added passive 1 FP per second.
+- Added passive 1% FP per second. This measn you gain 1 FP regen for every 100 FP you have. Sub-100 only gets the flat 1 FP.
 
 # Aux
 - Changed most sources of Hemorrhage from 15% to 8% HP loss. Includes both player and enemies.
@@ -278,7 +280,7 @@
  - Deathbed Companion
  - Fingerprint Knight
  - Erdtree Guardian
- - Marionette
+ - Lost Marionette
  - Night's Cavalry
  
 # Bugfixes
