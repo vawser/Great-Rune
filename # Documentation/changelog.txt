@@ -248,8 +248,11 @@
 # Items
 - Added the Holding Rune: a craftable rune you can craft to store runes. Costs 1,200 runes, will reward 1,000 when used, therefore incurring a 20% cost for using it to store runes.
 - Added Bloodied Flesh: a craftable item that can be consumed to restore 200 HP immediately.
-- Added Sorcerous Flesh: a craftable item that be consumed to restore 50 FP immediately.
- 
+- Added Sorcerous Flesh: a craftable item that can be consumed to restore 50 FP immediately.
+- Added Hallowed Flesh: a craftable item that can be consumed to double healing effectiveness until death.
+- Silver-Pickled Fowl Foot: now lasts until death.
+- Gold-Pickled Fowl Foot: now lasts until death.
+
 # Spirit Summons
 - Mimic Tear: now costs 200 FP and 500 HP to summon.
 - Ancestral Follower: now spawns 2 Ancestral Followers.
@@ -311,12 +314,3 @@ Confusion aura
 Apply aux on hit
 Attack Type damage
  
-1211 Bloodied Flesh 325000
-    1 * Bloodrose 20723
-    1 * Lump of Flesh 15020
-    1 * Beast Blood 15030
-    
-1212 Sorcerous Flesh 325010
-    1 * Sliver of Meat 15000
-    1 * Beast Liver 15010
-    3 * Cracked Crystal 20780
