@@ -23,3 +23,10 @@ MENU_ItemIcon_18902 Dragonbane Talisman
 
 MENU_ItemIcon_18910 Godskin Ward
 MENU_ItemIcon_18911 Marika's Golden Sigil
+
+MENU_ItemIcon_00360 Red Flesh
+MENU_ItemIcon_00361 Yellow Flesh
+MENU_ItemIcon_00362 Flesh Strip
+MENU_ItemIcon_00363 Yellow Flesh Strip
+MENU_ItemIcon_00364 Cyan Flesh Strip
+
