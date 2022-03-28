@@ -21,6 +21,11 @@
 - Unique bows can change their Ash of War.
 - Shattershard arrows now bypass enemy guard.
 - Increased the effective range of bows, greatbows and crossbows.
+- All weapons are buffable (i.e. you can apply weapon buffs to them).
+
+# Ashes of War
+- All non-ranged Ashes of War can be used on any non-ranged weapon.
+- All unique weapons can change Ash of War (but not affinity).
 
 # Armor
 - Added weak stagger resistance for armor chestpieces that weigh between 10.0 and 14.9.
@@ -254,7 +259,7 @@
 - Gold-Pickled Fowl Foot: now lasts until death.
 
 # Spirit Summons
-- Mimic Tear: now costs 200 FP and 500 HP to summon.
+- Mimic Tear: now costs 100 FP and 500 HP to summon.
 - Ancestral Follower: now spawns 2 Ancestral Followers.
 
 # Area Scaling:
@@ -265,6 +270,7 @@
 - Increased the drop rate of equipment significantly. Mostly 5%, whereas before it was 4% to 0.5%. 
 - Silver Tear: now drops Larvel Tear rarely (in addition to the guaranteed drops).
 - Increased the material drop amounts from the neutral creatures.
+- Enemies are now vulnerable to Madness.
 
 # Bosses
 - Increased boss HP for various bosses to account for the reduction in area HP scaling.
