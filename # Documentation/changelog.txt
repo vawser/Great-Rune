@@ -24,7 +24,11 @@
 - All weapons are buffable (i.e. you can apply weapon buffs to them).
 
 # Ashes of War
-- All non-ranged Ashes of War can be used on any non-ranged weapon.
+- Most Ashes of War can be used on any melee weapon.
+ - The bow/greatbow/crossbow/ballista ones are limited to their own sub-group, but within that they are available on all.
+ - Shields can be switched to the non-shield ones, but the ability to use it is restricted to the shield being the primary weapon or two-handed.
+ - Loretta's Slash is still limited due to it requiring a specific dummy poly, may be adjusted in the future.
+ 
 - All unique weapons can change Ash of War (but not affinity).
 
 # Armor
