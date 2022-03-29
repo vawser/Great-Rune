@@ -1,1 +1,35 @@
-﻿
+﻿#--------------------------------------
+# Key Items
+#--------------------------------------
+Condensed all cookbooks into the following:
+- Fetid Warrior's Cookbook
+- Bloodied Warrior's Cookbook
+- Burnt Warrior's Cookbook
+- Ancient Dragon Apostle's Cookbook
+- Missionary's Cookbook
+- Glintstone Craftsman's Cookbook
+- St. Trina's Cookbook
+- Frenzied Disciple's Cookbook
+- Perfumer's Cookbook
+
+#--------------------------------------
+# Consumables
+#--------------------------------------
+# Holding Rune
+- Costs 1,200 runes.
+- Sells or is used for 1,000 runes.
+ 
+# Bloodied Flesh 
+- Restores 200 HP immediately
+
+# Sorcerous Flesh
+- Restores 50 FP immediately
+
+# Hallowed Flesh
+- Boosts HP effectiveness by 100% until death.
+
+# Silver-Picked Fowl Foot
+- Lasts until death.
+
+# Gold-Picked Fowl Foot
+- Lasts until death.

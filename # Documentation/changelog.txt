@@ -266,6 +266,14 @@
 - Mimic Tear: now costs 100 FP and 500 HP to summon.
 - Ancestral Follower: now spawns 2 Ancestral Followers.
 
+# Frenzied Summons
+- Frenzied summons are hostile summons that reward souls plus various materials when defeated.
+ - Note they will not harm other enemies, only you.
+- You first need to craft the summon item, which is consumable. It requires Eye of Yelough as standard.
+- Frenzied X items can be crafted after getting the Frenzied Disciple's Cookbook.
+- Available Frenzied summons:
+ - Frenzied Troll Knight
+
 # Area Scaling:
 - Adjusted the area scaling to reduce lategame HP inflation and to curb lategame damage. See article for full details.
 
@@ -323,4 +331,5 @@ Kills grant X stacking effect
 Confusion aura
 Apply aux on hit
 Attack Type damage
- 
+
+20691
