@@ -273,6 +273,7 @@
 - Frenzied X items can be crafted after getting the Frenzied Disciple's Cookbook.
 - Available Frenzied summons:
  - Frenzied Troll Knight
+ - Frenzied Goat Swarm
 
 # Area Scaling:
 - Adjusted the area scaling to reduce lategame HP inflation and to curb lategame damage. See article for full details.
@@ -332,4 +333,4 @@ Confusion aura
 Apply aux on hit
 Attack Type damage
 
-20691
+160600000
