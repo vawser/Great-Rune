@@ -271,9 +271,11 @@
  - Note they will not harm other enemies, only you.
 - You first need to craft the summon item, which is consumable. It requires Eye of Yelough as standard.
 - Frenzied X items can be crafted after getting the Frenzied Disciple's Cookbook.
+
 - Available Frenzied summons:
  - Frenzied Troll Knight
  - Frenzied Goat Swarm
+ - Frenzied Magma Wyrm
 
 # Area Scaling:
 - Adjusted the area scaling to reduce lategame HP inflation and to curb lategame damage. See article for full details.
@@ -333,4 +335,4 @@ Confusion aura
 Apply aux on hit
 Attack Type damage
 
-160600000
+3126 
