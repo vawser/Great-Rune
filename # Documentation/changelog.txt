@@ -335,4 +335,81 @@ Confusion aura
 Apply aux on hit
 Attack Type damage
 
-3126 
+# Single
+21000000 Black Knife Assassin
+
+21100000 Beast Clergyman
+
+21300000 Margit, the Fell Omen
+
+31000000 Elemer of the Briar
+
+32510000 Tree Sentinel
+
+36000000 Alabaster Lord
+
+39100000 Fire Prelate
+
+42700000 Lion Guardian
+
+42900000 Bloodhound Knight
+
+# Groups
+22700000 Giant Crab
+22710000 Crab
+
+25000000 Crucible Knight
+25001000 Crucible Knight
+
+30500000 Commander
+30102000 Banished Knight
+
+30600000 Undead Mariner * 16
+
+30800000 Imp * 6
+
+32000000 Nomad Trader - Merchant Kalé
+32100000 Nomad Mule
+
+32520000 Nox Swordstress
+33000000 Nox Priest
+
+33500000 Crystalian
+33501000 Crystalian
+33502000 Crystalian
+
+35600000 Godskin Apostle
+35700000 Godskin Noble
+
+36300000 Giant Oracle Envoy
+36200000 Large Oracle Envoy
+36100000 Oracle Envoy
+36100000 Oracle Envoy
+36100000 Oracle Envoy
+
+38000000 Cleanrot Knight
+38001000 Cleanrot Knight
+
+38100000 Kindred of Rot
+38101000 Kindred of Rot
+38102000 Kindred of Rot
+
+40200000 Royal Revenant
+40000000 Royal Rider
+40001000 Royal Rider
+
+42100000 Warhawk * 3
+
+42200000 Giant Land Octopus
+42300000 Small Land Octopus * 4
+
+42400000 Large Fingercreeper
+42500000 Small Fingercreeper * 5
+
+42600000 Burial Watchdog
+42601000 Burial Watchdog
+42602000 Burial Watchdog
+
+43800000 Starcaller * 3
+
+43810000 Bloodthorn Exile * 2
