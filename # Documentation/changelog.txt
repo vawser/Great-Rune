@@ -224,6 +224,7 @@
 - Increased Black Flame Blade duration to 30 seconds.
 
 # Crafting
+- Enia can now forge multiple boss items from the same soul.
 - Increased the ammunition produced via crafting to 25 per craft.
 - Made various in-world materials grant more of their material on pickup.
 - Made some non-respawning materials respawn.
@@ -356,14 +357,15 @@ Confusion aura
 Apply aux on hit
 Attack Type damage
 
-3054
-Ripe Grape
-
-1241 
-
-15110 Great Dragonfly Head
-15420 Albinauric Bloodclot
-
-527012 
-527013
-527015
+Frenzied Summons:
+ - Like normal spirit summons, but can harm you too.
+ - Typically will be the bigger monsters that would have indiscriminate attacks
+ - Consumable and not upgradable, but by default tanky and strong.
+ 
+REDO:
+ - Armor SpEffect
+ - Armor Absorption boost
+ - Gem changes
+ - Weapon Sacred change
+ - NPC Param changes
+ 
