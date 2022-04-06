@@ -168,36 +168,20 @@ Afflicted:
  Morgott
  Omen Monstrosity
  Elemer of the Briar
- Albinauric Archer
- Giant Albinauric Archer
- Nox Swordstress
- Nox Priest
- Albinauric
  Sanguine Noble
  Scarlet Putrid Corpse
- Albinauric Lookout
- Depraved Perfumer
- White Veil Perfumer
  Cleanrot Knight
  Large Rotten Dog
  Rotten Dog
  Large Mushroom Dog
  Mushroom Dog
  Fungal Sorcerer
- Fungal Pod
- Giant Fungal Pod
- Giant Miranda Sprout
- Miranda Sprout
- Fading Giant Miranda Sprout
- Fading Miranda Sprout
  Monstrous Dog
  Monstrous Crow
  Monstrous Rotten Crow
  Giant Wormface
- Godrick the Grafted
  Mohg, The Omen
  Putrid Avatar
- Omenkiller
  
 Divine:
  Radagon

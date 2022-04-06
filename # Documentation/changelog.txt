@@ -367,6 +367,4 @@ Enemy Type: Dragon/Wyrm -> Beast
 Enemy Type: Unknown A -> Afflicted
 Enemy Type: Unknown B -> Divine
 
-9100 Hunter's Horn
-9110 Purifying Candlestick
-9120 Deathsworn Tear
+299000
