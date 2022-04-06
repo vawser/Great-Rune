@@ -449,3 +449,14 @@
 - Weight: 3.0
 - +0 Effect: Grants immunity to Scarlet Rot, but reduces damage negation by 25%.
 
+# Hunter's Horn
+- Weight: 2.0
+- +0 Effect: Raises attack power against Bestial enemies by 20%.
+
+# Purifying Candlestick
+- Weight: 2.5
+- +0 Effect: Raises attack power against Afflicted enemies by 20%.
+
+# Deathsworn Tear
+- Weight: 1.0
+- +0 Effect: Raises attack power against Divine enemies by 20%.

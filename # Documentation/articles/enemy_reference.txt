@@ -92,3 +92,124 @@ Mohg, The Omen
  
 Magma Wyrm
  - Fire Absorption: 0.2 -> 0.5
+ 
+#---------------------------------
+# Classifications
+#---------------------------------
+Void:
+ Alabaster Lord
+ Astel, Stars of Darkness
+ Fallingstar Beast
+ 
+Undead:
+ Undead Mariner
+ Undead Azula Beastman
+ Skeleton
+ Snail
+ Giant Skeleton Torso
+ Death Rite Bird
+ 
+Dragon:
+ Banished Knight (Farum Azula)
+ Dragon
+ Lesser Elder Dragon
+ Elder Dragon Greyoll
+ Ancient Dragon
+ Lichdragon Fortissax
+ Magma Wyrm
+ 
+Bestial:
+ Beast Clergyman / Gurranq, Beast Clergyman
+ Giant Crab
+ Crab
+ Red Wolf of Radagon
+ Misbegotten
+ Leonine Misbegotten
+ Man-Serpent
+ Azula Beastman
+ Grey Wolf
+ White Wolf
+ Rat
+ Giant Rat
+ Basilisk
+ Large Starved Dog
+ Starved Dog
+ Large Braided Dog
+ Braided Dog
+ Large Rotten Dog
+ Rotten Dog
+ Large Mushroom Dog
+ Mushroom Dog
+ Giant Bat
+ Bat Harpy
+ Warhawk
+ Giant Land Octopus
+ Lion Guardian
+ Giant Ant
+ Bloodhound Knight
+ Giant Lobster
+ Monstrous Dog
+ Monstrous Crow
+ Monstrous Rotten Crow
+ Runebear
+ Ancestor Spirit
+ Hawk
+ Deer
+ Owl
+ Boar
+ Goat
+ Dragonfly
+ Turtle
+ Rabbitgaroo
+ 
+Afflicted:
+ Malenia
+ Margit
+ Morgott
+ Omen Monstrosity
+ Elemer of the Briar
+ Albinauric Archer
+ Giant Albinauric Archer
+ Nox Swordstress
+ Nox Priest
+ Albinauric
+ Sanguine Noble
+ Scarlet Putrid Corpse
+ Albinauric Lookout
+ Depraved Perfumer
+ White Veil Perfumer
+ Cleanrot Knight
+ Large Rotten Dog
+ Rotten Dog
+ Large Mushroom Dog
+ Mushroom Dog
+ Fungal Sorcerer
+ Fungal Pod
+ Giant Fungal Pod
+ Giant Miranda Sprout
+ Miranda Sprout
+ Fading Giant Miranda Sprout
+ Fading Miranda Sprout
+ Monstrous Dog
+ Monstrous Crow
+ Monstrous Rotten Crow
+ Giant Wormface
+ Godrick the Grafted
+ Mohg, The Omen
+ Putrid Avatar
+ Omenkiller
+ 
+Divine:
+ Radagon
+ Elden Beast
+ Crucible Knight
+ Draconic Tree Sentinel
+ Tree Sentinel
+ Burial Watchdog
+ Godfrey, First Elden Lord
+ Hoarah Loux
+ Godrick the Grafted
+ Erdtree Avatar
+ Starscourge Radahn
+ Malenia, Blade of Miquella
+ 

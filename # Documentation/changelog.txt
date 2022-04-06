@@ -25,6 +25,8 @@
 - Shattershard arrows now bypass enemy guard.
 - Increased the effective range of bows, greatbows and crossbows.
 - All weapons are buffable (i.e. you can apply weapon buffs to them).
+- Added bonus Divine damage to the Godslayer/Godskin weapons.
+- Added bonus Beast damage to the Beast-Repellent Torch.
 
 # Ashes of War
 - Most Ashes of War can be used on any melee weapon.
@@ -204,6 +206,21 @@
     - Dropped very rarely by Turtles.
     - Dropped by Miriel, Pastor of Vows.
     
+- Hunter's Horn
+    - Weight: 2.0
+    - +0 Effect: Raises attack power against Bestial enemies by 20%.
+    - Source: Treasure in Siofra.
+
+- Purifying Candlestick
+    - Weight: 2.5
+    - +0 Effect: Raises attack power against Afflicted enemies by 20%.
+    - Source: Treasure in Sainted Hero's Grave.
+
+- Deathsworn Tear
+    - Weight: 1.0
+    - +0 Effect: Raises attack power against Divine enemies by 20%.
+    - Source: Treasure in Gelmir Hero's Grave.
+
 # Great Runes
 - Godrick's Great Rune
  - Reduced bonus to 3 in all stats.
@@ -312,6 +329,10 @@
 - Silver Tear: now drops Larvel Tear rarely (in addition to the guaranteed drops).
 - Increased the material drop amounts from the neutral creatures.
 - Enemies are now vulnerable to Madness.
+- Added the following enemy classifications:
+ - Beast
+ - Afflicted
+ - Divine
 
 # Bosses
 - Increased boss HP for various bosses to account for the reduction in area HP scaling.
@@ -338,30 +359,14 @@
 - Added invisible enemies fix.
 
 #------------------------------------------
-# Yapped
-#------------------------------------------
-- Add reference view (Right-click menu to switch to, and/or show name in secondary cell
-- Test multiple selection, add method to simultaneously edit selected cell fields?
-- Add comprehensive param view toggles
-- Add diff export: export only different rows from selected target
- - Need unique case for removal of rows
-  - Value in row that indicates type:
-   0: Change
-   1: Add
-   2: Remove
-- Add diff import
-
-#------------------------------------------
 # Notes
 #------------------------------------------
-# Talismans
-Kills grant X stacking effect
-Confusion aura
-Apply aux on hit
-Attack Type damage
+# Enemy Types
+Enemy Type: Ancient Dragon -> Dragon
+Enemy Type: Dragon/Wyrm -> Beast
+Enemy Type: Unknown A -> Afflicted
+Enemy Type: Unknown B -> Divine
 
-Frenzied Summons:
- - Like normal spirit summons, but can harm you too.
- - Typically will be the bigger monsters that would have indiscriminate attacks
- - Consumable and not upgradable, but by default tanky and strong.
- 
+9100 Hunter's Horn
+9110 Purifying Candlestick
+9120 Deathsworn Tear
