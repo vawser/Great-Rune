@@ -367,4 +367,4 @@ Enemy Type: Dragon/Wyrm -> Beast
 Enemy Type: Unknown A -> Afflicted
 Enemy Type: Unknown B -> Divine
 
-299000
+

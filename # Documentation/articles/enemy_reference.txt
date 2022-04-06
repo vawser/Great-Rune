@@ -167,7 +167,6 @@ Afflicted:
  Margit
  Morgott
  Omen Monstrosity
- Elemer of the Briar
  Sanguine Noble
  Scarlet Putrid Corpse
  Cleanrot Knight
@@ -182,6 +181,8 @@ Afflicted:
  Giant Wormface
  Mohg, The Omen
  Putrid Avatar
+ Ulcerated Tree Spirit
+ Kindred of Rot
  
 Divine:
  Radagon
