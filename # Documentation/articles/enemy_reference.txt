@@ -117,6 +117,8 @@ Dragon:
  Ancient Dragon
  Lichdragon Fortissax
  Magma Wyrm
+ Dragonlord Placidusax
+ Draconic Tree Sentinel
  
 Bestial:
  Beast Clergyman / Gurranq, Beast Clergyman
@@ -188,7 +190,6 @@ Divine:
  Radagon
  Elden Beast
  Crucible Knight
- Draconic Tree Sentinel
  Tree Sentinel
  Burial Watchdog
  Godfrey, First Elden Lord
@@ -197,4 +198,5 @@ Divine:
  Erdtree Avatar
  Starscourge Radahn
  Malenia, Blade of Miquella
+ Rennala, Queen of the Full Moon
  

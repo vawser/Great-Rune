@@ -354,6 +354,7 @@
  - Erdtree Guardian
  - Lost Marionette
  - Night's Cavalry
+ - Errant Sorcerer
  
 # Bugfixes
 - Added invisible enemies fix.
@@ -367,4 +368,21 @@ Enemy Type: Dragon/Wyrm -> Beast
 Enemy Type: Unknown A -> Afflicted
 Enemy Type: Unknown B -> Divine
 
+# Errant Sorcerer
+Hierodas Glintstone Crown       990000
+Errant Sorcerer Robe            990100
+Errant Sorcerer Manchettes      990200
+Errant Sorcerer Boots           990300
 
+Glintstone Staff                33000000
+Eclipse Crest Heater Shield     31310000
+
+Rock Sling          4710
+Gravity Well        4720
+
+INT 18
+
+# Juvenile Scholar
+
+Juvenile Scholar Cap
+Juvenile Scholar Robe
