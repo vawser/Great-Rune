@@ -15,7 +15,7 @@
 
 # Aux
 - Changed most sources of Hemorrhage from 15% to 8% HP loss. Includes both player and enemies.
-- Changed most sources of Hemorrhage from 10% to 6% HP loss. Includes both player and enemies.
+- Changed most sources of Frostbite from 10% to 6% HP loss. Includes both player and enemies.
 
 # Weapons
 - Sacred weapons will now deal 5% additional damage to Undead enemies and prevent resurrection.
@@ -309,17 +309,6 @@
 - Mimic Tear: now costs 100 FP and 500 HP to summon.
 - Ancestral Follower: now spawns 2 Ancestral Followers.
 
-# Frenzied Summons
-- Frenzied summons are hostile summons that reward souls plus various materials when defeated.
- - Note they will not harm other enemies, only you.
-- You first need to craft the summon item, which is consumable. It requires Eye of Yelough as standard.
-- Frenzied X items can be crafted after getting the Frenzied Disciple's Cookbook.
-
-- Available Frenzied summons:
- - Frenzied Troll Knight
- - Frenzied Goat Swarm
- - Frenzied Magma Wyrm
-
 # Area Scaling:
 - Adjusted the area scaling to reduce lategame HP inflation and to curb lategame damage. See article for full details.
 
@@ -342,13 +331,13 @@
 # Classes
 - Added new classes:
  - Battlemage
- - Assassin (Black Knife Assassin)
- - Monk (Blackflame Monk)
- - Hound (Bloodhound Knight)
- - Celebrant
+ - Black Knife Assassin 
+ - Blackflame Monk 
+ - Bloodhound Knight 
+ - Dominula Celebrant
  - Malenia's Chosen (Cleanrot Knight)
  - Ancient Knight (Crucible Knight)
- - Perfumer
+ - Depraved Perfumer
  - Deathbed Companion
  - Fingerprint Knight
  - Erdtree Guardian
@@ -368,21 +357,3 @@ Enemy Type: Dragon/Wyrm -> Beast
 Enemy Type: Unknown A -> Afflicted
 Enemy Type: Unknown B -> Divine
 
-# Errant Sorcerer
-Hierodas Glintstone Crown       990000
-Errant Sorcerer Robe            990100
-Errant Sorcerer Manchettes      990200
-Errant Sorcerer Boots           990300
-
-Glintstone Staff                33000000
-Eclipse Crest Heater Shield     31310000
-
-Rock Sling          4710
-Gravity Well        4720
-
-INT 18
-
-# Juvenile Scholar
-
-Juvenile Scholar Cap
-Juvenile Scholar Robe
