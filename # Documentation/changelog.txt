@@ -344,6 +344,7 @@
  - Lost Marionette
  - Night's Cavalry
  - Errant Sorcerer
+ - Beholder of Death
  
 # Bugfixes
 - Added invisible enemies fix.
@@ -357,3 +358,13 @@ Enemy Type: Dragon/Wyrm -> Beast
 Enemy Type: Unknown A -> Afflicted
 Enemy Type: Unknown B -> Divine
 
+ - Beholder of Death
+
+Inseparable Sword   2090000
+Twinned Set     600000
+
+Holy Water Pot 350
+
+STR 18
+DEX 18
+FTH 20
