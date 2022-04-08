@@ -27,6 +27,17 @@
 - All weapons are buffable (i.e. you can apply weapon buffs to them).
 - Added bonus Divine damage to the Godslayer/Godskin weapons.
 - Added bonus Beast damage to the Beast-Repellent Torch.
+- Baked in +30% scaling boost for the unique weapons.
+- Switched the unique weapons to the standard reinforcement type.
+
+# Reinforcement
+- Reduced max reinforcement to +10.
+- Changed reinforcement materials, there are now only four materials:
+  - Smithing Stone Shard
+  - Smithing Stone Fragment
+  - Smithing Stone Chunk
+  - Pure Smithing Stone
+- Reinforcement is 3/3/3/1
 
 # Ashes of War
 - Most Ashes of War can be used on any melee weapon.
@@ -328,6 +339,13 @@
 - Made Radagon tankier and the Elden Beast squishier.
 - Minor bosses now drop reinforcement material.
 
+# Merchants
+- Twin Maiden Musks now sell materials at the following intervals: 
+ - Smithing Stone Shard -> Godrick
+ - Smithing Stone Fragment -> Radahn
+ - Smithing Stone Chunk -> Morgott
+ - Pure Smithing Stone -> Melania
+
 # Classes
 - Added new classes:
  - Battlemage
@@ -358,3 +376,45 @@ Enemy Type: Dragon/Wyrm -> Beast
 Enemy Type: Unknown A -> Afflicted
 Enemy Type: Unknown B -> Divine
 
+
+10500 Smithing Stone Shard
+    9101 Godrick
+    
+10501 Smithing Stone Fragment
+    9130 Radahn
+    
+10502 Smithing Stone Chunk
+    9104 Morgott
+    
+10503 Pure Smithing Stone
+    9120 Melania
+
+
+# Smith
+10100 -> 10500
+10101
+10102
+
+10103 -> 10501
+10104
+10105
+
+10106 -> 10502
+10107
+
+10140 -> 10503
+
+# Somber
+10160 -> 10500
+10161
+10162
+
+10163 -> 10501
+10164
+10165
+
+10166 -> 10502
+10167
+10200
+
+10168 -> 10503
