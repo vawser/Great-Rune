@@ -37,7 +37,11 @@
   - Smithing Stone Fragment
   - Smithing Stone Chunk
   - Pure Smithing Stone
-- Reinforcement is 3/3/3/1
+- Reinforcement is now:
+ - Smithing Stone Shard: 3/5/8
+  - Smithing Stone Fragment: 3/5/8
+  - Smithing Stone Chunk: 3/5/8
+  - Pure Smithing Stone: 1
 
 # Ashes of War
 - Most Ashes of War can be used on any melee weapon.
@@ -340,7 +344,7 @@
 - Minor bosses now drop reinforcement material.
 
 # Merchants
-- Twin Maiden Musks now sell materials at the following intervals: 
+- Twin Maiden Husks now sell materials at the following intervals: 
  - Smithing Stone Shard -> Godrick
  - Smithing Stone Fragment -> Radahn
  - Smithing Stone Chunk -> Morgott
@@ -389,32 +393,3 @@ Enemy Type: Unknown B -> Divine
 10503 Pure Smithing Stone
     9120 Melania
 
-
-# Smith
-10100 -> 10500
-10101
-10102
-
-10103 -> 10501
-10104
-10105
-
-10106 -> 10502
-10107
-
-10140 -> 10503
-
-# Somber
-10160 -> 10500
-10161
-10162
-
-10163 -> 10501
-10164
-10165
-
-10166 -> 10502
-10167
-10200
-
-10168 -> 10503
