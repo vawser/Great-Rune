@@ -380,16 +380,6 @@ Enemy Type: Dragon/Wyrm -> Beast
 Enemy Type: Unknown A -> Afflicted
 Enemy Type: Unknown B -> Divine
 
-
-10500 Smithing Stone Shard
-    9101 Godrick
-    
-10501 Smithing Stone Fragment
-    9130 Radahn
-    
-10502 Smithing Stone Chunk
-    9104 Morgott
-    
-10503 Pure Smithing Stone
-    9120 Melania
-
+9200100 Hunter's Horn
+Purifying Candlestick
+Deathsworn Tear
