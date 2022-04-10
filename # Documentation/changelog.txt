@@ -3,9 +3,11 @@
 #------------------------------------------
 # General
 - Added explicit values in the descriptions for talismans.
+- Increased the NG+ multipliers so NG+ is more of a challenge for a full build.
 
 # Animations
-- Added invincibility frames to the player backstep animations.
+- Added full invincibility frames to the player's backstep animations.
+- Added full invincibility frames to the player's jump animations.
 
 # Stats
 - Changed Equip Load from Endurance to: {1:50, 20:80, 40:100, 60:140, 99:180}
@@ -257,7 +259,20 @@
 # Spells
 - Changed the Dragon Communion spells to only require Arcane.
 - Increased Black Flame Blade duration to 30 seconds.
+- Increased cast speed frame reduction for various start-up animations.
 
+- Inescapable Frenzy: 
+ - You can now walk during the start-up animation.
+
+- Rennala's Full Moon/Ranni's Dark Moon:
+ - You are now invincible during the hidden section of the start-up animation.
+ 
+- Zamor Ice Storm:
+ - You can now move normally during the start-up animation.
+ 
+- Whirl, O Flame!:
+ - You can now move and turn throughout all of the spell animations.
+ 
 # Crafting
 - Enia can now forge multiple boss items from a duplicated soul.
 - Increased the ammunition produced via crafting to 25 per craft.
@@ -350,6 +365,8 @@
  - Smithing Stone Chunk -> Morgott
  - Pure Smithing Stone -> Melania
 
+- Removed the Bell-Bearings related to Smithing Stones.
+
 # Classes
 - Added new classes:
  - Battlemage
@@ -372,6 +389,22 @@
 - Added invisible enemies fix.
 
 #------------------------------------------
+# Ideas
+#------------------------------------------
+- Add affinities to weapons that lack them.
+- Add affinities to bows/crossbows/etc
+- Add Note items to questlines that detail each stage, acting like a psuedo-journel.
+- Implement Cinder's transmog system.
+- Implement Talisman Upgrades that allow you to boost the talisman level. 
+ - Add a new reinforcement material, drop from sidebosses (100%) and tough enemies (varied %)
+ - Remove the existing +1/+2/+3 treasures if this occurs.
+- Adjust bosses to act more in-line with Dark Souls design, i.e. slow down Maliketh's quick slash, etc.
+- Adjust enemy lock-on camera:
+ - Adjust NPC camera for big bosses to frame them better
+ - Adjust in-TAE cameras for big enemy moves.
+ 
+
+#------------------------------------------
 # Notes
 #------------------------------------------
 # Enemy Types
@@ -380,6 +413,3 @@ Enemy Type: Dragon/Wyrm -> Beast
 Enemy Type: Unknown A -> Afflicted
 Enemy Type: Unknown B -> Divine
 
-9200100 Hunter's Horn
-Purifying Candlestick
-Deathsworn Tear

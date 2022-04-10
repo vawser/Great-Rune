@@ -1,11 +1,24 @@
+#-------------------------------------------
+# Installation
+#-------------------------------------------
 To use this mod you will need to:
 
-1. Make a backup of your regulation.bin file by copying it elsewhere.
-2. Unpack the game with UXM(https://cdn.discordapp.com/attachments/529900741998149643/949045219175825448/UXM_2.4.ER_EldenRingQuickhack.zip).
-3. Patch the eldenring.exe with UXM.
-4. Drag and drop the files into your Elden Ring/Game/ directory.
+1. 
+ - Download Mod Engine 2: go to https://github.com/soulsmods/ModEngine2/releases
+ - Click Assets, then download the the top one, NOT the source code. 
+ - Extract Mod Engine 2 somewhere onto your PC.
 
+2. 
+ - Extract the contents of this zip file into the "mod" folder in the same directory as the "modengine2_launcher.exe".
+ 
+3. 
+ - Launch Steam once so Steam Services are running.
+ - Click launchmod_eldenring.bat to launch the game.
+
+#-------------------------------------------
+# Removal
+#-------------------------------------------
 To remove this mod you will need to:
 
-1. Restore the Game directory with UXM.
-2. Replace the regulation.bin file with your backup.
+1. 
+ - Delete the contents of the "mod" folder in the Mod Engine 2 directory.
