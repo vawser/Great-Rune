@@ -25,6 +25,7 @@
 - Increased scaling of bows.
 - Unique bows can change their Ash of War.
 - Shattershard arrows now bypass enemy guard.
+- Rainbow Stone Arrows now start very slowly and then accelerate. Useful for enemies that dodge.
 - Increased the effective range of bows, greatbows and crossbows.
 - All weapons are buffable (i.e. you can apply weapon buffs to them).
 - Added bonus Divine damage to the Godslayer/Godskin weapons.
@@ -209,12 +210,12 @@
 
 - Fang of Madhros
     - Weight: 2.0
-    - +0 Effect: Increases guard counter posture damage by 500%.
+    - +0 Effect: Increases poise damage by 100%.
     - Dropped very rarely by Bears and Boars.
 
 - Horn of Cernulos
     - Weight: 2.0
-    - +0 Effect: Increases max stamina by 30% whilst at full health.
+    - +0 Effect: Grants weak stagger resistance.
     - Dropped very rarely by Deer and Goats.
     
 - Tear of Miriel

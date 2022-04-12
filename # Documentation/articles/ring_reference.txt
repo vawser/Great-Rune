@@ -439,11 +439,11 @@
 
 # Fang of Madhros
 - Weight: 2.0
-- +0 Effect: Increases guard counter posture damage by 500%.
+- +0 Effect: Increases poise damage by 100%.
 
 # Horn of Cernulos
 - Weight: 2.0
-- +0 Effect: Increases max stamina by 30% whilst at full health.
+- +0 Effect: Grants weak stagger resistance.
 
 # Tear of Miriel
 - Weight: 3.0
