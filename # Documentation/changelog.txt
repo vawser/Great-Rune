@@ -374,8 +374,8 @@
  - Blackflame Monk 
  - Bloodhound Knight 
  - Dominula Celebrant
- - Malenia's Chosen (Cleanrot Knight)
- - Ancient Knight (Crucible Knight)
+ - Malenia's Chosen
+ - Crucible Knight
  - Depraved Perfumer
  - Deathbed Companion
  - Fingerprint Knight
@@ -384,6 +384,8 @@
  - Night's Cavalry
  - Errant Sorcerer
  - Beholder of Death
+ - Rotten Noble
+ - Fallen Aristocrat
  
 # Bugfixes
 - Added invisible enemies fix.
@@ -413,3 +415,15 @@ Enemy Type: Dragon/Wyrm -> Beast
 Enemy Type: Unknown A -> Afflicted
 Enemy Type: Unknown B -> Divine
 
+41070000 Black Bow
+1141100 Bloodstained Dagger
+30000000 Buckler
+
+370000 Aristocrat Set
+
+50000000 Arrow
+50310000 Bloodbone Arrow
+ 
+DEX 20
+
+Fallen Aristocrat
