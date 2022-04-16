@@ -24,6 +24,7 @@
 - Dragon Communion Seal now scales mostly off Arcane.
 - Increased scaling of bows.
 - Unique bows can change their Ash of War.
+- Bows can now use affinities.
 - Shattershard arrows now bypass enemy guard.
 - Rainbow Stone Arrows now start very slowly and then accelerate. Useful for enemies that dodge.
 - Increased the effective range of bows, greatbows and crossbows.
@@ -35,16 +36,38 @@
 
 # Reinforcement
 - Reduced max reinforcement to +10.
-- Changed reinforcement materials, there are now only four materials:
-  - Smithing Stone Shard
-  - Smithing Stone Fragment
-  - Smithing Stone Chunk
-  - Pure Smithing Stone
-- Reinforcement is now:
- - Smithing Stone Shard: 3/5/8
-  - Smithing Stone Fragment: 3/5/8
-  - Smithing Stone Chunk: 3/5/8
-  - Pure Smithing Stone: 1
+- Changed reinforcement materials, there are now only 6 materials:
+  - Smithing Stone Scrap (+1, +2)
+   - Found in Limgrave (World)
+   - Found in Weeping Peninsula (World)
+   - Found in Stormveil Castle
+   
+  - Smithing Stone Shard (+3, +4)
+   - Found in Liurnia (World)
+   - Found in Raya Lucaria Academy
+   - Found in Ainsel River
+   
+  - Smithing Stone Fragment (+5, +6)
+   - Found in Altus Plateau (World)
+   - Found in Mt. Gelmir (World)
+   - Found in Caelid (World)
+   - Found in Volcano Manor
+   - Found in Nokron, Eternal City
+   
+  - Smithing Stone Chunk (+7, +8)
+   - Found in Mountaintops of the Giants (World)
+   - Found in Consecrated Snowfield (World)
+   - Found in Mohgwyn Palace
+   - Found in Lake of Rot
+   - Found in Leyndell, Royal Capital
+   
+  - Smithing Stone Slab (+9)
+   - Found in Miquella's Haligtree
+   - Found in Crumbling Farum Azula
+   - Found in Deeproot Depths
+   
+  - Pure Smithing Stone (+10)
+   - Found as treasure
 
 # Ashes of War
 - Most Ashes of War can be used on any melee weapon.
@@ -336,9 +359,76 @@
  - Inflicts Madness for its duration on the user.
  - Lasts 60 seconds.
 
+- Added the following items:
+ - Diluted Bell Bearing
+  - Dropped by Godrick the Grafted
+  - Unlocks:
+   - Smithing Stone Scrap
+   - Sanctuary Stone
+    
+ - Sorcerous Bell Bearing
+  - Dropped by Rennala
+  - Unlocks:
+   - Smithing Stone Shard
+   - Glintstone Scrap
+   - Cracked Crystal
+   
+ - Gluttonous Bell Bearing
+  - Dropped by Rykard
+  - Unlocks:
+   - Arteria Leaf
+   - Explosive Stone
+   
+ - Deific Bell Bearing
+  - Dropped by Radahn
+  - Unlocks:
+   - Smithing Stone Fragment
+   
+ - Prophetic Bell Bearing
+  - Dropped by Morgott
+  - Unlocks:
+   - Smithing Stone Chunk
+   
+ - Burning Bell Bearing
+  - Dropped by Fire Giant
+  - Unlocks:
+   - Smithing Stone Slab
+   
+ - Malignant Bell Bearing
+  - Dropped by Maliketh
+  - Unlocks:
+   - Pure Smithing Stone
+   
+ - Putrid Bell Bearing
+  - Dropped by Malenia
+  - Unlocks:
+   - Aeonian Butterfly
+   
+ - Sanguine Bell Bearing
+  - Dropped by Mohg
+  - Unlocks:
+   - Bloodrose
+   
+- Condensed the Picker Bell Bearing items into:
+ - Glovewort Picker's Bell Bearing
+  - Dropped by Dragonkin Soldier (Ainsel River)
+  - Unlocks:
+   - Grave Glovewort
+ 
+ - Ghost-Glovewort Picker's Bell Bearing
+  - Dropped by Valiant Gargoyles (Siofra River)
+  - Unlocks:
+   - Ghost Glovewort
+
 # Spirit Summons
 - Mimic Tear: now costs 100 FP and 500 HP to summon.
 - Ancestral Follower: now spawns 2 Ancestral Followers.
+- Condensed all Grave Glovewort items into one item: Grave Glovewort 
+- Condensed all Ghost Glovewort items into one item: Ghost Glovewort 
+- Spirit Summon Ashes can no longer be reinforced.
+- Spirit Summon Ashes are now consumable.
+- Roderika now sells Spirit Summon Ashes in exchange for Grave or Ghost Glovewort, plus runes. 
+ - Once you find the initial item, they will then appear in the shop.
 
 # Area Scaling:
 - Adjusted the area scaling to reduce lategame HP inflation and to curb lategame damage. See article for full details.
@@ -357,16 +447,6 @@
 # Bosses
 - Increased boss HP for various bosses to account for the reduction in area HP scaling.
 - Made Radagon tankier and the Elden Beast squishier.
-- Minor bosses now drop reinforcement material.
-
-# Merchants
-- Twin Maiden Husks now sell materials at the following intervals: 
- - Smithing Stone Shard -> Godrick
- - Smithing Stone Fragment -> Radahn
- - Smithing Stone Chunk -> Morgott
- - Pure Smithing Stone -> Melania
-
-- Removed the Bell-Bearings related to Smithing Stones.
 
 # Classes
 - Added new classes:
@@ -395,7 +475,6 @@
 # Ideas
 #------------------------------------------
 - Add affinities to weapons that lack them.
-- Add affinities to bows/crossbows/etc
 - Add Note items to questlines that detail each stage, acting like a psuedo-journel.
 - Implement Cinder's transmog system.
 - Implement Talisman Upgrades that allow you to boost the talisman level. 
@@ -410,21 +489,3 @@
 #------------------------------------------
 # Notes
 #------------------------------------------
-# Enemy Types
-Enemy Type: Ancient Dragon -> Dragon
-Enemy Type: Dragon/Wyrm -> Beast
-Enemy Type: Unknown A -> Afflicted
-Enemy Type: Unknown B -> Divine
-
-41070000 Black Bow
-1141100 Bloodstained Dagger
-30000000 Buckler
-
-370000 Aristocrat Set
-
-50000000 Arrow
-50310000 Bloodbone Arrow
- 
-DEX 20
-
-Fallen Aristocrat
