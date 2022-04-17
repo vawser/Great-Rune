@@ -20,21 +20,27 @@
 - Changed most sources of Frostbite from 10% to 6% HP loss. Includes both player and enemies.
 
 # Weapons
+- Most weapons can now swap Affinities.
+- All weapons are buffable (i.e. you can apply weapon buffs to them).
+- Baked in +30% scaling boost for the unique weapons.
+
 - Sacred weapons will now deal 5% additional damage to Undead enemies and prevent resurrection.
+- Added bonus Divine damage to the Godslayer/Godskin weapons.
+- Added bonus Beast damage to the Beast-Repellent Torch.
+
+# Spell Tools
 - Dragon Communion Seal now scales mostly off Arcane.
+
+# Ranged Weapons
 - Increased scaling of bows.
 - Unique bows can change their Ash of War.
 - Bows can now use affinities.
 - Shattershard arrows now bypass enemy guard.
 - Rainbow Stone Arrows now start very slowly and then accelerate. Useful for enemies that dodge.
 - Increased the effective range of bows, greatbows and crossbows.
-- All weapons are buffable (i.e. you can apply weapon buffs to them).
-- Added bonus Divine damage to the Godslayer/Godskin weapons.
-- Added bonus Beast damage to the Beast-Repellent Torch.
-- Baked in +30% scaling boost for the unique weapons.
-- Switched the unique weapons to the standard reinforcement type.
 
 # Reinforcement
+- Switched the unique weapons to the standard reinforcement type.
 - Reduced max reinforcement to +10.
 - Changed reinforcement materials, there are now only 6 materials:
   - Smithing Stone Scrap (+1, +2)
@@ -489,7 +495,6 @@
 #------------------------------------------
 # Ideas
 #------------------------------------------
-- Add affinities to weapons that lack them.
 - Add Note items to questlines that detail each stage, acting like a psuedo-journel.
 - Implement Cinder's transmog system.
 - Implement Talisman Upgrades that allow you to boost the talisman level. 
