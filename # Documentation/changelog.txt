@@ -421,14 +421,29 @@
    - Ghost Glovewort
 
 # Spirit Summons
-- Mimic Tear: now costs 100 FP and 500 HP to summon.
+- Reduced Spirit Summon FP costs.
+- Removed Spirit Summon HP costs.
 - Ancestral Follower: now spawns 2 Ancestral Followers.
+
 - Condensed all Grave Glovewort items into one item: Grave Glovewort 
 - Condensed all Ghost Glovewort items into one item: Ghost Glovewort 
+
 - Spirit Summon Ashes can no longer be reinforced.
+ - They have the following modifiers:
+  - HP: *8 (*2 for Mimic)
+  - Max Stamina: *2
+  - Defence %: *2
+  - Resist %: *2
+  - Power %: *2.5 (*1 for Mimic)
+  
 - Spirit Summon Ashes are now consumable.
+
 - Roderika now sells Spirit Summon Ashes in exchange for Grave or Ghost Glovewort, plus runes. 
  - Once you find the initial item, they will then appear in the shop.
+ 
+# Treasure
+- Meteorite Staff is now dropped by the Fallingstar Beast in Sellia Crystal Tunnel.
+- Spirit Summon Ash treasures now reward 3 or 5 at a time.
 
 # Area Scaling:
 - Adjusted the area scaling to reduce lategame HP inflation and to curb lategame damage. See article for full details.
