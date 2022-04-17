@@ -504,10 +504,13 @@
 - Made Radagon tankier and the Elden Beast squishier.
 
 - Beast Clergyman:
- - Slowed down all attack animations by 25%. This is to make the fight more reactable.
+ - Slowed down all attack animations by 20%. This is to make the fight more reactable.
 
 - Malenia, Blade of Miquella
- - Slowed down all attack animations by 25%. This is to make the fight more reactable.
+ - Slowed down all attack animations by 20%. This is to make the fight more reactable.
+
+- Commander Veteran
+ - Slowed down various attack animations by 20%.
 
 # Classes
 - Added new classes:
