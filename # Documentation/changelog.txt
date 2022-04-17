@@ -29,6 +29,10 @@
 - Added bonus Divine damage to the Godslayer/Godskin weapons.
 - Added bonus Beast damage to the Beast-Repellent Torch.
 
+- Colossal Swords:
+ - Reduced the duration of recovery animation.
+ - Increased the speed of the jump attack animation.
+ 
 # Spell Tools
 - Adjusted the spell buffs for all catalysts so they are closer to one another in terms of power.
 - Dragon Communion Seal now scales mostly off Arcane.
@@ -476,6 +480,7 @@
 - Adjusted the area scaling to reduce lategame HP inflation and to curb lategame damage. See article for full details.
 
 # Enemies
+- Adjusted the lock cameras for large enemies to make them more readable.
 - Increased the rune gain from various enemies.
 - Increased the drop rate of equipment significantly. Mostly 5%, whereas before it was 4% to 0.5%. 
 - Increased the material drop amounts from the neutral creatures.
@@ -497,6 +502,12 @@
 # Bosses
 - Increased boss HP for various bosses to account for the reduction in area HP scaling.
 - Made Radagon tankier and the Elden Beast squishier.
+
+- Beast Clergyman:
+ - Slowed down all attack animations by 25%. This is to make the fight more reactable.
+
+- Malenia, Blade of Miquella
+ - Slowed down all attack animations by 25%. This is to make the fight more reactable.
 
 # Classes
 - Added new classes:
@@ -531,11 +542,8 @@
  - Remove the existing +1/+2/+3 treasures if this occurs.
 - Adjust bosses to act more in-line with Dark Souls design, i.e. slow down Maliketh's quick slash, etc.
 - Adjust enemy lock-on camera:
- - Adjust NPC camera for big bosses to frame them better
  - Adjust in-TAE cameras for big enemy moves.
- 
 
 #------------------------------------------
 # Notes
 #------------------------------------------
-
