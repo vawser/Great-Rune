@@ -18,6 +18,7 @@
 # Aux
 - Changed most sources of Hemorrhage from 15% to 8% HP loss. Includes both player and enemies.
 - Changed most sources of Frostbite from 10% to 6% HP loss. Includes both player and enemies.
+- Madness now applies a debuff to its target: -50% damage output. Lasts 30 seconds.
 
 # Weapons
 - Most weapons can now swap Affinities.
@@ -517,3 +518,10 @@
 #------------------------------------------
 # Notes
 #------------------------------------------
+20100000;81200132
+
+7100000 Eclipse Shotel
+17050000 Vyke's War Spear
+299000 TEST BUDDY
+
+299000 
