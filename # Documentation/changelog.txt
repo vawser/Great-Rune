@@ -30,7 +30,15 @@
 - Added bonus Beast damage to the Beast-Repellent Torch.
 
 # Spell Tools
+- Adjusted the spell buffs for all catalysts so they are closer to one another in terms of power.
 - Dragon Communion Seal now scales mostly off Arcane.
+- Meteorite Staff now scales normally.
+
+- Crystal Staff: now 25 INT requirement (was 48).
+- Carian Regal Scepter: now 50 INT requirement (was 60).
+- Azur's Glintstone Staff: now 50 INT requirement (was 52).
+- Lusat's Glintstone Staff: now 60 INT requirement (was 52).
+- Rotten Crystal Staff: now 25 INT requirement (was 48).
 
 # Ranged Weapons
 - Increased scaling of bows.
@@ -90,6 +98,18 @@
 - Added strong stagger resistance for armor chestpieces that weigh between 20.0 and above.
 - Increased the Standard/Slash/Thrust absorption for all armor by 5%.
 - Increased the Strike absorption for all armor by 2.5%.
+
+- Made Deathbed Smalls obtainable.
+ - Found with the Deathbed Dress.
+ 
+- Made Ragged Set obtainable.
+ - Found in Deathtouched Catacombs - Stormhill.
+ 
+- Made Brave's Set obtainable.
+ - Found in Abandoned Cave - Caelid.
+ 
+- Made Millicent Set obtainable.
+ - Sold by Enia after defeating Commander O'Neil.
 
 # Talismans
 - Crimson Amber Medallion
@@ -518,10 +538,4 @@
 #------------------------------------------
 # Notes
 #------------------------------------------
-20100000;81200132
 
-7100000 Eclipse Shotel
-17050000 Vyke's War Spear
-299000 TEST BUDDY
-
-299000 
