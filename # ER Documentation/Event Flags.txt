@@ -10,11 +10,18 @@
 176 Malenia's Great Rune
 197 Great Rune of the Unborn
 
+HandleBossDefeat
+
 # Bosses
-9101 Godfrey the Grafted
-9104 Morgott, the Omen King
-9107 Godfrey/Hoarah Loux
-9108 Astel, Naturalborn of the Void
+9100 Godrick the Grafted - Stormveil Castle
+9101 Margit, the Fell Omen - Stormveil Castle
+9103 Grafted Scion - Chapel of Anticipation
+9104 Morgott, the Omen King - Leyndell
+9105 Godfrey, First Elden Lord - Leyndell
+9106 Sir Gideon Ofnir, the All-Knowing - Leyndell
+9107 Hoarah Loux - Leyndell
+9108 Astel, Naturalborn of the Void - Lake of Rot
+9109 Dragonkin Soldier of Nokstella - Ainsel River
 9111 Lichdragon Fortissax
 9112 Mohg
 9115 Dragonlord Placidusax
@@ -27,6 +34,8 @@
 9130 Starscourge Radahn
 9131 Fire Giant
 9133 Regal Ancestor Spirit
+9134 Dragonkin Soldier - Lake of Rot
+9135 Fia's Champion - Deeproot Depths
 9182 Elemer of the Briar
 9184 Commander Niall
 

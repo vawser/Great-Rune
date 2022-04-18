@@ -5,6 +5,12 @@
 - Added explicit values in the descriptions for talismans.
 - Increased the NG+ multipliers so NG+ is more of a challenge for a full build.
 
+# Features
+- Added Bestiary:
+ - Allows you to veiw the alive/dead status of bosses.
+ - Allows you to view the location of bosses.
+ - Allows you to ressurect dead bosses to fight them again.
+
 # Animations
 - Added full invincibility frames to the player's backstep animations.
 - Added full invincibility frames to the player's jump animations.
@@ -501,7 +507,12 @@
 
 # Bosses
 - Increased boss HP for various bosses to account for the reduction in area HP scaling.
-- Made Radagon tankier and the Elden Beast squishier.
+
+- Radagon:
+ - Increased base HP.
+ 
+- Elden Beast:
+ - Reduced base HP.
 
 - Beast Clergyman:
  - Slowed down all attack animations by 20%. This is to make the fight more reactable.
@@ -550,3 +561,5 @@
 #------------------------------------------
 # Notes
 #------------------------------------------
+Use Starlight Shard shop for the Talisman mechanic (check ESD for it)
+
