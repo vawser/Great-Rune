@@ -538,3 +538,4 @@
 #------------------------------------------
 Use Starlight Shard shop for the Talisman mechanic (check ESD for it)
 
+OpenPuppetShop(100300, 100324)

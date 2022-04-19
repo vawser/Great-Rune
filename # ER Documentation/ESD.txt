@@ -3,19 +3,25 @@
 #-----------------------------------
 x: 
  1  - Talk List
+ 2  -
  3  - OpenRepository
+ 4  - 
  5  - OpenRegularShop
  6  - OpenSellShop
  7  - OpenEquipmentChangeOfPurposeShop
+ 8  - 
  9  - OpenEnhanceShop(0)
  10 - OpenSoul
  11 - OpenMagicEquip
  12 - OpenConversationChoicesMenu
  13 - OpenChooseQuantityDialog
  14 - OpenEstusAllotMenu
+ 15 - 
  16 - OpenCharaMakeMenu(0)
+ 17 - 
  18 - OpenTranspositionShop
  19 - ReallocateAttributes
+ 20 - 
  21 - OpenPhysickMenu
  22 - OpenDragonCommunionShop
  23 - c1_136() 
@@ -24,6 +30,7 @@ x:
  26 - OpenTailoringShop
  27 - OpenAshOfWarShop
  28 - OpenPuppetShop
+ 29 - ?
  30 - OpenCharaMakeMenu(1)
  31 - OpenDupeShop(0)
  32 - OpenDupeShop(1)
