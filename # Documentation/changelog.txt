@@ -35,10 +35,6 @@
 - Added bonus Divine damage to the Godslayer/Godskin weapons.
 - Added bonus Beast damage to the Beast-Repellent Torch.
 
-- Colossal Swords:
- - Reduced the duration of recovery animation.
- - Increased the speed of the jump attack animation.
- 
 # Spell Tools
 - Adjusted the spell buffs for all catalysts so they are closer to one another in terms of power.
 - Dragon Communion Seal now scales mostly off Arcane.
@@ -320,19 +316,6 @@
 # Spells
 - Changed the Dragon Communion spells to only require Arcane.
 - Increased Black Flame Blade duration to 30 seconds.
-- Increased cast speed frame reduction for various start-up animations.
-
-- Inescapable Frenzy: 
- - You can now walk during the start-up animation.
-
-- Rennala's Full Moon/Ranni's Dark Moon:
- - You are now invincible during the hidden section of the start-up animation.
- 
-- Zamor Ice Storm:
- - You can now move normally during the start-up animation.
- 
-- Whirl, O Flame!:
- - You can now move and turn throughout all of the spell animations.
  
 # Crafting
 - Enia can now forge multiple boss items from a duplicated soul.
@@ -514,15 +497,6 @@
  
 - Elden Beast:
  - Reduced base HP.
-
-- Beast Clergyman:
- - Slowed down all attack animations by 20%. This is to make the fight more reactable.
-
-- Malenia, Blade of Miquella
- - Slowed down all attack animations by 20%. This is to make the fight more reactable.
-
-- Commander Veteran
- - Slowed down various attack animations by 20%.
 
 # Classes
 - Added new classes:
