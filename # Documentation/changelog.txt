@@ -6,7 +6,7 @@
 - Increased the NG+ multipliers so NG+ is more of a challenge for a full build.
 
 # Features
-- Added Bestiary to the Grace Menu:
+- Added Bestiary to Merchant Kale:
  - Allows you to veiw the alive/dead status of bosses.
  - Allows you to view the location of bosses.
  - Allows you to ressurect dead bosses to fight them again.
