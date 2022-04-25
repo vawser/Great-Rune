@@ -314,7 +314,7 @@
  - Now grants immunity to Hemorrhage.
     
 # Spells
-- Changed the Dragon Communion spells to only require Arcane.
+- Adjusted the Dragon spell requirements, reducing the Faith requirements.
 - Increased Black Flame Blade duration to 30 seconds.
  
 # Crafting
@@ -517,6 +517,16 @@
  - Beholder of Death
  - Rotten Noble
  - Fallen Aristocrat
+ - Draconic Adherent
+ - Reviled Omen
+ - Disciple of Helphen
+ - Eternal Wanderer
+ - Albinauric Upstart
+ - White Mask Assailant
+ - Fallen Braggart
+ - Crystal Miner
+ - Ascetic Sorcerer
+ - Bestial Champion
  
 # Bugfixes
 - Added invisible enemies fix.
