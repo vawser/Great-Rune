@@ -30,3 +30,15 @@ MENU_ItemIcon_00362 Flesh Strip
 MENU_ItemIcon_00363 Yellow Flesh Strip
 MENU_ItemIcon_00364 Cyan Flesh Strip
 
+MENU_ItemIcon_00365 Innards - Orange
+MENU_ItemIcon_00366 Innards - Dark Yellow
+MENU_ItemIcon_00367 Innards - Yellow
+MENU_ItemIcon_00368 Innards - Light Green
+MENU_ItemIcon_00369 Innards - Green
+MENU_ItemIcon_00370 Innards - Cyan
+MENU_ItemIcon_00371 Innards - Light Blue
+MENU_ItemIcon_00372 Innards - Pink
+MENU_ItemIcon_00373 Innards - Purple
+MENU_ItemIcon_00374 Innards - Dark Blue
+MENU_ItemIcon_00375 Innards - Blue
+MENU_ItemIcon_00376 Innards - Gray

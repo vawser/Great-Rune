@@ -5,13 +5,70 @@
 - Added explicit values in the descriptions for talismans.
 - Increased the NG+ multipliers so NG+ is more of a challenge for a full build.
 
-# Features
+# Boos Rebirth
 - Added Boss Rebirth to Rennala:
  - Allows you to veiw the alive/dead status of bosses.
  - Allows you to view the location of bosses.
  - Allows you to ressurect dead bosses to fight them again.
   - Rennala and Malenia are not available currently.
- - Costs 1 Larvel Tear to ressurect a boss.
+ - Costs 1 Larval Tear to ressurect a boss.
+
+# Innards
+- Added a 'perk' system to the Great-Jar. 
+ - You can now offer 'Potent Innards' to the Great-Jar, in exchange for unique innards that grant beneficial effects.
+ - Each unique innard can be purchased multiple times (max 10, or 5 for regeneration ones).
+ - The effects of innards are applied upon resting at a grace.
+ - You can purchase the 'Sage of the Great-Jar' from the Great-Jar. 
+  - This will allow you to offer innards while at any site of grace.
+ 
+- Innards:
+ - Innards of Vitality: 
+  - Boost max HP by 5%. 
+  - Caps at 10 stacks.
+  
+ - Innards of Wisdom: 
+  - Boost max FP by 5%. 
+  - Caps at 10 stacks.
+  
+ - Innards of Tenacity: 
+  - Boost max Stamina by 5%. 
+  - Caps at 10 stacks.
+  
+ - Innards of Fortitude: 
+  - Boost physical absorption by 5%. 
+  - Caps at 10 stacks.
+  
+ - Innards of Reflection: 
+  - Boost elemental absorption by 5%. 
+  - Caps at 10 stacks.
+  
+ - Innards of Regeneration: 
+  - Boost HP regeneration by 1.
+  - Caps at 5 stacks.
+  
+ - Innards of Tranquility: 
+  - Boost FP regeneration by 1.
+  - Caps at 5 stacks.
+  
+ - Innards of Endurance: 
+  - Boost Stamina regeneration by 2.
+  - Caps at 10 stacks.
+  
+ - Innards of Greed: 
+  - Boost rune acquisition by 5%.
+  - Caps at 10 stacks.
+  
+ - Innards of Finesse: 
+  - Reduces weapon stamina consumption by 5%.
+  - Caps at 10 stacks.
+  
+ - Innards of Courage: 
+  - Boost melee and spell damage by 3%.
+  - Caps at 10 stacks.
+  
+ - Innards of Clarity: 
+  - Reduces spell and item FP consumption by 5%.
+  - Caps at 10 stacks.
 
 # Animations
 - Added full invincibility frames to the player's backstep animations.
@@ -57,40 +114,8 @@
 - Increased the effective range of bows, greatbows and crossbows.
 
 # Reinforcement
-- Switched the unique weapons to the standard reinforcement type.
-- Reduced max reinforcement to +10.
-- Changed reinforcement materials, there are now only 6 materials:
-  - Smithing Stone Scrap (+1, +2)
-   - Found in Limgrave (World)
-   - Found in Weeping Peninsula (World)
-   - Found in Stormveil Castle
-   
-  - Smithing Stone Shard (+3, +4)
-   - Found in Liurnia (World)
-   - Found in Raya Lucaria Academy
-   - Found in Ainsel River
-   
-  - Smithing Stone Fragment (+5, +6)
-   - Found in Altus Plateau (World)
-   - Found in Mt. Gelmir (World)
-   - Found in Caelid (World)
-   - Found in Volcano Manor
-   - Found in Nokron, Eternal City
-   
-  - Smithing Stone Chunk (+7, +8)
-   - Found in Mountaintops of the Giants (World)
-   - Found in Consecrated Snowfield (World)
-   - Found in Mohgwyn Palace
-   - Found in Lake of Rot
-   - Found in Leyndell, Royal Capital
-   
-  - Smithing Stone Slab (+9)
-   - Found in Miquella's Haligtree
-   - Found in Crumbling Farum Azula
-   - Found in Deeproot Depths
-   
-  - Pure Smithing Stone (+10)
-   - Found as treasure
+- Removed reinforcement. All weapons have their highest reinforcement modifiers applied by default.
+- The stat scaling curve has been adjusted to account for this change.
 
 # Ashes of War
 - Most Ashes of War can be used on any melee weapon.
@@ -235,6 +260,9 @@
     - +1 Effect: Boosts non-physical damage negation by 7.5%.
     - +2 Effect: Boosts non-physical damage negation by 10%.
 
+- Longtail Cat Talisman
+    - Now blocks all fall damage unless it is through a killplane.
+    
 # New Talismans
 - Voidbane Talisman
     - Weight: 1.2
@@ -385,15 +413,14 @@
  - Diluted Bell Bearing
   - Dropped by Godrick the Grafted
   - Unlocks:
-   - Smithing Stone Scrap
-   - Sanctuary Stone
+   - Potent Innards * 5
     
  - Sorcerous Bell Bearing
   - Dropped by Rennala
   - Unlocks:
-   - Smithing Stone Shard
    - Glintstone Scrap
    - Cracked Crystal
+   - Potent Innards * 10
    
  - Gluttonous Bell Bearing
   - Dropped by Rykard
@@ -404,22 +431,22 @@
  - Deific Bell Bearing
   - Dropped by Radahn
   - Unlocks:
-   - Smithing Stone Fragment
+   - Potent Innards * 15
    
  - Prophetic Bell Bearing
   - Dropped by Morgott
   - Unlocks:
-   - Smithing Stone Chunk
+   - Potent Innards * 20
    
  - Burning Bell Bearing
   - Dropped by Fire Giant
   - Unlocks:
-   - Smithing Stone Slab
+   - Potent Innards * 25
    
  - Malignant Bell Bearing
   - Dropped by Maliketh
   - Unlocks:
-   - Pure Smithing Stone
+   - Potent Innards * 30
    
  - Putrid Bell Bearing
   - Dropped by Malenia
@@ -452,11 +479,11 @@
 
 - Spirit Summon Ashes can no longer be reinforced.
  - They have the following modifiers:
-  - HP: *8 (*2 for Mimic)
+  - HP: *2 
   - Max Stamina: *2
   - Defence %: *2
   - Resist %: *2
-  - Power %: *2.5 (*1 for Mimic)
+  - Power %: *2 (*1 for Mimic)
   
 - Spirit Summon Ashes are now consumable.
 
@@ -466,6 +493,8 @@
 # Treasure
 - Meteorite Staff is now dropped by the Fallingstar Beast in Sellia Crystal Tunnel.
 - Spirit Summon Ash treasures now reward 3 or 5 at a time.
+- Replaced all reinforcement material treasures with Potent Innards.
+- Bosses now drop Potent Innards in addition to their normal drops.
 
 # Area Scaling:
 - Adjusted the area scaling to reduce lategame HP inflation and to curb lategame damage. See article for full details.
@@ -476,7 +505,7 @@
 - Increased the drop rate of equipment significantly. Mostly 5%, whereas before it was 4% to 0.5%. 
 - Increased the material drop amounts from the neutral creatures.
 
-- Silver Tear: now drops Larvel Tear rarely (in addition to the guaranteed drops).
+- Silver Tear: now drops Larval Tear rarely (in addition to the guaranteed drops).
 
 - Added the following enemy classifications:
  - Beast
@@ -538,9 +567,6 @@
 #------------------------------------------
 - Add Note items to questlines that detail each stage, acting like a psuedo-journel.
 - Implement Cinder's transmog system.
-- Implement Talisman Upgrades that allow you to boost the talisman level. 
- - Add a new reinforcement material, drop from sidebosses (100%) and tough enemies (varied %)
- - Remove the existing +1/+2/+3 treasures if this occurs.
 - Adjust bosses to act more in-line with Dark Souls design, i.e. slow down Maliketh's quick slash, etc.
 - Adjust enemy lock-on camera:
  - Adjust in-TAE cameras for big enemy moves.
@@ -550,18 +576,8 @@
 #------------------------------------------
 Make Spirit Summons spells, new spell school for Sorcery
 
-Add Bestiary to Renalla
- Make it cost Larval Tears
- 
-Remove reinforcement, replace them with Fragments and Worts
 
-Add Perk system where you spend fragments/worts to unlock perks:
- - Strength
- - Skill
- - Wisdom
- - Devotion
 
-2008 Fragment of Strength
-2018 Fragment of Skill
-2119 Wort of Devotion
-2019 Wort of Wisdom
+
+
+
