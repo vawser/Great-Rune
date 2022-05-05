@@ -110,6 +110,12 @@
 - Changed FP from Mind to: {1:50, 20:150, 50:300, 60:400, 99:500}
 - Added passive 1 FP per second.
 
+# Game System Values
+- Baseline Stealth Attack Multiplier is now 150% (was 120%). 
+- AI Sight Multiplier - Evening is now 0.8 (was 1)
+- AI Sight Multiplier - Midnight is now 0.3 (was 0.5)
+- Boss Kill - Rune Acquisition Delay Time is now 0.3 seconds (was 3.2).
+
 # Aux
 - Changed most sources of Hemorrhage from 15% to 8% HP loss. Includes both player and enemies.
 - Changed most sources of Frostbite from 10% to 6% HP loss. Includes both player and enemies.
@@ -579,19 +585,3 @@
 #------------------------------------------
 Make Spirit Summons spells, new spell school for Sorcery
 
-Affinities:
- Night: dex magic -> stealth attack bonus
- Blighted: adds blight build-up
- Soporific: adds sleep build-up
- 
-Affinity: Unused [13] -> Sanctified
-Affinity: Unused [14] -> Sanctified
-Affinity: Unused [15] -> Red-Hot
-Affinity: Unused [16] -> Red-Hot
-Affinity: Unused [17] -> Sanctified
-Affinity: Unused [18] -> Black
-Affinity: Unused [19] -> Glintstone
-Affinity: Unused [20] -> Glintstone
-Affinity: Unused [21] -> Sanctified
-Affinity: Unused [22] -> Iron
-Affinity: Unused [23] -> 
