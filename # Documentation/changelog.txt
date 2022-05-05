@@ -124,6 +124,8 @@
 - Added bonus Divine damage to the Godslayer/Godskin weapons.
 - Added bonus Beast damage to the Beast-Repellent Torch.
 
+- Added Deflect mechanic.
+
 # Spell Tools
 - Adjusted the spell buffs for all catalysts so they are closer to one another in terms of power.
 - Dragon Communion Seal now scales mostly off Arcane.
@@ -577,8 +579,19 @@
 #------------------------------------------
 Make Spirit Summons spells, new spell school for Sorcery
 
-
-
-
-
-
+Affinities:
+ Night: dex magic -> stealth attack bonus
+ Blighted: adds blight build-up
+ Soporific: adds sleep build-up
+ 
+Affinity: Unused [13] -> Sanctified
+Affinity: Unused [14] -> Sanctified
+Affinity: Unused [15] -> Red-Hot
+Affinity: Unused [16] -> Red-Hot
+Affinity: Unused [17] -> Sanctified
+Affinity: Unused [18] -> Black
+Affinity: Unused [19] -> Glintstone
+Affinity: Unused [20] -> Glintstone
+Affinity: Unused [21] -> Sanctified
+Affinity: Unused [22] -> Iron
+Affinity: Unused [23] -> 
