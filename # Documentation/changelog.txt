@@ -1,0 +1,574 @@
+#------------------------------------------
+# 1.00
+#------------------------------------------
+# General
+- Added explicit values in the descriptions for talismans.
+- Increased the NG+ multipliers so NG+ is more of a challenge for a full build.
+
+# Boss Rebirth
+- Added Boss Rebirth to Rennala:
+ - Allows you to veiw the alive/dead status of bosses.
+ - Allows you to view the location of bosses.
+ - Allows you to ressurect dead bosses to fight them again.
+  - Rennala and Malenia are not available currently.
+ - Costs 1 Larval Tear to ressurect a boss.
+
+# Innards
+- Added a 'perk' system to the Great-Jar. 
+ - You can now spend 'Potent Innards' with the Great-Jar, purchasing unique innards that grant beneficial effects.
+ - Each unique innard can be purchased multiple times (max 5, or 3 for regeneration ones).
+ - The effects of innards are applied upon resting at a grace.
+ - You can purchase the 'Sage of the Great-Jar' from the Great-Jar. 
+  - This will allow you to offer innards while at any site of grace.
+ 
+- Innards:
+ - Innards of Vitality: 
+  - Boost max HP by 5%. 
+  - Caps at 5 stacks.
+  
+ - Innards of Wisdom: 
+  - Boost max FP by 5%. 
+  - Caps at 5 stacks.
+  
+ - Innards of Tenacity: 
+  - Boost max Stamina by 5%. 
+  - Caps at 5 stacks.
+  
+ - Innards of Fortitude: 
+  - Boost physical absorption by 5%. 
+  - Caps at 5 stacks.
+  
+ - Innards of Reflection: 
+  - Boost elemental absorption by 5%. 
+  - Caps at 5 stacks.
+  
+ - Innards of Regeneration: 
+  - Boost HP regeneration by 1.
+  - Caps at 3 stacks.
+  
+ - Innards of Tranquility: 
+  - Boost FP regeneration by 1.
+  - Caps at 3 stacks.
+  
+ - Innards of Endurance: 
+  - Boost Stamina regeneration by 2.
+  - Caps at 5 stacks.
+  
+ - Innards of Greed: 
+  - Boost rune acquisition by 5%.
+  - Caps at 5 stacks.
+  
+ - Innards of Finesse: 
+  - Reduces weapon stamina consumption by 5%.
+  - Caps at 5 stacks.
+  
+ - Innards of Courage: 
+  - Boost melee and spell damage by 3%.
+  - Caps at 5 stacks.
+  
+ - Innards of Clarity: 
+  - Reduces spell and item FP consumption by 5%.
+  - Caps at 5 stacks.
+
+# Classes
+- Added new classes:
+ - Battlemage
+ - Black Knife Assassin 
+ - Blackflame Monk 
+ - Bloodhound Knight 
+ - Dominula Celebrant
+ - Malenia's Chosen
+ - Crucible Knight
+ - Depraved Perfumer
+ - Deathbed Companion
+ - Fingerprint Knight
+ - Erdtree Guardian
+ - Lost Marionette
+ - Night's Cavalry
+ - Errant Sorcerer
+ - Beholder of Death
+ - Rotten Noble
+ - Fallen Aristocrat
+ - Draconic Adherent
+ - Reviled Omen
+ - Disciple of Helphen
+ - Eternal Wanderer
+ - Albinauric Upstart
+ - White Mask Assailant
+ - Fallen Braggart
+ - Crystal Miner
+ - Ascetic Sorcerer
+ - Bestial Champion
+ 
+# Animations
+- Added full invincibility frames to the player's backstep animations.
+- Added full invincibility frames to the player's jump animations.
+
+# Stats
+- Changed Equip Load from Endurance to: {1:50, 20:80, 40:100, 60:140, 99:180}
+- Changed Item Discovery from Arcane to: {0:1, 20:1.5, 30:1.75, 50:2, 99:3}
+- Changed FP from Mind to: {1:50, 20:150, 50:300, 60:400, 99:500}
+- Added passive 1 FP per second.
+
+# Game System Values
+- Baseline Stealth Attack Multiplier is now 150% (was 120%). 
+- AI Sight Multiplier - Evening is now 0.8 (was 1)
+- AI Sight Multiplier - Midnight is now 0.3 (was 0.5)
+- Boss Kill - Rune Acquisition Delay Time is now 0.3 seconds (was 3.2).
+
+# Aux
+- Changed most sources of Hemorrhage from 15% to 8% HP loss. Includes both player and enemies.
+- Changed most sources of Frostbite from 10% to 6% HP loss. Includes both player and enemies.
+- Madness now applies a debuff to its target: -50% damage output. Lasts 30 seconds.
+
+# Weapons
+- Most weapons can now swap Affinities.
+- All weapons are buffable (i.e. you can apply weapon buffs to them).
+- Baked in +30% scaling boost for the unique weapons.
+
+- Sacred weapons will now deal 5% additional damage to Undead enemies and prevent resurrection.
+- Added bonus Divine damage to the Godslayer/Godskin weapons.
+- Added bonus Beast damage to the Beast-Repellent Torch.
+
+- Added Deflect mechanic:
+ - Normal Deflect will reduce stamina drain and boost guard absorption.
+ - Perfect Deflect will prevent stamina drain, boost guard absorption and emit a whirlwind that staggers enemies.
+
+# Spell Tools
+- Adjusted the spell buffs for all catalysts so they are closer to one another in terms of power.
+- Dragon Communion Seal now scales mostly off Arcane.
+- Meteorite Staff now scales normally.
+
+- Crystal Staff: now 25 INT requirement (was 48).
+- Carian Regal Scepter: now 50 INT requirement (was 60).
+- Azur's Glintstone Staff: now 50 INT requirement (was 52).
+- Lusat's Glintstone Staff: now 60 INT requirement (was 52).
+- Rotten Crystal Staff: now 25 INT requirement (was 48).
+
+# Ranged Weapons
+- Increased scaling of bows.
+- Unique bows can change their Ash of War.
+- Bows can now use affinities.
+- Shattershard arrows now bypass enemy guard.
+- Rainbow Stone Arrows now start very slowly and then accelerate. Useful for enemies that dodge.
+- Increased the effective range of bows, greatbows and crossbows.
+
+# Reinforcement
+- Removed reinforcement. Adjusted weapon modifiers to allow for natural progression throughout the game, based mainly on stat scaling.
+
+# Area Scaling
+- Enemy physical defence is now *2 to account for higher early base damage.
+- Enemy elemental defence is now *1.5 to account for higher early base damage.
+- Enemy HP in the areas before Mt. Gelmir is now higher to account for higher early base damage.
+
+# Ashes of War
+- Most Ashes of War can be used on any melee weapon.
+ - The bow/greatbow/crossbow/ballista ones are limited to their own sub-group, but within that they are available on all.
+ - Shields can be switched to the non-shield ones, but the ability to use it is restricted to the shield being the primary weapon or two-handed.
+ - Loretta's Slash is still limited due to it requiring a specific dummy poly, may be adjusted in the future.
+ 
+- All unique weapons can change Ash of War (but not affinity).
+
+# Armor
+- Added weak stagger resistance for armor chestpieces that weigh between 10.0 and 14.9.
+- Added medium stagger resistance for armor chestpieces that weigh between 15.0 and 19.9.
+- Added strong stagger resistance for armor chestpieces that weigh between 20.0 and above.
+- Increased the Standard/Slash/Thrust absorption for all armor by 5%.
+- Increased the Strike absorption for all armor by 2.5%.
+
+- Made Deathbed Smalls obtainable.
+ - Found with the Deathbed Dress.
+ 
+- Made Ragged Set obtainable.
+ - Found in Deathtouched Catacombs - Stormhill.
+ 
+- Made Brave's Set obtainable.
+ - Found in Abandoned Cave - Caelid.
+ 
+- Made Millicent Set obtainable.
+ - Sold by Enia after defeating Commander O'Neil.
+
+# Talismans
+- Crimson Amber Medallion
+    - +0 Effect: Boosts maximum HP by 10%.
+    - +1 Effect: Boosts maximum HP by 15%.
+    - +2 Effect: Boosts maximum HP by 20%.
+
+- Cerulean Amber Medallion
+    - +0 Effect: Boosts maximum FP by 10%.
+    - +1 Effect: Boosts maximum FP by 15%.
+    - +2 Effect: Boosts maximum FP by 20%.
+
+- Viridian Amber Medallion
+    - +0 Effect: Boosts maximum stamina by 10%.
+    - +1 Effect: Boosts maximum stamina by 15%.
+    - +2 Effect: Boosts maximum stamina by 20%.
+
+- Arsenal Charm
+    - +0 Effect: Boosts maximum equipment load by 15%.
+    - +1 Effect: Boosts maximum equipment load by 20%.
+
+- Great-Jar's Arsenal
+    - +0 Effect: Boosts maximum equipment load by 25%.
+
+- Erdtree's Favor
+    - +0 Effect: Raises maximum HP, stamina, and equip load by 5%.
+    - +1 Effect: Raises maximum HP, stamina, and equip load by 7.5%.
+    - +2 Effect: Raises maximum HP, stamina, and equip load by 10%.
+
+- Green Turtle Talisman
+    - +0 Effect: Raises stamina recovery speed by 10.
+
+- Stalwart Horn Charm
+    - +0 Effect: Raises robustness by 250.
+    - +1 Effect: Raises robustness by 500.
+
+- Immunizing Horn Charm
+    - +0 Effect: Raises immunity by 250.
+    - +1 Effect: Raises immunity by 500.
+
+- Clarifying Horn Charm
+    - +0 Effect: Raises focus by 250.
+    - +1 Effect: Raises focus by 500.
+
+- Prince of Death's Pustule
+    - +0 Effect: Raises vitality by 250.
+
+- Prince of Death's Cyst
+    - +0 Effect: Raises vitality by 500.
+
+- Mottled Necklace
+    - +0 Effect: Raises immunity, robustness, and focus by 150.
+    - +1 Effect: Raises immunity, robustness, and focus by 300.
+
+- Millicent's Prosthesis
+    - +0 Effect: Boosts dexterity by 5 and raises attack power with successive attacks, up to 15% additional damage.
+
+- Magic Scorpion Charm
+    - +0 Effect: Raises magic attack power by 15%, but lowers physical damage negation by 15%.
+
+- Lightning Scorpion Charm
+    - +0 Effect: Raises lightning attack power by 15%, but lowers physical damage negation by 15%.
+
+- Fire Scorpion Charm
+    - +0 Effect: Raises fire attack power by 15%, but lowers physical damage negation by 15%.
+
+- Sacred Scorpion Charm
+    - +0 Effect: Raises holy attack power by 15%, but lowers physical damage negation by 15%.
+
+- Rotten Winged Sword Insignia
+    - +0 Effect: Raises attack power with successive attacks, up to 15% additional attack power.
+
+- Graven-School Talisman
+    - +0 Effect: Raises potency of sorceries by 5%.
+
+- Graven-Mass Talisman
+    - +0 Effect: Raises potency of sorceries by 10%.
+
+- Faithful's Canvas Talisman
+    - +0 Effect: Raises potency of incantations by 5%.
+
+- Flock's Canvas Talisman
+    - +0 Effect: Raises potency of incantations by 10%.
+
+- Dragoncrest Shield Talisman
+    - +0 Effect: Boosts physical damage negation by 5%.
+    - +1 Effect: Boosts physical damage negation by 10%.
+    - +2 Effect: Boosts physical damage negation by 15%.
+
+- Dragoncrest Greatshield Talisman
+    - +0 Effect: Boosts physical damage negation by 20%.
+
+- Spelldrake Talisman
+    - +0 Effect: Boosts magic damage negation by 10%.
+    - +1 Effect: Boosts magic damage negation by 15%.
+    - +2 Effect: Boosts magic damage negation by 20%.
+
+- Flamedrake Talisman
+    - +0 Effect: Boosts fire damage negation by 10%.
+    - +1 Effect: Boosts fire damage negation by 15%.
+    - +2 Effect: Boosts fire damage negation by 20%.
+
+- Boltdrake Talisman
+    - +0 Effect: Boosts lightning damage negation by 10%.
+    - +1 Effect: Boosts lightning damage negation by 15%.
+    - +2 Effect: Boosts lightning damage negation by 20%.
+
+- Haligdrake Talisman
+    - +0 Effect: Boosts holy damage negation by 10%.
+    - +1 Effect: Boosts holy damage negation by 15%.
+    - +2 Effect: Boosts holy damage negation by 20%. 
+
+- Pearldrake Talisman
+    - +0 Effect: Boosts non-physical damage negation by 5%.
+    - +1 Effect: Boosts non-physical damage negation by 7.5%.
+    - +2 Effect: Boosts non-physical damage negation by 10%.
+
+- Longtail Cat Talisman
+    - Now blocks all fall damage unless it is through a killplane.
+    
+# New Talismans
+- Voidbane Talisman
+    - Weight: 1.2
+    - +0 Effect: Raises attack power against Void enemies by 20%.
+    - Found in Nokron, Night's Sacred Ground.
+    
+- Deathbane Talisman
+    - Weight: 1.2
+    - +0 Effect: Raises attack power against Undead enemies by 20%.
+    - Sold by D, Hunter of The Dead.
+
+- Dragonbane Talisman
+    - Weight: 1.2
+    - +0 Effect: Raises attack power against Dragon enemies by 20%.
+    - Found in Caelid, Gael Tunnel
+
+- Godskin Ward
+    - Weight: 3
+    - +0 Effect: Increases Physical defence by 100.
+    - Found in Crumbling Farum Azula.
+
+- Marika's Golden Sigil
+    - Weight: 1.5
+    - +0 Effect: Increases Elemental defence by 100.
+    - Found in Leyndell, Royal Capital.
+
+- Feather of Khandros
+    - Weight: 1.0
+    - +0 Effect: Reduces weapon stamina consumption by 25%.
+    - Dropped very rarely by Hawks, Owls and Gulls.
+
+- Fang of Madhros
+    - Weight: 2.0
+    - +0 Effect: Increases poise damage by 100%.
+    - Dropped very rarely by Bears and Boars.
+
+- Horn of Cernulos
+    - Weight: 2.0
+    - +0 Effect: Grants weak stagger resistance.
+    - Dropped very rarely by Deer and Goats.
+    
+- Tear of Miriel
+    - Weight: 3.0
+    - +0 Effect: Grants immunity to Scarlet Rot, but reduces damage negation by 25%.
+    - Dropped very rarely by Turtles.
+    - Dropped by Miriel, Pastor of Vows.
+    
+- Hunter's Horn
+    - Weight: 2.0
+    - +0 Effect: Raises attack power against Bestial enemies by 20%.
+    - Source: Treasure in Siofra.
+
+- Purifying Candlestick
+    - Weight: 2.5
+    - +0 Effect: Raises attack power against Afflicted enemies by 20%.
+    - Source: Treasure in Sainted Hero's Grave.
+
+- Deathsworn Tear
+    - Weight: 1.0
+    - +0 Effect: Raises attack power against Divine enemies by 20%.
+    - Source: Treasure in Gelmir Hero's Grave.
+
+# Great Runes
+- Godrick's Great Rune
+ - Reduced bonus to 3 in all stats.
+    
+- Radahn's Great Rune
+ - Now boosts immunity by 200 in addition to its normal effect.
+ 
+- Morgott's Great Rune
+ - Now adds 1% HP regen per second in addition to its normal effect.
+    
+- Rykard's Great Rune
+ - Now grants a stacking bonus: Serpent's Hunger, upon defeating enemies. 
+ - Serpent's Hunger is a stacking bonus. Each stack lasts 120 seconds and boosts damage by 1%.
+ - Replaces original effect.
+    
+- Mohg's Great Rune
+ - Now grants immunity to Hemorrhage.
+    
+# Spells
+- Adjusted the Dragon spell requirements, reducing the Faith requirements.
+- Increased Black Flame Blade duration to 30 seconds.
+ 
+# Crafting
+- Enia can now forge multiple boss items from a duplicated soul.
+- Increased the ammunition produced via crafting to 25 per craft.
+- Made various in-world materials grant more of their material on pickup.
+- Made some non-respawning materials respawn.
+- Condensed the cookbooks and made several recipes available by default.
+ - New cookbooks:
+  - Fetid Warrior's Cookbook
+  - Bloodied Warrior's Cookbook
+  - Burnt Warrior's Cookbook
+  - Ancient Dragon Apostle's Cookbook
+  - Missionary's Cookbook
+  - Glintstone Craftsman's Cookbook
+  - St. Trina's Cookbook
+  - Frenzied Disciple's Cookbook
+  - Perfumer's Cookbook
+ - All others have been removed.
+ 
+- Added the following to the crafting menu:
+ - Rune Arc (Default)
+ - Starlight Shards (Glintstone Craftsman's Cookbook)
+ - Glintstone Scrap (Glintstone Craftsman's Cookbook)
+ - Large Glintstone Scrap (Glintstone Craftsman's Cookbook)
+ - Poisoned Stone Clump (Fetid Warrior's Cookbook)
+ - Poisoned Stone (Fetid Warrior's Cookbook)
+ - Explosive Stone Clump (Burnt Warrior's Cookbook)
+ - Explosive Stone (Burnt Warrior's Cookbook)
+ - Celestial Dew (Rennala)
+ - Larval Tear (Rennala)
+ - Imbued Sword Key (Radahn)
+ - Stonesword Key (Default)
+ 
+# Items
+- Added the Holding Rune: 
+ - Craftable.
+ - Used to store runes, as it costs 1,200 to craft, but returns only 1,000.
+ 
+- Added Bloodied Flesh: 
+ - Craftable.
+ - Use to restore 200 HP immediately.
+ 
+- Added Sorcerous Flesh: 
+ - Craftable.
+ - Use to restore 50 FP immediately.
+ 
+- Added Hallowed Flesh: 
+ - Craftable.
+ - Use to double healing effectiveness until death.
+ 
+- Silver-Pickled Fowl Foot: 
+ - Now lasts until death.
+ 
+- Gold-Pickled Fowl Foot: 
+ - Now lasts until death.
+ 
+- Added Ripe Grape: 
+ - Craftable
+ - Boosts damage inflicted by 20%. 
+ - Reduces damage taken by 20%.
+ - Inflicts Madness for its duration on the user.
+ - Lasts 60 seconds.
+
+- Added the following items:
+ - Diluted Bell Bearing
+  - Dropped by Godrick the Grafted
+  - Unlocks:
+   - Potent Innards * 5
+    
+ - Sorcerous Bell Bearing
+  - Dropped by Rennala
+  - Unlocks:
+   - Glintstone Scrap
+   - Cracked Crystal
+   - Potent Innards * 10
+   
+ - Gluttonous Bell Bearing
+  - Dropped by Rykard
+  - Unlocks:
+   - Arteria Leaf
+   - Explosive Stone
+   
+ - Deific Bell Bearing
+  - Dropped by Radahn
+  - Unlocks:
+   - Potent Innards * 15
+   
+ - Prophetic Bell Bearing
+  - Dropped by Morgott
+  - Unlocks:
+   - Potent Innards * 20
+   
+ - Burning Bell Bearing
+  - Dropped by Fire Giant
+  - Unlocks:
+   - Potent Innards * 25
+   
+ - Malignant Bell Bearing
+  - Dropped by Maliketh
+  - Unlocks:
+   - Potent Innards * 30
+   
+ - Putrid Bell Bearing
+  - Dropped by Malenia
+  - Unlocks:
+   - Aeonian Butterfly
+   
+ - Sanguine Bell Bearing
+  - Dropped by Mohg
+  - Unlocks:
+   - Bloodrose
+   
+- Condensed the Picker Bell Bearing items into:
+ - Glovewort Picker's Bell Bearing
+  - Dropped by Dragonkin Soldier (Ainsel River)
+  - Unlocks:
+   - Grave Glovewort
+ 
+ - Ghost-Glovewort Picker's Bell Bearing
+  - Dropped by Valiant Gargoyles (Siofra River)
+  - Unlocks:
+   - Ghost Glovewort
+
+# Spirit Summons
+- Reduced Spirit Summon FP costs.
+- Removed Spirit Summon HP costs.
+- Ancestral Follower: now spawns 2 Ancestral Followers.
+
+- Condensed all Grave Glovewort items into one item: Grave Glovewort 
+- Condensed all Ghost Glovewort items into one item: Ghost Glovewort 
+
+- Spirit Summon Ashes can no longer be reinforced.
+ - They have the following modifiers:
+  - HP: *2 
+  - Max Stamina: *2
+  - Defence %: *2
+  - Resist %: *2
+  - Power %: *2 (*1 for Mimic)
+  
+- Spirit Summon Ashes are now consumable.
+
+- Roderika now sells Spirit Summon Ashes in exchange for Grave or Ghost Glovewort, plus runes. 
+ - Once you find the initial item, they will then appear in the shop.
+ 
+# Treasure
+- Meteorite Staff is now dropped by the Fallingstar Beast in Sellia Crystal Tunnel.
+- Spirit Summon Ash treasures now reward 3 or 5 at a time.
+- Replaced all reinforcement material treasures with Potent Innards.
+- Bosses now drop Potent Innards in addition to their normal drops.
+
+# Enemies
+- Adjusted the lock cameras for large enemies to make them more readable.
+- Increased the rune gain from various enemies.
+- Increased the drop rate of equipment significantly. Mostly 5%, whereas before it was 4% to 0.5%. 
+- Increased the material drop amounts from the neutral creatures.
+
+- Silver Tear: now drops Larval Tear rarely (in addition to the guaranteed drops).
+
+- Added the following enemy classifications:
+ - Beast
+ - Afflicted
+ - Divine
+
+- Enemies are now vulnerable to Madness:
+ - It deals 10% HP plus 100 HP damage.
+ - Reduces enemy damage by 50% for 30 seconds.
+ 
+- Enemies are now vulnerable to Blight:
+ - For non-player enemies, it deals 25% HP damage.
+
+# Bosses
+- Adjusted boss rune drops.
+- Increased boss HP for various bosses to account for the reduction in area HP scaling.
+
+- Radagon:
+ - Increased base HP.
+ 
+- Elden Beast:
+ - Reduced base HP.
+ 
+# Bugfixes
+- Added invisible enemies fix.

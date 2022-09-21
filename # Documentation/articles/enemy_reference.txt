@@ -1,0 +1,202 @@
+﻿Rennala, Queen of the Full Moon
+ - HP: 1452 -> 2000
+ - Magic Absorption: 0.2 -> 0.5
+ 
+Black Knife Assassin
+ - Holy Absorption: 0.6 -> 1.0
+ 
+Beast Clergyman / Gurranq, Beast Clergyman
+ - HP: 1588 -> 2500
+ - Holy Absorption: 0.2 -> 0.6
+ 
+Malenia, Blade of Miquella
+ - HP: 2489 -> 3400
+ 
+Margit, the Fell Omen
+ - HP: 2521 -> 2600
+ - Holy Absorption: 0.6 -> 1.0
+ 
+Morgott, the Omen King
+ - HP: 2521 -> 3000
+ - Holy Absorption: 0.6 -> 1.0
+ 
+Radagon
+ - HP: 1893 -> 4000
+ - Holy Absorption: 0.2 -> 0.5
+ 
+Elden Beast
+ - HP: 3000 -> 1600
+ - Holy Absorption: 0.2 -> 0.5
+ 
+Elemer of the Briar
+ - HP: 1507 -> 1900
+ 
+Night's Cavalry
+ - Holy Absorption: 0.6 -> 0.9
+ 
+Red Wolf of Radagon
+ - HP: 973 -> 1600
+ 
+Draconic Tree Sentinel
+ - HP: 2036 -> 2500
+ 
+Tree Sentinel
+ - HP: 1745 -> 2000
+ 
+Fallen Tree Sentinel
+ - HP: 1860 -> 2200
+ 
+Godskin Apostle
+ - Holy Absorption: 0.6 -> 1.0
+ 
+Godskin Noble
+ - Holy Absorption: 0.6 -> 1.0
+ 
+Alabaster Lord
+ - HP: 755 -> 1400
+ - Holy Absorption: 0.8 -> 1.2
+ 
+Godskin Monk
+ - Holy Absorption: 0.8 -> 1.2
+ 
+Lichdragon Fortissax
+ - HP: 3128 -> 4000
+ 
+Dragonlord Placidusax
+ - HP: 3782 -> 4500
+ 
+Wormface
+ - Holy Absorption: 0.6 -> 1.2
+ 
+Astel, Stars of Darkness
+ - HP: 2708 -> 3500
+ 
+Fallingstar Beast
+ - Holy Absorption: 0.8 -> 1.2
+ 
+Godfrey, First Elden Lord
+ - HP: 1721 -> 2600
+ 
+Hoarah Loux
+ - HP: 2356 -> 3500
+ 
+Fire Giant
+ - HP: 3489 -> 4000
+ 
+Gargoyle
+ - HP: 1745 -> 2000
+ 
+Mohg, The Omen
+ - HP: 2553 -> 3500
+ - Fire Absorption: 0.2 -> 0.5
+ 
+Magma Wyrm
+ - Fire Absorption: 0.2 -> 0.5
+ 
+#---------------------------------
+# Classifications
+#---------------------------------
+Void:
+ Alabaster Lord
+ Astel, Stars of Darkness
+ Fallingstar Beast
+ 
+Undead:
+ Undead Mariner
+ Undead Azula Beastman
+ Skeleton
+ Snail
+ Giant Skeleton Torso
+ Death Rite Bird
+ 
+Dragon:
+ Banished Knight (Farum Azula)
+ Dragon
+ Lesser Elder Dragon
+ Elder Dragon Greyoll
+ Ancient Dragon
+ Lichdragon Fortissax
+ Magma Wyrm
+ Dragonlord Placidusax
+ Draconic Tree Sentinel
+ 
+Bestial:
+ Beast Clergyman / Gurranq, Beast Clergyman
+ Giant Crab
+ Crab
+ Red Wolf of Radagon
+ Misbegotten
+ Leonine Misbegotten
+ Man-Serpent
+ Azula Beastman
+ Grey Wolf
+ White Wolf
+ Rat
+ Giant Rat
+ Basilisk
+ Large Starved Dog
+ Starved Dog
+ Large Braided Dog
+ Braided Dog
+ Large Rotten Dog
+ Rotten Dog
+ Large Mushroom Dog
+ Mushroom Dog
+ Giant Bat
+ Bat Harpy
+ Warhawk
+ Giant Land Octopus
+ Lion Guardian
+ Giant Ant
+ Bloodhound Knight
+ Giant Lobster
+ Monstrous Dog
+ Monstrous Crow
+ Monstrous Rotten Crow
+ Runebear
+ Ancestor Spirit
+ Hawk
+ Deer
+ Owl
+ Boar
+ Goat
+ Dragonfly
+ Turtle
+ Rabbitgaroo
+ 
+Afflicted:
+ Malenia
+ Margit
+ Morgott
+ Omen Monstrosity
+ Sanguine Noble
+ Scarlet Putrid Corpse
+ Cleanrot Knight
+ Large Rotten Dog
+ Rotten Dog
+ Large Mushroom Dog
+ Mushroom Dog
+ Fungal Sorcerer
+ Monstrous Dog
+ Monstrous Crow
+ Monstrous Rotten Crow
+ Giant Wormface
+ Mohg, The Omen
+ Putrid Avatar
+ Ulcerated Tree Spirit
+ Kindred of Rot
+ 
+Divine:
+ Radagon
+ Elden Beast
+ Crucible Knight
+ Tree Sentinel
+ Burial Watchdog
+ Godfrey, First Elden Lord
+ Hoarah Loux
+ Godrick the Grafted
+ Erdtree Avatar
+ Starscourge Radahn
+ Malenia, Blade of Miquella
+ Rennala, Queen of the Full Moon
+ 

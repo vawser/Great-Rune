@@ -1,0 +1,70 @@
+﻿# Mod Range
+75000
+
+75010 Innards of Vitality - 1
+75011 Innards of Vitality - 2
+75012 Innards of Vitality - 3
+75013 Innards of Vitality - 4
+75014 Innards of Vitality - 5
+
+75020 Innards of Wisdom - 1
+75021 Innards of Wisdom - 2
+75022 Innards of Wisdom - 3
+75023 Innards of Wisdom - 4
+75024 Innards of Wisdom - 5
+
+75030 Innards of Tenacity - 1
+75031 Innards of Tenacity - 2
+75032 Innards of Tenacity - 3
+75033 Innards of Tenacity - 4
+75034 Innards of Tenacity - 5
+
+75040 Innards of Fortitude - 1
+75041 Innards of Fortitude - 2
+75042 Innards of Fortitude - 3
+75043 Innards of Fortitude - 4
+75044 Innards of Fortitude - 5
+
+75050 Innards of Reflection - 1
+75051 Innards of Reflection - 2
+75052 Innards of Reflection - 3
+75053 Innards of Reflection - 4
+75054 Innards of Reflection - 5
+
+75060 Innards of Regeneration - 1
+75061 Innards of Regeneration - 2
+75062 Innards of Regeneration - 3
+
+75070 Innards of Tranquility - 1
+75071 Innards of Tranquility - 2
+75072 Innards of Tranquility - 3
+
+75080 Innards of Endurance - 1
+75081 Innards of Endurance - 2
+75082 Innards of Endurance - 3
+75083 Innards of Endurance - 4
+75084 Innards of Endurance - 5
+
+75090 Innards of Greed - 1
+75091 Innards of Greed - 2
+75092 Innards of Greed - 3
+75093 Innards of Greed - 4
+75094 Innards of Greed - 5
+
+75100 Innards of Finesse - 1
+75101 Innards of Finesse - 2
+75102 Innards of Finesse - 3
+75103 Innards of Finesse - 4
+75104 Innards of Finesse - 5
+
+75110 Innards of Courage - 1
+75111 Innards of Courage - 2
+75112 Innards of Courage - 3
+75113 Innards of Courage - 4
+75114 Innards of Courage - 5
+
+75120 Innards of Clarity - 1
+75121 Innards of Clarity - 2
+75122 Innards of Clarity - 3
+75123 Innards of Clarity - 4
+75124 Innards of Clarity - 5

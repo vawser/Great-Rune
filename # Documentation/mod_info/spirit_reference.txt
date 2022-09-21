@@ -1,0 +1,66 @@
+﻿Treasures
+
+200000 Black Knife Tiche 530265
+201000 Banished Knight Oleg 510280
+202000 Banished Knight Engvall 520040
+203000 Fanged Imp Ashes 160880
+204000 Latenna the Albinauric 400410
+205000 Nomad Ashes 35007270
+206000 Nightmaiden & Swordstress Puppets 12017990
+207000 Mimic Tear Ashes 12027880
+208000 Crystalian Ashes 31117220
+209000 Ancestral Follower Ashes 510320
+210000 Winged Misbegotten Ashes 30127010
+211000 Albinauric Ashes 1036507030
+212000 Skeletal Militiaman Ashes 530170
+213000 Skeletal Bandit Ashes 530240
+214000 Oracle Envoy Ashes 15007170
+215000 Putrid Corpse Ashes 520430
+216000 Depraved Perfumer Carmaan 16007010
+217000 Perfumer Tricia 520110
+218000 Glintstone Sorcerer Ashes 520060
+219000 Twinsage Sorcerer Ashes 520050
+220000 Page Ashes 30067030
+221000 Battlemage Hugues 1049397850
+222000 Clayman Ashes 12017710
+223000 Cleanrot Knight Finlay 15007580
+224000 Kindred of Rot Ashes 520150
+225000 Marionette Soldier Ashes 14007150
+226000 Avionette Soldier Ashes 14007290
+227000 Fire Monk Ashes 30187070
+228000 Blackflame Monk Amon 520200
+229000 Man-Serpent Ashes 16007520
+230000 Azula Beastman Ashes 13007890
+231000 Kaiden Sellsword Ashes 520070
+232000 Lone Wolf Ashes 400390
+233000 Giant Rat Ashes 1040557000
+234000 Demi-Human Ashes 520010
+235000 Rotten Stray Ashes 1049397040
+236000 Spirit Jellyfish Ashes 400190
+237000 Warhawk Ashes 580340
+238000 Stormhawk Deenh 10017900
+239000 Bloodhound Knight Floh 520090
+240000 Wandering Noble Ashes 30027020
+241000 Noble Sorcerer Ashes 1037507000
+242000 Vulgar Militia Ashes 30107080
+243000 Mad Pumpkin Head Ashes 520140
+244000 Land Squirt Ashes 1038447040
+245000 Miranda Sprout Ashes 30157000
+246000 Soldjars of Fortune Ashes 520130
+247000 Omenkiller Rollo 510740
+248000 Greatshield Soldier Ashes 12077440
+249000 Archer Ashes 12017630
+250000 Godrick Soldier Ashes 1041387050
+251000 Raya Lucaria Soldier Ashes 30037010
+252000 Leyndell Soldier Ashes 30087020
+253000 Radahn Soldier Ashes 30167020
+254000 Mausoleum Soldier Ashes 12037520
+255000 Haligtree Soldier Ashes 15007690
+256000 Ancient Dragon Knight Kristoff 520080
+257000 Redmane Knight Ogha 520160
+258000 Lhutel the Headless 520000
+259000 Nepheli Loux Puppet 400149
+260000 Dung Eater Puppet 130100
+261000 Finger Maiden Therolina Puppet 130000
+262000 Dolores the Sleeping Arrow Puppet 130010
+263000 Jarwight Puppet 130020

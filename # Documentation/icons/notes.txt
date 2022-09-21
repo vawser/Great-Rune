@@ -1,0 +1,44 @@
+﻿Icon order is determined in the .layout file.
+
+This file points to the top-left corner of the square that contains the icon.
+
+When packing the Knowledge icons, making sure flags2 is 0x00000000, otherwise the game will crash.
+
+# Icons
+SB_Icon_00 - Goods
+SB_Icon_01 - Goods
+SB_Icon_02 - Goods
+SB_Icon_02_A - Goods/Spells
+SB_Icon_02_B - Ashes
+SB_Icon_03 - Weapons
+SB_Icon_03_A - Weapons
+SB_Icon_04 - Armor
+SB_Icon_05 - Armor
+SB_Icon_06 - Talismans/Armor/Ammunition
+
+# Added Icons
+MENU_ItemIcon_18900 Voidbane Talisman
+MENU_ItemIcon_18901 Deathbane Talisman
+MENU_ItemIcon_18902 Dragonbane Talisman
+
+MENU_ItemIcon_18910 Godskin Ward
+MENU_ItemIcon_18911 Marika's Golden Sigil
+
+MENU_ItemIcon_00360 Red Flesh
+MENU_ItemIcon_00361 Yellow Flesh
+MENU_ItemIcon_00362 Flesh Strip
+MENU_ItemIcon_00363 Yellow Flesh Strip
+MENU_ItemIcon_00364 Cyan Flesh Strip
+
+MENU_ItemIcon_00365 Innards - Orange
+MENU_ItemIcon_00366 Innards - Dark Yellow
+MENU_ItemIcon_00367 Innards - Yellow
+MENU_ItemIcon_00368 Innards - Light Green
+MENU_ItemIcon_00369 Innards - Green
+MENU_ItemIcon_00370 Innards - Cyan
+MENU_ItemIcon_00371 Innards - Light Blue
+MENU_ItemIcon_00372 Innards - Pink
+MENU_ItemIcon_00373 Innards - Purple
+MENU_ItemIcon_00374 Innards - Dark Blue
+MENU_ItemIcon_00375 Innards - Blue
+MENU_ItemIcon_00376 Innards - Gray

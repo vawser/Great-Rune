@@ -1,0 +1,30 @@
+﻿SB_Icon_00
+    61 free
+    
+SB_Icon_01
+    25 free
+    
+SB_Icon_02
+    28 free
+    
+SB_Icon_02_A
+    26 free
+    
+SB_Icon_02_B (potential candidate for extension)
+    53 free (+144 if it can be extended)
+    
+SB_Icon_03
+    21 free
+    
+SB_Icon_03_A (potential candidate for extension)
+    39 free (+144 if it can be extended)
+    
+SB_Icon_04
+    34 free
+    
+SB_Icon_05
+    17 free
+    
+SB_Icon_06
+    71 free
+    
