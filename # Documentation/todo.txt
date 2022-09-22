@@ -18,3 +18,5 @@
 - Add method to remove Rykard's lava for non-Serpent Hunter users.
 
 #----------------------------------------
+
+Update localization with vanilla changes

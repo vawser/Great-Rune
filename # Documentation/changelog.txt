@@ -7,6 +7,7 @@
 
 # World
 - Torrent can be mounted anywhere.
+- Added spiritspring in Southwest Liurnia: allows access to Moonlight Altar area.
 
 # Boss Rebirth
 - Added Boss Rebirth to Rennala:
