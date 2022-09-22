@@ -5,6 +5,9 @@
 - Added explicit values in the descriptions for talismans.
 - Increased the NG+ multipliers so NG+ is more of a challenge for a full build.
 
+# World
+- Torrent can be mounted anywhere.
+
 # Boss Rebirth
 - Added Boss Rebirth to Rennala:
  - Allows you to veiw the alive/dead status of bosses.

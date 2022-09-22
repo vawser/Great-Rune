@@ -1,26 +1,20 @@
 ﻿#-------------------------------------------------
 # TODO
 #-------------------------------------------------
-# Script
-Change Innard effect application to EMEVD
-Improve the Boss Respawn toggles for the major bosses, i.e. properly reset all relevant flags
+# Mechanics
+- Add Note items to questlines that detail each stage, acting like a psuedo-journal.
+- Improve the Boss Respawn toggles for the major bosses, i.e. properly reset all relevant flags
+- Add in the Cinders transmog system
 
-# Map
-Make the open world more dangerous in general
-    Add scripted enemy spawning, i.e. sets of enemies that appear after major events
-        Limgrave:
-            More knights appear throughout Limgrave once Margit is dead
-            
-# Ideas
-- Add Note items to questlines that detail each stage, acting like a psuedo-journel.
-- Implement Cinder's transmog system.
+# World
+- Add lots more spiritsprings to make world traversal a bit more fun.
+- Remove (i.e. block) most of the catacombs dungeons and move the enemies and loot into the overworld.
 
-# Notes
-Make Spirit Summons spells, new spell school for Sorcery
+# Bosses
+- Add statues of marika to:
+    - Dragonlord Placidusax
+    - Rennala
+- Split Radagon and Elden Beast into two bosses.
+- Add method to remove Rykard's lava for non-Serpent Hunter users.
 
-Change Perfect Deflect bullet to something different
-
-#-------------------------------------------------
-# Notes
-#-------------------------------------------------
-AEG003_336_9002
+#----------------------------------------
