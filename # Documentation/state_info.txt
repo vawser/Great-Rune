@@ -1,0 +1,8 @@
+﻿290 Crucible Feather Talisman
+
+# Mod
+3000 Peaceful Difficulty
+3001 Easy Difficulty
+3002 Normal Difficulty
+3003 Hard Difficulty
+3004 Nightmare Difficulty

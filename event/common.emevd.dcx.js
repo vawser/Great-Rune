@@ -6449,6 +6449,7 @@ $Event(10000, Default, function() {
     // Default Setup (applied only once per character
     if(!EventFlag(75001))
     {
+        SetEventFlagID(75004, ON); // Normal Difficulty
         SetEventFlagID(75210, ON); // Randomise Time on Spawn
         
         SetEventFlagID(75001, ON); // Default setup complete
@@ -6557,6 +6558,142 @@ $Event(10000, Default, function() {
     InitializeEvent(13, 10101, 75323, Weather.RainyHeavyFog);
     InitializeEvent(14, 10101, 75324, Weather.SnowyHeavyFog);
     InitializeEvent(15, 10101, 75325, Weather.ScatteredRain);
+    
+    // Weather.Unknown18 - Snow with blue fog
+    // Weather.Unknown19 - Cloud
+    // Weather.Unknown20 - Rain
+    // Weather.Unknown21 - Fog
+    // Weather.Unknown22 - Rainy Cloud
+    // Weather.Unknown23 - Fog
+    
+    // Jar of Promise
+    SetCharacterAIState(18000900, Disabled);
+    SetCharacterInvincibility(18000900, Enabled);
+    
+    // Difficulty
+    InitializeEvent(0, 10120, 0); // Peaceful
+    InitializeEvent(0, 10121, 0); // Easy
+    InitializeEvent(0, 10122, 0); // Normal
+    InitializeEvent(0, 10123, 0); // Hard
+    InitializeEvent(0, 10124, 0); // Nightmare
+    InitializeEvent(0, 10125, 0); // Difficulty Change
+    
+    
+});
+
+// Difficulty: Peaceful
+$Event(10120, Default, function() {
+    if(EventFlag(75402))
+    {
+        ClearSpEffect(10000, 9501000);
+        ClearSpEffect(10000, 9501001);
+        ClearSpEffect(10000, 9501002);
+        ClearSpEffect(10000, 9501003);
+        ClearSpEffect(10000, 9501004);
+        ClearSpEffect(10000, 9501013);
+        ClearSpEffect(10000, 9501014);
+        
+        SetSpEffect(10000, 9501000);
+    }
+    
+    WaitFixedTimeSeconds(1);
+    
+    RestartEvent();
+});
+
+// Difficulty: Easy
+$Event(10121, Default, function() {
+    if(EventFlag(75403))
+    {
+        ClearSpEffect(10000, 9501000);
+        ClearSpEffect(10000, 9501001);
+        ClearSpEffect(10000, 9501002);
+        ClearSpEffect(10000, 9501003);
+        ClearSpEffect(10000, 9501004);
+        ClearSpEffect(10000, 9501013);
+        ClearSpEffect(10000, 9501014);
+        
+        SetSpEffect(10000, 9501001);
+    }
+    
+    WaitFixedTimeSeconds(1);
+    
+    RestartEvent();
+});
+
+// Difficulty: Normal
+$Event(10122, Default, function() {
+    if(EventFlag(75404))
+    {
+        ClearSpEffect(10000, 9501000);
+        ClearSpEffect(10000, 9501001);
+        ClearSpEffect(10000, 9501002);
+        ClearSpEffect(10000, 9501003);
+        ClearSpEffect(10000, 9501004);
+        ClearSpEffect(10000, 9501013);
+        ClearSpEffect(10000, 9501014);
+        
+        SetSpEffect(10000, 9501002);
+    }
+    
+    WaitFixedTimeSeconds(1);
+    
+    RestartEvent();
+});
+
+// Difficulty: Hard
+$Event(10123, Default, function() {
+    if(EventFlag(75405))
+    {
+        ClearSpEffect(10000, 9501000);
+        ClearSpEffect(10000, 9501001);
+        ClearSpEffect(10000, 9501002);
+        ClearSpEffect(10000, 9501003);
+        ClearSpEffect(10000, 9501004);
+        ClearSpEffect(10000, 9501013);
+        ClearSpEffect(10000, 9501014);
+        
+        SetSpEffect(10000, 9501003);
+        SetSpEffect(10000, 9501013);
+    }
+    
+    WaitFixedTimeSeconds(1);
+    
+    RestartEvent();
+});
+
+// Difficulty: Nightmare
+$Event(10124, Default, function() {
+    if(EventFlag(75406))
+    {
+        ClearSpEffect(10000, 9501000);
+        ClearSpEffect(10000, 9501001);
+        ClearSpEffect(10000, 9501002);
+        ClearSpEffect(10000, 9501003);
+        ClearSpEffect(10000, 9501004);
+        ClearSpEffect(10000, 9501013);
+        ClearSpEffect(10000, 9501014);
+        
+        SetSpEffect(10000, 9501004);
+        SetSpEffect(10000, 9501014);
+    }
+    
+    WaitFixedTimeSeconds(1);
+    
+    RestartEvent();
+});
+
+// Difficulty Change
+$Event(10125, Default, function() {
+    if(EventFlag(75401))
+    {
+        SetEventFlagID(75401, OFF);
+        SetSpEffect(10000, 9501090);
+    }
+    
+    WaitFixedTimeSeconds(1);
+    
+    RestartEvent();
 });
 
 // Change Weather

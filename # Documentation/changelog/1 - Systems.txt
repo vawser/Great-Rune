@@ -1,6 +1,14 @@
 #------------------------------------------
 # Changes: Systems
 #------------------------------------------
+# Game Difficulty
+- Added the ability to select Game Difficulty at the Jar of Promise, right at the entrance into Limgrave.
+ - Peaceful: boosts HP, FP, Max Stamina by 50%, and all absorptions by 25%. Adds 1% HP/FP regen per second.
+ - Easy: boosts HP, FP, Max Stamina by 20%, and all absorptions by 10%.
+ - Normal: the default, and applies no changes.
+ - Hard: reduces HP, FP, Max Stamina by 20%, and all absorptions by 10%. Boosts rune gain by 100%.
+ - Nightmare: reduces HP, FP, Max Stamina by 50%, and all absorptions by 25%. Boosts rune gain by 200%.
+
 # Boss Rebirth
 - Added Boss Rebirth to Rennala:
  - Allows you to veiw the alive/dead status of bosses.

@@ -3,6 +3,16 @@
 
 75001 Default Setup flag
 
+
+75401 Game Difficulty change
+75402 Peaceful
+75403 Easy
+75404 Normal
+75405 Hard
+75406 Nightmare
+75407
+75408
+
 75010 Innards of Vitality - 1
 75011 Innards of Vitality - 2
 75012 Innards of Vitality - 3
