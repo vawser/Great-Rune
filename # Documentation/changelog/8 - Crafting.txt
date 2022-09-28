@@ -1,0 +1,34 @@
+#------------------------------------------
+# Changes: Crafting
+#------------------------------------------
+- Enia can now forge multiple boss items from a duplicated soul.
+- Increased the ammunition produced via crafting to 25 per craft.
+- Made various in-world materials grant more of their material on pickup.
+- Made some non-respawning materials respawn.
+- Condensed the cookbooks and made several recipes available by default.
+ - New cookbooks:
+  - Fetid Warrior's Cookbook
+  - Bloodied Warrior's Cookbook
+  - Burnt Warrior's Cookbook
+  - Ancient Dragon Apostle's Cookbook
+  - Missionary's Cookbook
+  - Glintstone Craftsman's Cookbook
+  - St. Trina's Cookbook
+  - Frenzied Disciple's Cookbook
+  - Perfumer's Cookbook
+ - All others have been removed.
+ 
+- Added the following to the crafting menu:
+ - Rune Arc (Default)
+ - Starlight Shards (Glintstone Craftsman's Cookbook)
+ - Glintstone Scrap (Glintstone Craftsman's Cookbook)
+ - Large Glintstone Scrap (Glintstone Craftsman's Cookbook)
+ - Poisoned Stone Clump (Fetid Warrior's Cookbook)
+ - Poisoned Stone (Fetid Warrior's Cookbook)
+ - Explosive Stone Clump (Burnt Warrior's Cookbook)
+ - Explosive Stone (Burnt Warrior's Cookbook)
+ - Celestial Dew (Rennala)
+ - Larval Tear (Rennala)
+ - Imbued Sword Key (Radahn)
+ - Stonesword Key (Default)
+ 

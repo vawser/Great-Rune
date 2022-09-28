@@ -1,0 +1,21 @@
+#------------------------------------------
+# Changes: Runes
+#------------------------------------------
+# Great Runes
+- Godrick's Great Rune
+ - Reduced bonus to 3 in all stats.
+    
+- Radahn's Great Rune
+ - Now boosts immunity by 200 in addition to its normal effect.
+ 
+- Morgott's Great Rune
+ - Now adds 1% HP regen per second in addition to its normal effect.
+    
+- Rykard's Great Rune
+ - Now grants a stacking bonus: Serpent's Hunger, upon defeating enemies. 
+ - Serpent's Hunger is a stacking bonus. Each stack lasts 120 seconds and boosts damage by 1%.
+ - Replaces original effect.
+    
+- Mohg's Great Rune
+ - Now grants immunity to Hemorrhage.
+ 

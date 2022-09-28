@@ -1,0 +1,5 @@
+#------------------------------------------
+# Changes: Spells
+#------------------------------------------
+- Adjusted the Dragon spell requirements, reducing the Faith requirements.
+- Increased Black Flame Blade duration to 30 seconds.

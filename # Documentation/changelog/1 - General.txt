@@ -1,0 +1,20 @@
+#------------------------------------------
+# Changes: General
+#------------------------------------------
+- Increased the NG+ multipliers so NG+ is more of a challenge for a full build.
+
+# Game System Values
+- Baseline Stealth Attack Multiplier is now 150% (was 120%). 
+- AI Sight Multiplier - Evening is now 0.8 (was 1)
+- AI Sight Multiplier - Midnight is now 0.3 (was 0.5)
+- Boss Kill - Rune Acquisition Delay Time is now 0.3 seconds (was 3.2).
+
+# Time of Day
+- Added the ability to set how the time of day changes upon respawning at a grace (both for death and warp respawning).
+ - By default the time is set to randomise between any hour.
+ - There are options to force it to:
+  - Day (6:00)
+  - Noon (12:00)
+  - Night (20:00)
+- You can access this feature via the "Temporal Adjustment" option at any site of grace.
+  

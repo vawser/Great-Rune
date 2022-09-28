@@ -1,0 +1,22 @@
+#------------------------------------------
+# Changes: Enemies
+#------------------------------------------
+- Adjusted the lock cameras for large enemies to make them more readable.
+- Increased the rune gain from various enemies.
+- Increased the drop rate of equipment significantly. Mostly 5%, whereas before it was 4% to 0.5%. 
+- Increased the material drop amounts from the neutral creatures.
+
+- Silver Tear: now drops Larval Tear rarely (in addition to the guaranteed drops).
+
+- Added the following enemy classifications:
+ - Beast
+ - Afflicted
+ - Divine
+
+- Enemies are now vulnerable to Madness:
+ - It deals 10% HP plus 100 HP damage.
+ - Reduces enemy damage by 50% for 30 seconds.
+ 
+- Enemies are now vulnerable to Blight:
+ - For non-player enemies, it deals 25% HP damage.
+ 

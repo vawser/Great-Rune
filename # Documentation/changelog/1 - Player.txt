@@ -1,0 +1,42 @@
+#------------------------------------------
+# Changes: Player
+#------------------------------------------
+# Classes
+- Added new classes:
+ - Battlemage
+ - Black Knife Assassin 
+ - Blackflame Monk 
+ - Bloodhound Knight 
+ - Dominula Celebrant
+ - Malenia's Chosen
+ - Crucible Knight
+ - Depraved Perfumer
+ - Deathbed Companion
+ - Fingerprint Knight
+ - Erdtree Guardian
+ - Lost Marionette
+ - Night's Cavalry
+ - Errant Sorcerer
+ - Beholder of Death
+ - Rotten Noble
+ - Fallen Aristocrat
+ - Draconic Adherent
+ - Reviled Omen
+ - Disciple of Helphen
+ - Eternal Wanderer
+ - Albinauric Upstart
+ - White Mask Assailant
+ - Fallen Braggart
+ - Crystal Miner
+ - Ascetic Sorcerer
+ - Bestial Champion
+ 
+# Animations
+- Added full invincibility frames to the player's backstep animations.
+- Added full invincibility frames to the player's jump animations.
+
+# Stats
+- Changed Equip Load from Endurance to: {1:50, 20:80, 40:100, 60:140, 99:180}
+- Changed Item Discovery from Arcane to: {0:1, 20:1.5, 30:1.75, 50:2, 99:3}
+- Changed FP from Mind to: {1:50, 20:150, 50:300, 60:400, 99:500}
+- Added passive 1 FP per second.

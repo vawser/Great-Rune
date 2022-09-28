@@ -9,7 +9,16 @@
 # World
 - Add lots more spiritsprings to make world traversal a bit more fun.
 - Remove (i.e. block) most of the catacombs dungeons and move the enemies and loot into the overworld.
-
+- Add training dummies to Roundtable Hold:
+    Assasin (Backstab, staggerable)
+    Crucible Knight (High absorption and defence)
+    Cleanrot Knight (Low elemental absorption, can be inflicted with aux)
+    
+    Have regular health, but set to noDead
+    Add asset that lets the player configure them
+        Restore Health
+        Increase Max Health
+    
 # Bosses
 - Add statues of marika to:
     - Dragonlord Placidusax
@@ -18,5 +27,3 @@
 - Add method to remove Rykard's lava for non-Serpent Hunter users.
 
 #----------------------------------------
-
-Update localization with vanilla changes

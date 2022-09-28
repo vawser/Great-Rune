@@ -1,0 +1,23 @@
+#------------------------------------------
+# Changes: Spirit Summons
+#------------------------------------------
+- Reduced Spirit Summon FP costs.
+- Removed Spirit Summon HP costs.
+- Ancestral Follower: now spawns 2 Ancestral Followers.
+
+- Condensed all Grave Glovewort items into one item: Grave Glovewort 
+- Condensed all Ghost Glovewort items into one item: Ghost Glovewort 
+
+- Spirit Summon Ashes can no longer be reinforced.
+ - They have the following modifiers:
+  - HP: *2 
+  - Max Stamina: *2
+  - Defence %: *2
+  - Resist %: *2
+  - Power %: *2 (*1 for Mimic)
+  
+- Spirit Summon Ashes are now consumable.
+
+- Roderika now sells Spirit Summon Ashes in exchange for Grave or Ghost Glovewort, plus runes. 
+ - Once you find the initial item, they will then appear in the shop.
+ 

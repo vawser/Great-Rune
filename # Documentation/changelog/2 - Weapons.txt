@@ -1,0 +1,44 @@
+#------------------------------------------
+# Changes: Weapons
+#------------------------------------------
+- Most weapons can now swap Affinities.
+- All weapons are buffable (i.e. you can apply weapon buffs to them).
+- Baked in +30% scaling boost for the unique weapons.
+- Removed reinforcement. Adjusted weapon modifiers to allow for natural progression throughout the game, based mainly on stat scaling.
+
+# Affinities
+- Sacred weapons will now deal 5% additional damage to Undead enemies and prevent resurrection.
+- Added bonus Divine damage to the Godslayer/Godskin weapons.
+- Added bonus Beast damage to the Beast-Repellent Torch.
+
+# Ranged Weapons
+- Increased scaling of bows.
+- Unique bows can change their Ash of War.
+- Bows can now use affinities.
+- Shattershard arrows now bypass enemy guard.
+- Rainbow Stone Arrows now start very slowly and then accelerate. Useful for enemies that dodge.
+- Increased the effective range of bows, greatbows and crossbows.
+
+# Catalysts
+- Adjusted the spell buffs for all catalysts so they are closer to one another in terms of power.
+- Dragon Communion Seal now scales mostly off Arcane.
+- Meteorite Staff now scales normally.
+
+- Crystal Staff: now 25 INT requirement (was 48).
+- Carian Regal Scepter: now 50 INT requirement (was 60).
+- Azur's Glintstone Staff: now 50 INT requirement (was 52).
+- Lusat's Glintstone Staff: now 60 INT requirement (was 52).
+- Rotten Crystal Staff: now 25 INT requirement (was 48).
+
+# Ashes of War
+- All unique weapons can change Ash of War (but not affinity).
+- Most Ashes of War can be used on any melee weapon.
+ - The bow/greatbow/crossbow/ballista ones are limited to their own sub-group, but within that they are available on all.
+ - Shields can be switched to the non-shield ones, but the ability to use it is restricted to the shield being the primary weapon or two-handed.
+ - Loretta's Slash is still limited due to it requiring a specific dummy poly, may be adjusted in the future.
+ 
+
+# Aux
+- Changed most sources of Hemorrhage from 15% to 8% HP loss. Includes both player and enemies.
+- Changed most sources of Frostbite from 10% to 6% HP loss. Includes both player and enemies.
+- Madness now applies a debuff to its target: -50% damage output. Lasts 30 seconds.

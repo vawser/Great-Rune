@@ -1,0 +1,12 @@
+#------------------------------------------
+# Changes: Bosses
+#------------------------------------------
+- Adjusted boss rune drops.
+- Increased boss HP for various bosses to account for the reduction in area HP scaling.
+
+- Radagon:
+ - Increased base HP.
+ 
+- Elden Beast:
+ - Reduced base HP.
+ 

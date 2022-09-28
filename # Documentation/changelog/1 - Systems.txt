@@ -1,0 +1,73 @@
+#------------------------------------------
+# Changes: Systems
+#------------------------------------------
+# Boss Rebirth
+- Added Boss Rebirth to Rennala:
+ - Allows you to veiw the alive/dead status of bosses.
+ - Allows you to view the location of bosses.
+ - Allows you to ressurect dead bosses to fight them again.
+  - Rennala and Malenia are not available currently.
+ - Costs 1 Larval Tear to ressurect a boss.
+ 
+# Innards
+- Added a 'perk' system to the Great-Jar. 
+ - You can now spend 'Potent Innards' with the Great-Jar, purchasing unique innards that grant beneficial effects.
+ - Each unique innard can be purchased multiple times (max 5, or 3 for regeneration ones).
+ - The effects of innards are applied upon resting at a grace.
+ - You can purchase the 'Sage of the Great-Jar' from the Great-Jar. 
+  - This will allow you to offer innards while at any site of grace.
+ 
+- Innards:
+ - Innards of Vitality: 
+  - Boost max HP by 5%. 
+  - Caps at 5 stacks.
+  
+ - Innards of Wisdom: 
+  - Boost max FP by 5%. 
+  - Caps at 5 stacks.
+  
+ - Innards of Tenacity: 
+  - Boost max Stamina by 5%. 
+  - Caps at 5 stacks.
+  
+ - Innards of Fortitude: 
+  - Boost physical absorption by 5%. 
+  - Caps at 5 stacks.
+  
+ - Innards of Reflection: 
+  - Boost elemental absorption by 5%. 
+  - Caps at 5 stacks.
+  
+ - Innards of Regeneration: 
+  - Boost HP regeneration by 1.
+  - Caps at 3 stacks.
+  
+ - Innards of Tranquility: 
+  - Boost FP regeneration by 1.
+  - Caps at 3 stacks.
+  
+ - Innards of Endurance: 
+  - Boost Stamina regeneration by 2.
+  - Caps at 5 stacks.
+  
+ - Innards of Greed: 
+  - Boost rune acquisition by 5%.
+  - Caps at 5 stacks.
+  
+ - Innards of Finesse: 
+  - Reduces weapon stamina consumption by 5%.
+  - Caps at 5 stacks.
+  
+ - Innards of Courage: 
+  - Boost melee and spell damage by 3%.
+  - Caps at 5 stacks.
+  
+ - Innards of Clarity: 
+  - Reduces spell and item FP consumption by 5%.
+  - Caps at 5 stacks.
+  
+# Weapon Deflect
+- Added Deflect mechanic:
+ - Normal Deflect will reduce stamina drain and boost guard absorption.
+ - Perfect Deflect will prevent stamina drain, boost guard absorption and emit a whirlwind that staggers enemies.
+ 

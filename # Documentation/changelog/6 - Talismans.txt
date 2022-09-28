@@ -1,0 +1,186 @@
+#------------------------------------------
+# Changes: Talismans
+#------------------------------------------
+- Added explicit values in the descriptions for talismans.
+
+# Talismans
+- Crimson Amber Medallion
+    - +0 Effect: Boosts maximum HP by 10%.
+    - +1 Effect: Boosts maximum HP by 15%.
+    - +2 Effect: Boosts maximum HP by 20%.
+
+- Cerulean Amber Medallion
+    - +0 Effect: Boosts maximum FP by 10%.
+    - +1 Effect: Boosts maximum FP by 15%.
+    - +2 Effect: Boosts maximum FP by 20%.
+
+- Viridian Amber Medallion
+    - +0 Effect: Boosts maximum stamina by 10%.
+    - +1 Effect: Boosts maximum stamina by 15%.
+    - +2 Effect: Boosts maximum stamina by 20%.
+
+- Arsenal Charm
+    - +0 Effect: Boosts maximum equipment load by 15%.
+    - +1 Effect: Boosts maximum equipment load by 20%.
+
+- Great-Jar's Arsenal
+    - +0 Effect: Boosts maximum equipment load by 25%.
+
+- Erdtree's Favor
+    - +0 Effect: Raises maximum HP, stamina, and equip load by 5%.
+    - +1 Effect: Raises maximum HP, stamina, and equip load by 7.5%.
+    - +2 Effect: Raises maximum HP, stamina, and equip load by 10%.
+
+- Green Turtle Talisman
+    - +0 Effect: Raises stamina recovery speed by 10.
+
+- Stalwart Horn Charm
+    - +0 Effect: Raises robustness by 250.
+    - +1 Effect: Raises robustness by 500.
+
+- Immunizing Horn Charm
+    - +0 Effect: Raises immunity by 250.
+    - +1 Effect: Raises immunity by 500.
+
+- Clarifying Horn Charm
+    - +0 Effect: Raises focus by 250.
+    - +1 Effect: Raises focus by 500.
+
+- Prince of Death's Pustule
+    - +0 Effect: Raises vitality by 250.
+
+- Prince of Death's Cyst
+    - +0 Effect: Raises vitality by 500.
+
+- Mottled Necklace
+    - +0 Effect: Raises immunity, robustness, and focus by 150.
+    - +1 Effect: Raises immunity, robustness, and focus by 300.
+
+- Millicent's Prosthesis
+    - +0 Effect: Boosts dexterity by 5 and raises attack power with successive attacks, up to 15% additional damage.
+
+- Magic Scorpion Charm
+    - +0 Effect: Raises magic attack power by 15%, but lowers physical damage negation by 15%.
+
+- Lightning Scorpion Charm
+    - +0 Effect: Raises lightning attack power by 15%, but lowers physical damage negation by 15%.
+
+- Fire Scorpion Charm
+    - +0 Effect: Raises fire attack power by 15%, but lowers physical damage negation by 15%.
+
+- Sacred Scorpion Charm
+    - +0 Effect: Raises holy attack power by 15%, but lowers physical damage negation by 15%.
+
+- Rotten Winged Sword Insignia
+    - +0 Effect: Raises attack power with successive attacks, up to 15% additional attack power.
+
+- Graven-School Talisman
+    - +0 Effect: Raises potency of sorceries by 5%.
+
+- Graven-Mass Talisman
+    - +0 Effect: Raises potency of sorceries by 10%.
+
+- Faithful's Canvas Talisman
+    - +0 Effect: Raises potency of incantations by 5%.
+
+- Flock's Canvas Talisman
+    - +0 Effect: Raises potency of incantations by 10%.
+
+- Dragoncrest Shield Talisman
+    - +0 Effect: Boosts physical damage negation by 5%.
+    - +1 Effect: Boosts physical damage negation by 10%.
+    - +2 Effect: Boosts physical damage negation by 15%.
+
+- Dragoncrest Greatshield Talisman
+    - +0 Effect: Boosts physical damage negation by 20%.
+
+- Spelldrake Talisman
+    - +0 Effect: Boosts magic damage negation by 10%.
+    - +1 Effect: Boosts magic damage negation by 15%.
+    - +2 Effect: Boosts magic damage negation by 20%.
+
+- Flamedrake Talisman
+    - +0 Effect: Boosts fire damage negation by 10%.
+    - +1 Effect: Boosts fire damage negation by 15%.
+    - +2 Effect: Boosts fire damage negation by 20%.
+
+- Boltdrake Talisman
+    - +0 Effect: Boosts lightning damage negation by 10%.
+    - +1 Effect: Boosts lightning damage negation by 15%.
+    - +2 Effect: Boosts lightning damage negation by 20%.
+
+- Haligdrake Talisman
+    - +0 Effect: Boosts holy damage negation by 10%.
+    - +1 Effect: Boosts holy damage negation by 15%.
+    - +2 Effect: Boosts holy damage negation by 20%. 
+
+- Pearldrake Talisman
+    - +0 Effect: Boosts non-physical damage negation by 5%.
+    - +1 Effect: Boosts non-physical damage negation by 7.5%.
+    - +2 Effect: Boosts non-physical damage negation by 10%.
+
+- Longtail Cat Talisman
+    - Now blocks all fall damage unless it is through a killplane.
+    
+# New Talismans
+- Voidbane Talisman
+    - Weight: 1.2
+    - +0 Effect: Raises attack power against Void enemies by 20%.
+    - Found in Nokron, Night's Sacred Ground.
+    
+- Deathbane Talisman
+    - Weight: 1.2
+    - +0 Effect: Raises attack power against Undead enemies by 20%.
+    - Sold by D, Hunter of The Dead.
+
+- Dragonbane Talisman
+    - Weight: 1.2
+    - +0 Effect: Raises attack power against Dragon enemies by 20%.
+    - Found in Caelid, Gael Tunnel
+
+- Godskin Ward
+    - Weight: 3
+    - +0 Effect: Increases Physical defence by 100.
+    - Found in Crumbling Farum Azula.
+
+- Marika's Golden Sigil
+    - Weight: 1.5
+    - +0 Effect: Increases Elemental defence by 100.
+    - Found in Leyndell, Royal Capital.
+
+- Feather of Khandros
+    - Weight: 1.0
+    - +0 Effect: Reduces weapon stamina consumption by 25%.
+    - Dropped very rarely by Hawks, Owls and Gulls.
+
+- Fang of Madhros
+    - Weight: 2.0
+    - +0 Effect: Increases poise damage by 100%.
+    - Dropped very rarely by Bears and Boars.
+
+- Horn of Cernulos
+    - Weight: 2.0
+    - +0 Effect: Grants weak stagger resistance.
+    - Dropped very rarely by Deer and Goats.
+    
+- Tear of Miriel
+    - Weight: 3.0
+    - +0 Effect: Grants immunity to Scarlet Rot, but reduces damage negation by 25%.
+    - Dropped very rarely by Turtles.
+    - Dropped by Miriel, Pastor of Vows.
+    
+- Hunter's Horn
+    - Weight: 2.0
+    - +0 Effect: Raises attack power against Bestial enemies by 20%.
+    - Source: Treasure in Siofra.
+
+- Purifying Candlestick
+    - Weight: 2.5
+    - +0 Effect: Raises attack power against Afflicted enemies by 20%.
+    - Source: Treasure in Sainted Hero's Grave.
+
+- Deathsworn Tear
+    - Weight: 1.0
+    - +0 Effect: Raises attack power against Divine enemies by 20%.
+    - Source: Treasure in Gelmir Hero's Grave.
+    

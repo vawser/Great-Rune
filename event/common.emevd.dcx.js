@@ -369,7 +369,7 @@ $Event(0, Default, function() {
     InitializeEvent(0, 1700, 0);
     
     // Great Rune
-    InitializeEvent(0, 10100, 0);
+    InitializeEvent(0, 10000, 0);
 });
 
 $Event(50, Default, function() {
@@ -1150,6 +1150,9 @@ L1:
 $Event(910, Default, function() {
     EndIf(!PlayerIsInOwnWorld());
     EndIf(EventFlag(9415));
+    
+    // Nokron uncovered by meteorite
+    // Change weather for this event once, then skip
     if (EventFlag(310)) {
         if (!EventFlag(9416)) {
             DisableAreaWelcomeMessage();
@@ -6440,91 +6443,253 @@ $Event(9950, Default, function(X0_4, X4_4) {
 });
 
 // Great Rune
-$Event(10100, Default, function() {
+$Event(10000, Default, function() {
+    EndIf(ThisEventSlot());
+    
+    // Default Setup (applied only once per character
+    if(!EventFlag(75001))
+    {
+        SetEventFlagID(75210, ON); // Randomise Time on Spawn
+        
+        SetEventFlagID(75001, ON); // Default setup complete
+    }
+
     // Innards of Vitality
-    InitializeEvent(0, 11000, 75010, 9500000);
-    InitializeEvent(1, 11000, 75011, 9500001);
-    InitializeEvent(2, 11000, 75012, 9500002);
-    InitializeEvent(3, 11000, 75013, 9500003);
-    InitializeEvent(4, 11000, 75014, 9500004);
+    InitializeEvent(0, 10100, 75010, 9500000);
+    InitializeEvent(1, 10100, 75011, 9500001);
+    InitializeEvent(2, 10100, 75012, 9500002);
+    InitializeEvent(3, 10100, 75013, 9500003);
+    InitializeEvent(4, 10100, 75014, 9500004);
     
     // Innards of Wisdom
-    InitializeEvent(5, 11000, 75020, 9500010);
-    InitializeEvent(6, 11000, 75021, 9500011);
-    InitializeEvent(7, 11000, 75022, 9500012);
-    InitializeEvent(8, 11000, 75023, 9500013);
-    InitializeEvent(9, 11000, 75024, 9500014);
+    InitializeEvent(5, 10100, 75020, 9500010);
+    InitializeEvent(6, 10100, 75021, 9500011);
+    InitializeEvent(7, 10100, 75022, 9500012);
+    InitializeEvent(8, 10100, 75023, 9500013);
+    InitializeEvent(9, 10100, 75024, 9500014);
     
     // Innards of Tenacity
-    InitializeEvent(10, 11000, 75030, 9500020);
-    InitializeEvent(11, 11000, 75031, 9500021);
-    InitializeEvent(12, 11000, 75032, 9500022);
-    InitializeEvent(13, 11000, 75033, 9500023);
-    InitializeEvent(14, 11000, 75034, 9500024);
+    InitializeEvent(10, 10100, 75030, 9500020);
+    InitializeEvent(11, 10100, 75031, 9500021);
+    InitializeEvent(12, 10100, 75032, 9500022);
+    InitializeEvent(13, 10100, 75033, 9500023);
+    InitializeEvent(14, 10100, 75034, 9500024);
     
     // Innards of Fortitude
-    InitializeEvent(15, 11000, 75040, 9500030);
-    InitializeEvent(16, 11000, 75041, 9500031);
-    InitializeEvent(17, 11000, 75042, 9500032);
-    InitializeEvent(18, 11000, 75043, 9500033);
-    InitializeEvent(19, 11000, 75044, 9500034);
+    InitializeEvent(15, 10100, 75040, 9500030);
+    InitializeEvent(16, 10100, 75041, 9500031);
+    InitializeEvent(17, 10100, 75042, 9500032);
+    InitializeEvent(18, 10100, 75043, 9500033);
+    InitializeEvent(19, 10100, 75044, 9500034);
     
     // Innards of Reflection
-    InitializeEvent(20, 11000, 75050, 9500040);
-    InitializeEvent(21, 11000, 75051, 9500041);
-    InitializeEvent(22, 11000, 75052, 9500042);
-    InitializeEvent(23, 11000, 75053, 9500043);
-    InitializeEvent(24, 11000, 75054, 9500044);
+    InitializeEvent(20, 10100, 75050, 9500040);
+    InitializeEvent(21, 10100, 75051, 9500041);
+    InitializeEvent(22, 10100, 75052, 9500042);
+    InitializeEvent(23, 10100, 75053, 9500043);
+    InitializeEvent(24, 10100, 75054, 9500044);
     
     // Innards of Regeneration
-    InitializeEvent(25, 11000, 75060, 9500050);
-    InitializeEvent(26, 11000, 75061, 9500051);
-    InitializeEvent(27, 11000, 75062, 9500052);
+    InitializeEvent(25, 10100, 75060, 9500050);
+    InitializeEvent(26, 10100, 75061, 9500051);
+    InitializeEvent(27, 10100, 75062, 9500052);
     
     // Innards of Tranquility
-    InitializeEvent(28, 11000, 75070, 9500060);
-    InitializeEvent(29, 11000, 75071, 9500061);
-    InitializeEvent(30, 11000, 75072, 9500062);
+    InitializeEvent(28, 10100, 75070, 9500060);
+    InitializeEvent(29, 10100, 75071, 9500061);
+    InitializeEvent(30, 10100, 75072, 9500062);
     
     // Innards of Endurance
-    InitializeEvent(31, 11000, 75080, 9500070);
-    InitializeEvent(32, 11000, 75081, 9500071);
-    InitializeEvent(33, 11000, 75082, 9500072);
-    InitializeEvent(34, 11000, 75083, 9500073);
-    InitializeEvent(35, 11000, 75084, 9500074);
+    InitializeEvent(31, 10100, 75080, 9500070);
+    InitializeEvent(32, 10100, 75081, 9500071);
+    InitializeEvent(33, 10100, 75082, 9500072);
+    InitializeEvent(34, 10100, 75083, 9500073);
+    InitializeEvent(35, 10100, 75084, 9500074);
     
     // Innards of Greed
-    InitializeEvent(36, 11000, 75090, 9500080);
-    InitializeEvent(37, 11000, 75091, 9500081);
-    InitializeEvent(38, 11000, 75092, 9500082);
-    InitializeEvent(39, 11000, 75093, 9500083);
-    InitializeEvent(40, 11000, 75094, 9500084);
+    InitializeEvent(36, 10100, 75090, 9500080);
+    InitializeEvent(37, 10100, 75091, 9500081);
+    InitializeEvent(38, 10100, 75092, 9500082);
+    InitializeEvent(39, 10100, 75093, 9500083);
+    InitializeEvent(40, 10100, 75094, 9500084);
     
     // Innards of Finesse
-    InitializeEvent(41, 11000, 75100, 9500090);
-    InitializeEvent(42, 11000, 75101, 9500091);
-    InitializeEvent(43, 11000, 75102, 9500092);
-    InitializeEvent(44, 11000, 75103, 9500093);
-    InitializeEvent(45, 11000, 75104, 9500094);
+    InitializeEvent(41, 10100, 75100, 9500090);
+    InitializeEvent(42, 10100, 75101, 9500091);
+    InitializeEvent(43, 10100, 75102, 9500092);
+    InitializeEvent(44, 10100, 75103, 9500093);
+    InitializeEvent(45, 10100, 75104, 9500094);
     
     // Innards of Courage
-    InitializeEvent(46, 11000, 75110, 9500100);
-    InitializeEvent(47, 11000, 75111, 9500101);
-    InitializeEvent(48, 11000, 75112, 9500102);
-    InitializeEvent(49, 11000, 75113, 9500103);
-    InitializeEvent(50, 11000, 75114, 9500104);
+    InitializeEvent(46, 10100, 75110, 9500100);
+    InitializeEvent(47, 10100, 75111, 9500101);
+    InitializeEvent(48, 10100, 75112, 9500102);
+    InitializeEvent(49, 10100, 75113, 9500103);
+    InitializeEvent(50, 10100, 75114, 9500104);
     
     // Innards of Clarity
-    InitializeEvent(51, 11000, 75010, 9500110);
-    InitializeEvent(52, 11000, 75011, 9500111);
-    InitializeEvent(53, 11000, 75012, 9500112);
-    InitializeEvent(54, 11000, 75013, 9500113);
-    InitializeEvent(55, 11000, 75014, 9500114);
+    InitializeEvent(51, 10100, 75010, 9500110);
+    InitializeEvent(52, 10100, 75011, 9500111);
+    InitializeEvent(53, 10100, 75012, 9500112);
+    InitializeEvent(54, 10100, 75013, 9500113);
+    InitializeEvent(55, 10100, 75014, 9500114);
     
+    // Time
+    InitializeEvent(0, 10001, 0); // Randomise Time on Spawn
+    InitializeEvent(0, 10002, 0); // Force Day on Spawn
+    InitializeEvent(0, 10003, 0); // Force Noon on Spawn
+    InitializeEvent(0, 10004, 0); // Force Night on Spawn
+});
+
+// Randomise Time on Spawn
+$Event(10001, Default, function() {
+    EndIf(ThisEventSlot());
+    
+    // End if Randomise Time on Spawn is not ON
+    EndIf(!EventFlag(75210));
+    
+    // Select random flag, used to randomise time
+    BatchSetEventFlags(75900, 75925, OFF);
+    RandomlySetEventFlagInRange(75900, 75925, ON);
+    
+    if (EventFlag(75900))
+    {
+        SetCurrentTime(0, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75902))
+    {
+        SetCurrentTime(1, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75903))
+    {
+        SetCurrentTime(2, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75904))
+    {
+        SetCurrentTime(3, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75905))
+    {
+        SetCurrentTime(4, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75906))
+    {
+        SetCurrentTime(5, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75907))
+    {
+        SetCurrentTime(6, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75908))
+    {
+        SetCurrentTime(7, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75909))
+    {
+        SetCurrentTime(8, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75910))
+    {
+        SetCurrentTime(9, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75911))
+    {
+        SetCurrentTime(10, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75912))
+    {
+        SetCurrentTime(11, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75913))
+    {
+        SetCurrentTime(12, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75914))
+    {
+        SetCurrentTime(13, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75915))
+    {
+        SetCurrentTime(14, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75916))
+    {
+        SetCurrentTime(15, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75917))
+    {
+        SetCurrentTime(16, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75918))
+    {
+        SetCurrentTime(17, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75919))
+    {
+        SetCurrentTime(18, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75920))
+    {
+        SetCurrentTime(19, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75921))
+    {
+        SetCurrentTime(20, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75922))
+    {
+        SetCurrentTime(21, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75923))
+    {
+        SetCurrentTime(22, 0, 0, false, false, false, 0, 0, 0);
+    }
+    else if (EventFlag(75924))
+    {
+        SetCurrentTime(23, 0, 0, false, false, false, 0, 0, 0);
+    }
+    
+    EndEvent();
+});
+
+// Force Day on Spawn
+$Event(10002, Default, function() {
+    EndIf(ThisEventSlot());
+    
+    // End if Force Day on Spawn is not ON
+    EndIf(!EventFlag(75211));
+    
+    SetCurrentTime(6, 0, 0, false, false, false, 0, 0, 0);
+    
+    EndEvent();
+});
+
+// Force Noon on Spawn
+$Event(10003, Default, function() {
+    EndIf(ThisEventSlot());
+    
+    // End if Force Noon on Spawn is not ON
+    EndIf(!EventFlag(75212));
+    
+    SetCurrentTime(12, 0, 0, false, false, false, 0, 0, 0);
+    
+    EndEvent();
+});
+
+// Force Night on Spawn
+$Event(10004, Default, function() {
+    EndIf(ThisEventSlot());
+    
+    // End if Force Night on Spawn is not ON
+    EndIf(!EventFlag(75213));
+    
+    SetCurrentTime(20, 0, 0, false, false, false, 0, 0, 0);
+    
+    EndEvent();
 });
 
 // Set Effect based on Flag
-$Event(11000, Default, function(X0_4, X4_4) {
+$Event(10100, Default, function(X0_4, X4_4) {
     EndIf(ThisEventSlot());
     WaitFor(EventFlag(X0_4));
     SetSpEffect(10000, X4_4);

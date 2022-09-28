@@ -1,0 +1,92 @@
+#------------------------------------------
+# Changes: Items
+#------------------------------------------
+- Added the Holding Rune: 
+ - Craftable.
+ - Used to store runes, as it costs 1,200 to craft, but returns only 1,000.
+ 
+- Added Bloodied Flesh: 
+ - Craftable.
+ - Use to restore 200 HP immediately.
+ 
+- Added Sorcerous Flesh: 
+ - Craftable.
+ - Use to restore 50 FP immediately.
+ 
+- Added Hallowed Flesh: 
+ - Craftable.
+ - Use to double healing effectiveness until death.
+ 
+- Silver-Pickled Fowl Foot: 
+ - Now lasts until death.
+ 
+- Gold-Pickled Fowl Foot: 
+ - Now lasts until death.
+ 
+- Added Ripe Grape: 
+ - Craftable
+ - Boosts damage inflicted by 20%. 
+ - Reduces damage taken by 20%.
+ - Inflicts Madness for its duration on the user.
+ - Lasts 60 seconds.
+
+- Added the following items:
+ - Diluted Bell Bearing
+  - Dropped by Godrick the Grafted
+  - Unlocks:
+   - Potent Innards * 5
+    
+ - Sorcerous Bell Bearing
+  - Dropped by Rennala
+  - Unlocks:
+   - Glintstone Scrap
+   - Cracked Crystal
+   - Potent Innards * 10
+   
+ - Gluttonous Bell Bearing
+  - Dropped by Rykard
+  - Unlocks:
+   - Arteria Leaf
+   - Explosive Stone
+   
+ - Deific Bell Bearing
+  - Dropped by Radahn
+  - Unlocks:
+   - Potent Innards * 15
+   
+ - Prophetic Bell Bearing
+  - Dropped by Morgott
+  - Unlocks:
+   - Potent Innards * 20
+   
+ - Burning Bell Bearing
+  - Dropped by Fire Giant
+  - Unlocks:
+   - Potent Innards * 25
+   
+ - Malignant Bell Bearing
+  - Dropped by Maliketh
+  - Unlocks:
+   - Potent Innards * 30
+   
+ - Putrid Bell Bearing
+  - Dropped by Malenia
+  - Unlocks:
+   - Aeonian Butterfly
+   
+ - Sanguine Bell Bearing
+  - Dropped by Mohg
+  - Unlocks:
+   - Bloodrose
+   
+- Condensed the Picker Bell Bearing items into:
+ - Glovewort Picker's Bell Bearing
+  - Dropped by Dragonkin Soldier (Ainsel River)
+  - Unlocks:
+   - Grave Glovewort
+ 
+ - Ghost-Glovewort Picker's Bell Bearing
+  - Dropped by Valiant Gargoyles (Siofra River)
+  - Unlocks:
+   - Ghost Glovewort
+   

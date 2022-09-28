@@ -1,0 +1,11 @@
+#------------------------------------------
+# Changes: World
+#------------------------------------------
+# Torrent
+- Torrent can be mounted anywhere.
+- Added spiritspring in Southwest Liurnia: allows access to Moonlight Altar area.
+
+# Scaling
+- Enemy physical defence is now *2 to account for higher early base damage.
+- Enemy elemental defence is now *1.5 to account for higher early base damage.
+- Enemy HP in the areas before Mt. Gelmir is now higher to account for higher early base damage.

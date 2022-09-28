@@ -1,0 +1,7 @@
+#------------------------------------------
+# Changes: Treasure
+#------------------------------------------
+- Meteorite Staff is now dropped by the Fallingstar Beast in Sellia Crystal Tunnel.
+- Spirit Summon Ash treasures now reward 3 or 5 at a time.
+- Replaced all reinforcement material treasures with Potent Innards.
+- Bosses now drop Potent Innards in addition to their normal drops.
