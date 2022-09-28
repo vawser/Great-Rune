@@ -2696,8 +2696,8 @@ def t000001000_x140():
     while True:
         ClearTalkListData()
 
-# Randomise Time
-        AddTalkListDataIf(5, 80101006, -1)
+        # Clear Adjustment
+        AddTalkListData(5, 80101006, -1)
         
         # Randomise Time
         AddTalkListDataIf(not GetEventFlag(75210), 1, 80101005, -1)
