@@ -6446,6 +6446,9 @@ $Event(9950, Default, function(X0_4, X4_4) {
 $Event(10000, Default, function() {
     EndIf(ThisEventSlot());
     
+    //-------------------
+    // Setup
+    //-------------------
     // Default Setup (applied only once per character
     if(!EventFlag(75001))
     {
@@ -6455,6 +6458,18 @@ $Event(10000, Default, function() {
         SetEventFlagID(75001, ON); // Default setup complete
     }
 
+    //-------------------
+    // Innards
+    //-------------------
+    // When player has Saga, enable Envoy NPC stuff
+    if(PlayerHasItem(ItemType.Goods, 32000))
+    {
+        if(!EventFlag(75190))
+        {
+            SetEventFlagID(75190, ON);
+        }
+    }
+    
     // Innards of Vitality
     InitializeEvent(0, 10100, 75010, 9500000);
     InitializeEvent(1, 10100, 75011, 9500001);
@@ -6535,13 +6550,17 @@ $Event(10000, Default, function() {
     InitializeEvent(54, 10100, 75013, 9500113);
     InitializeEvent(55, 10100, 75014, 9500114);
     
-    // Time
+    //-------------------
+    // Time Change
+    //-------------------
     InitializeEvent(0, 10001, 0); // Randomise Time on Spawn
     InitializeEvent(0, 10002, 0); // Force Day on Spawn
     InitializeEvent(0, 10003, 0); // Force Noon on Spawn
     InitializeEvent(0, 10004, 0); // Force Night on Spawn
     
-    // Weather
+    //-------------------
+    // Weather Change 
+    //-------------------
     InitializeEvent(0, 10101, 75310, Weather.Default);
     InitializeEvent(1, 10101, 75311, Weather.Rain);
     InitializeEvent(2, 10101, 75312, Weather.Snow);
@@ -6559,18 +6578,9 @@ $Event(10000, Default, function() {
     InitializeEvent(14, 10101, 75324, Weather.SnowyHeavyFog);
     InitializeEvent(15, 10101, 75325, Weather.ScatteredRain);
     
-    // Weather.Unknown18 - Snow with blue fog
-    // Weather.Unknown19 - Cloud
-    // Weather.Unknown20 - Rain
-    // Weather.Unknown21 - Fog
-    // Weather.Unknown22 - Rainy Cloud
-    // Weather.Unknown23 - Fog
-    
-    // Jar of Promise
-    SetCharacterAIState(18000900, Disabled);
-    SetCharacterInvincibility(18000900, Enabled);
-    
+    //-------------------
     // Difficulty
+    //-------------------
     InitializeEvent(0, 10120, 0); // Peaceful
     InitializeEvent(0, 10121, 0); // Easy
     InitializeEvent(0, 10122, 0); // Normal
@@ -6578,7 +6588,40 @@ $Event(10000, Default, function() {
     InitializeEvent(0, 10124, 0); // Nightmare
     InitializeEvent(0, 10125, 0); // Difficulty Change
     
+    //-------------------
+    // Map
+    //-------------------
+    // Jar of Promise
+    SetCharacterAIState(18000900, Disabled);
+    SetCharacterInvincibility(18000900, Enabled);
+    ForceAnimationPlayback(18000900, 701, true, false, false);
     
+    // Sleeping Ursine
+    SetCharacterAIState(1042360952, Disabled);
+    SetCharacterInvincibility(1042360952, Enabled);
+    ForceAnimationPlayback(1042360952, 700, true, false, false);
+    
+    // The Visionary
+    SetCharacterAIState(1038450952, Disabled);
+    SetCharacterInvincibility(1038450952, Enabled);
+    
+    // Need to workout how to force c0000 anims
+    // ForceAnimationPlayback(1038450952, 90040, false, false, false);
+    
+    // Envoy of the Great-Jar
+    if(EventFlag(75190))
+    {
+        ChangeCharacterEnableState(11100920, Enabled);
+        SetCharacterAIState(11100920, Disabled);
+        SetCharacterInvincibility(11100920, Enabled);
+        ForceAnimationPlayback(11100920, 701, true, false, false);
+    }
+    else
+    {
+        ChangeCharacterEnableState(11100920, Disabled);
+        SetCharacterAIState(11100920, Disabled);
+        SetCharacterInvincibility(11100920, Enabled);
+    }
 });
 
 // Difficulty: Peaceful

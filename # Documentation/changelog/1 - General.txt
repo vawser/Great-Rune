@@ -16,7 +16,7 @@
   - Day (6:00)
   - Noon (12:00)
   - Night (20:00)
-- You can access this feature via the "Temporal Adjustment" option at any site of grace.
+- You can access this feature via the "Sleeping Ursine" near to the Limgrave entrance chapel.
   
 # Weather
 - Added the ability to force specific weather.
@@ -38,5 +38,4 @@
  - Rainy Clouds
  - Puffy Clouds
  - Windy, Puffy Clouds
- 
-- You can access this feature via the "Climatic Adjustment" option at any site of grace.
+- You can access this feature via "The Visionary" within the Artist's Shack in Liurnia.

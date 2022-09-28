@@ -27,4 +27,7 @@
 - Add method to remove Rykard's lava for non-Serpent Hunter users.
 
 #----------------------------------------
-Add none option to Temportal Adjustment menu
+Move Innards menu to own NPC (Envoy of the Great-Jar)
+
+Fix Visionary and Sleeping Ursine now showing their names in menu
+ (Due to dupe enemy? Jar used normal enemy, they used c1000)

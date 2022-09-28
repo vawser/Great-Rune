@@ -81,6 +81,8 @@
 75123 Innards of Clarity - 4
 75124 Innards of Clarity - 5
 
+75190 Envoy of the Great-Jar
+
 75210 Time Setting: Randomise Time on Spawn
 75211 Time Setting: Force Day on Spawn
 75212 Time Setting: Force Noon on Spawn

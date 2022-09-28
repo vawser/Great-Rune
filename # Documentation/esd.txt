@@ -1,7 +1,7 @@
-﻿t000001200  Jar of Promise
-t000001300
-t000001400
-t000001500
+﻿t000001200 Jar of Promise
+t000001300 Sleeping Ursine
+t000001400 The Visionary
+t000001500 Envoy of the Great-Jar
 t000001600
 t000001700
 t000001800

@@ -179,7 +179,7 @@
       "AngleSnap": 0.7853982,
       "AngleSnapEnable": false,
       "PivotPrimIsEnabled": false,
-      "OrbitCamCenter_DummyPolyFollowRefPoint": "-0.025386114, 1.2430762, -0.07976243",
+      "OrbitCamCenter_DummyPolyFollowRefPoint": "-0.025386117, 1.2431006, -0.07976197",
       "OrbitCamCenter_DummyPolyFollowRefPoint_Init": "0, 5.862862E-05, 0.813",
       "OverallMouseSpeedMult": 1.0,
       "CameraTurnSpeedMouse": 1.0,

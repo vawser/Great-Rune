@@ -23,7 +23,7 @@
  - Each unique innard can be purchased multiple times (max 5, or 3 for regeneration ones).
  - The effects of innards are applied upon resting at a grace.
  - You can purchase the 'Sage of the Great-Jar' from the Great-Jar. 
-  - This will allow you to offer innards while at any site of grace.
+  - This will causes a "Envoy of the Great-Jar" to appear in Roundtable Hold, allowing you to more easily purchase innards.
  
 - Innards:
  - Innards of Vitality: 
