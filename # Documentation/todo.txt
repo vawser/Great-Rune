@@ -28,5 +28,3 @@
 
 #----------------------------------------
 Add none option to Temportal Adjustment menu
-
-Switch difficulty to use tutorial window for description

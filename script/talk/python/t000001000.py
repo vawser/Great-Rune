@@ -2696,6 +2696,9 @@ def t000001000_x140():
     while True:
         ClearTalkListData()
 
+# Randomise Time
+        AddTalkListDataIf(5, 80101006, -1)
+        
         # Randomise Time
         AddTalkListDataIf(not GetEventFlag(75210), 1, 80101005, -1)
         
@@ -2760,6 +2763,18 @@ def t000001000_x140():
                 SetEventFlag(75211, 0)
                 SetEventFlag(75212, 0)
                 SetEventFlag(75213, 1)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Clear Adjustment
+        elif GetTalkListEntryResult() == 5:
+            call = t000001000_x4(80101014)
+    
+            if call.Get() == 0:
+                SetEventFlag(75210, 0)
+                SetEventFlag(75211, 0)
+                SetEventFlag(75212, 0)
+                SetEventFlag(75213, 0)
             elif call.Get() == 1:
                 pass
             return 0
