@@ -76,4 +76,23 @@
 75212 Time Setting: Force Noon on Spawn
 75213 Time Setting: Force Night on Spawn
 
+75301 Dummy flag
+
+75310 Force Weather: Default
+75311 Force Weather: Rain
+75312 Force Weather: Snow
+75313 Force Weather: Windy Rain
+75314 Force Weather: Fog
+75315 Force Weather: Cloudless
+75316 Force Weather: Flat Clouds
+75317 Force Weather: Puffy Clouds
+75318 Force Weather: Rainy Clouds
+75319 Force Weather: Windy Fog
+75320 Force Weather: Heavy Snow
+75321 Force Weather: Heavy Fog
+75322 Force Weather: Windy, Puffy Clouds
+75323 Force Weather: Rainy, Heavy Fog
+75324 Force Weather: Snowy, Heavy Fog
+75325 Force Weather: Scattered Rain
+
 75900 -> 75999 Random Range

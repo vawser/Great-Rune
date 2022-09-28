@@ -6539,6 +6539,41 @@ $Event(10000, Default, function() {
     InitializeEvent(0, 10002, 0); // Force Day on Spawn
     InitializeEvent(0, 10003, 0); // Force Noon on Spawn
     InitializeEvent(0, 10004, 0); // Force Night on Spawn
+    
+    // Weather
+    InitializeEvent(0, 10101, 75310, Weather.Default);
+    InitializeEvent(1, 10101, 75311, Weather.Rain);
+    InitializeEvent(2, 10101, 75312, Weather.Snow);
+    InitializeEvent(3, 10101, 75313, Weather.WindyRain);
+    InitializeEvent(4, 10101, 75314, Weather.Fog);
+    InitializeEvent(5, 10101, 75315, Weather.Cloudless);
+    InitializeEvent(6, 10101, 75316, Weather.FlatClouds);
+    InitializeEvent(7, 10101, 75317, Weather.PuffyClouds);
+    InitializeEvent(8, 10101, 75318, Weather.RainyClouds);
+    InitializeEvent(9, 10101, 75319, Weather.WindyFog);
+    InitializeEvent(10, 10101, 75320, Weather.HeavySnow);
+    InitializeEvent(11, 10101, 75321, Weather.HeavyFog);
+    InitializeEvent(12, 10101, 75322, Weather.WindyPuffyClouds);
+    InitializeEvent(13, 10101, 75323, Weather.RainyHeavyFog);
+    InitializeEvent(14, 10101, 75324, Weather.SnowyHeavyFog);
+    InitializeEvent(15, 10101, 75325, Weather.ScatteredRain);
+});
+
+// Change Weather
+$Event(10101, Default, function(X0_4, X4_4) {
+    // Check if force weather flag is ON
+    if(EventFlag(X0_4))
+    {
+        // Only change if not already active
+        if(!WeatherActive(X4_4, 0, 0))
+        {
+            ChangeWeather(X4_4, -1, true);
+        }
+    }
+
+    // Loop to allow for updates in real-time
+    WaitFixedTimeSeconds(1.0);
+    RestartEvent();
 });
 
 // Randomise Time on Spawn

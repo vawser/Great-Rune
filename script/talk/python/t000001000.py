@@ -1065,7 +1065,9 @@ def t000001000_x31():
 
         # Temporal Adjustment
         AddTalkListData(30, 80101000, -1)
-        
+        # Climatic Adjustment
+        AddTalkListData(29, 80101100, -1)
+        #
         # Offer Innards
         AddTalkListDataIf(ComparePlayerInventoryNumber(3, 32000, 4, 1, 0) == 1, 31, 80100000, -1)
         #AddTalkListData(31, 80100000, -1)
@@ -1148,6 +1150,10 @@ def t000001000_x31():
 		# Temporal Adjustment
         elif GetTalkListEntryResult() == 30:
             assert t000001000_x140()
+            assert not CheckSpecificPersonGenericDialogIsOpen(0)
+		# CLimatic Adjustment
+        elif GetTalkListEntryResult() == 29:
+            assert t000001000_x142()
             assert not CheckSpecificPersonGenericDialogIsOpen(0)
         else:
             """State 4,30"""
@@ -2760,6 +2766,230 @@ def t000001000_x140():
         # Leave
         elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
             return 0
+
+#----------------------------------------------------------
+# Climatic Adjustment
+#----------------------------------------------------------
+def t000001000_x142():
+    c1110()
+    
+    while True:
+        ClearTalkListData()
+
+        # None
+        AddTalkListData(1, 80101101, -1)
+        
+        # Default
+        AddTalkListDataIf(not GetEventFlag(75310), 2, 80101102, -1)
+        
+        # Rain
+        AddTalkListDataIf(not GetEventFlag(75311), 3, 80101103, -1)
+        
+        # Windy Rain
+        AddTalkListDataIf(not GetEventFlag(75313), 5, 80101105, -1)
+        
+        # Scattered Rain
+        AddTalkListDataIf(not GetEventFlag(75325), 16, 80101116, -1)
+        
+        # Snow
+        AddTalkListDataIf(not GetEventFlag(75312), 4, 80101104, -1)
+        
+        # Heavy Snow
+        AddTalkListDataIf(not GetEventFlag(75320), 11, 80101111, -1)
+        
+        # Fog
+        AddTalkListDataIf(not GetEventFlag(75314), 6, 80101106, -1)
+        
+        # Windy Fog
+        AddTalkListDataIf(not GetEventFlag(75319), 10, 80101110, -1)
+        
+        # Heavy Fog
+        AddTalkListDataIf(not GetEventFlag(75321), 12, 80101112, -1)
+        
+        # Rainy, Heavy Fog
+        AddTalkListDataIf(not GetEventFlag(75323), 14, 80101114, -1)
+        
+        # Snowy, Heavy Fog
+        AddTalkListDataIf(not GetEventFlag(75324), 15, 80101115, -1)
+        
+        # Cloudless
+        AddTalkListDataIf(not GetEventFlag(75315), 7, 80101107, -1)
+        
+        # Flat Clouds
+        AddTalkListDataIf(not GetEventFlag(75316), 8, 80101108, -1)
+        
+        # Rainy Clouds
+        AddTalkListDataIf(not GetEventFlag(75318), 17, 80101117, -1)
+        
+        # Puffy Clouds
+        AddTalkListDataIf(not GetEventFlag(75317), 9, 80101109, -1)
+        
+        # Windy, Puffy Clouds
+        AddTalkListDataIf(not GetEventFlag(75322), 13, 80101113, -1)
+        
+        # Quit
+        AddTalkListData(99, 80100015, -1)
+
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # None
+        if GetTalkListEntryResult() == 1:
+            call = t000001000_x4(80101165)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75301)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Default
+        elif GetTalkListEntryResult() == 2:
+            call = t000001000_x4(80101150)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75310)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Rain
+        elif GetTalkListEntryResult() == 3:
+            call = t000001000_x4(80101151)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75311)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Snow
+        elif GetTalkListEntryResult() == 4:
+            call = t000001000_x4(80101152)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75312)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Windy Rain
+        elif GetTalkListEntryResult() == 5:
+            call = t000001000_x4(80101153)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75313)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Fog
+        elif GetTalkListEntryResult() == 6:
+            call = t000001000_x4(80101154)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75314)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Cloudless
+        elif GetTalkListEntryResult() == 7:
+            call = t000001000_x4(80101155)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75315)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Flat Clouds
+        elif GetTalkListEntryResult() == 8:
+            call = t000001000_x4(80101156)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75316)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Puffy Clouds
+        elif GetTalkListEntryResult() == 9:
+            call = t000001000_x4(80101157)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75317)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Rainy Clouds
+        elif GetTalkListEntryResult() == 17:
+            call = t000001000_x4(80101166)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75318)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Windy Fog
+        elif GetTalkListEntryResult() == 10:
+            call = t000001000_x4(80101158)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75319)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Heavy Snow
+        elif GetTalkListEntryResult() == 11:
+            call = t000001000_x4(80101159)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75320)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Heavy Fog
+        elif GetTalkListEntryResult() == 12:
+            call = t000001000_x4(80101160)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75321)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Windy, Puffy Clouds
+        elif GetTalkListEntryResult() == 13:
+            call = t000001000_x4(80101161)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75322)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Rainy, Heavy Fog
+        elif GetTalkListEntryResult() == 14:
+            call = t000001000_x4(80101162)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75323)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Snowy, Heavy Fog
+        elif GetTalkListEntryResult() == 15:
+            call = t000001000_x4(80101163)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75324)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Scattered Rain
+        elif GetTalkListEntryResult() == 16:
+            call = t000001000_x4(80101164)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(75325)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Leave
+        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
+            return 0
             
 #----------------------------------------------------------
 # Utility
@@ -2785,3 +3015,25 @@ def t000001000_x150(innard_item=_, purchase_message=_, cost=_):
         pass
     return 0
     
+# Set Weather
+def t000001000_x151(flag=_):
+    SetEventFlag(75310, 0)
+    SetEventFlag(75311, 0)
+    SetEventFlag(75312, 0)
+    SetEventFlag(75313, 0)
+    SetEventFlag(75314, 0)
+    SetEventFlag(75315, 0)
+    SetEventFlag(75316, 0)
+    SetEventFlag(75317, 0)
+    SetEventFlag(75318, 0)
+    SetEventFlag(75319, 0)
+    SetEventFlag(75320, 0)
+    SetEventFlag(75321, 0)
+    SetEventFlag(75322, 0)
+    SetEventFlag(75323, 0)
+    SetEventFlag(75324, 0)
+    SetEventFlag(75325, 0)
+    
+    SetEventFlag(flag, 1)
+    
+    return 0
