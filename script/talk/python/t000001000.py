@@ -3,78 +3,7 @@
 # Grace
 #-----------------------------------------------------
 def t000001000_1():
-    # Setup Whetblades
-    SetEventFlag(65610, 0)
-    SetEventFlag(65620, 0)
-    SetEventFlag(65630, 0)
-    SetEventFlag(65640, 0)
-    SetEventFlag(65650, 0)
-    SetEventFlag(65660, 0)
-    SetEventFlag(65670, 0)
-    SetEventFlag(65680, 0)
-    SetEventFlag(65690, 0)
-    SetEventFlag(65700, 0)
-    SetEventFlag(65710, 0)
-    SetEventFlag(65720, 0)
-    SetEventFlag(65730, 0)
-    SetEventFlag(65740, 0)
-    SetEventFlag(65750, 0)
-    SetEventFlag(65760, 0)
-    SetEventFlag(65770, 0)
-    SetEventFlag(65780, 0)
-    SetEventFlag(65790, 0)
-    SetEventFlag(65800, 0)
-    SetEventFlag(65810, 0)
-    SetEventFlag(65820, 0)
-    SetEventFlag(65830, 0)
-    
-    # Iron Whetblade
-    if DoesPlayerHaveItem(3, 8970) == 1:
-        SetEventFlag(65610, 1)
-        SetEventFlag(65620, 1)
-        SetEventFlag(65630, 1)
-        SetEventFlag(65820, 1)
-    else:
-        SetEventFlag(65830, 0)
-
-    # Red-Hot Whetblade
-    if DoesPlayerHaveItem(3, 8971) == 1:
-        SetEventFlag(65640, 1)
-        SetEventFlag(65650, 1)
-        SetEventFlag(65760, 1)
-        SetEventFlag(65750, 1)
-    else:
-        SetEventFlag(65830, 0)
-
-    # Sanctified Whetblade
-    if DoesPlayerHaveItem(3, 8972) == 1:
-        SetEventFlag(65660, 1)
-        SetEventFlag(65670, 1)
-        SetEventFlag(65730, 1)
-        SetEventFlag(65810, 1)
-        SetEventFlag(65740, 1)
-        SetEventFlag(65770, 1)
-    else:
-        SetEventFlag(65830, 0)
-
-    # Glintstone Whetblade
-    if DoesPlayerHaveItem(3, 8973) == 1:
-        SetEventFlag(65680, 1)
-        SetEventFlag(65690, 1)
-        SetEventFlag(65800, 1)
-        SetEventFlag(65790, 1)
-    else:
-        SetEventFlag(65830, 0)
-
-    # Black Whetblade
-    if DoesPlayerHaveItem(3, 8974) == 1:
-        SetEventFlag(65700, 1)
-        SetEventFlag(65710, 1)
-        SetEventFlag(65720, 1)
-        SetEventFlag(65780, 1)
-    else:
-        SetEventFlag(65830, 0)
-        
+    """State 0,1"""
     t000001000_x22()
     Quit()
 
@@ -1026,10 +955,10 @@ def t000001000_x31():
     assert GetCurrentStateElapsedTime() > 0.1 or not GetEventFlag(4651)
     """State 11"""
     assert not GetEventFlag(9001)
+    
     """State 18"""
     # goods:1001:Flask of Crimson Tears, goods:1000:Flask of Crimson Tears, goods:1003:Flask of Crimson Tears +1, goods:1002:Flask of Crimson Tears +1, goods:1005:Flask of Crimson Tears +2, goods:1004:Flask of Crimson Tears +2, goods:1007:Flask of Crimson Tears +3, goods:1006:Flask of Crimson Tears +3, goods:1009:Flask of Crimson Tears +4, goods:1008:Flask of Crimson Tears +4, goods:1011:Flask of Crimson Tears +5, goods:1010:Flask of Crimson Tears +5, goods:1013:Flask of Crimson Tears +6, goods:1012:Flask of Crimson Tears +6, goods:1015:Flask of Crimson Tears +7, goods:1014:Flask of Crimson Tears +7, goods:1017:Flask of Crimson Tears +8, goods:1016:Flask of Crimson Tears +8, goods:1019:Flask of Crimson Tears +9, goods:1018:Flask of Crimson Tears +9, goods:1021:Flask of Crimson Tears +10, goods:1020:Flask of Crimson Tears +10, goods:1023:Flask of Crimson Tears +11, goods:1022:Flask of Crimson Tears +11, goods:1025:Flask of Crimson Tears +12, goods:1024:Flask of Crimson Tears +12, goods:1050:Flask of Cerulean Tears, goods:1051:Flask of Cerulean Tears, goods:1052:Flask of Cerulean Tears +1, goods:1053:Flask of Cerulean Tears +1, goods:1054:Flask of Cerulean Tears +2, goods:1055:Flask of Cerulean Tears +2, goods:1056:Flask of Cerulean Tears +3, goods:1057:Flask of Cerulean Tears +3, goods:1058:Flask of Cerulean Tears +4, goods:1059:Flask of Cerulean Tears +4, goods:1060:Flask of Cerulean Tears +5, goods:1061:Flask of Cerulean Tears +5, goods:1062:Flask of Cerulean Tears +6, goods:1063:Flask of Cerulean Tears +6, goods:1064:Flask of Cerulean Tears +7, goods:1065:Flask of Cerulean Tears +7, goods:1067:Flask of Cerulean Tears +8, goods:1066:Flask of Cerulean Tears +8, goods:1069:Flask of Cerulean Tears +9, goods:1068:Flask of Cerulean Tears +9
     assert t000001000_x8(goods7=1000)
-
     """State 5"""
     c1_110()
     while True:
@@ -1039,9 +968,8 @@ def t000001000_x31():
         """State 2"""
         # action:15000420:"Pass time"
         AddTalkListDataIf(not GetEventFlag(9411) or GetEventFlag(9412) == 1, 1, 15000420, -1)
-        
         # action:15000540:"Level Up"
-        AddTalkListDataIf(GetEventFlag(4680) == 1 or GetEventFlag(4699) == 1, 32, 15000540, -1)
+        AddTalkListDataIf(GetEventFlag(4680) == 1 or GetEventFlag(4699) == 1, 2, 15000540, -1)
         """State 29"""
         assert t000001000_x71(z1=3, z2=15000371)
         """State 17"""
@@ -1059,7 +987,6 @@ def t000001000_x31():
         # goods:8163:Tailoring Tools, goods:8188:Golden Tailoring Tools, action:22230000:"Alter garments"
         AddTalkListDataIf(ComparePlayerInventoryNumber(3, 8163, 2, 0, 0) == 1 or ComparePlayerInventoryNumber(3, 8188, 2, 0, 0) == 1,
                           9, 22230000, -1)
-
         """State 26"""
         assert t000001000_x52()
         """State 15"""

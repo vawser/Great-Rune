@@ -1,110 +1,122 @@
-﻿# Mod Range
-75000
+﻿#-----------------------------------------------------------------
+# Mod Ranges
+#-----------------------------------------------------------------
+#------------------------------------
+104759_0000
+#------------------------------------
 
-75001 Default Setup flag
+#------------------------------------
+104760_0000 
+#------------------------------------
+
+#------------------------------------
+104761_0000 Systems
+#------------------------------------
+1047610010 Default Setup flag
+
+# Difficulty
+1047610100 Game Difficulty change
+1047610101 Peaceful
+1047610102 Easy
+1047610103 Normal
+1047610104 Hard
+1047610105 Nightmare
+
+# Innards
+1047610200 Show Envoy of the Great-Jar
+1047610210 Innards of Vitality - 1
+1047610211 Innards of Vitality - 2
+1047610212 Innards of Vitality - 3
+1047610213 Innards of Vitality - 4
+1047610214 Innards of Vitality - 5
+1047610220 Innards of Wisdom - 1
+1047610221 Innards of Wisdom - 2
+1047610222 Innards of Wisdom - 3
+1047610223 Innards of Wisdom - 4
+1047610224 Innards of Wisdom - 5
+1047610230 Innards of Tenacity - 1
+1047610231 Innards of Tenacity - 2
+1047610232 Innards of Tenacity - 3
+1047610233 Innards of Tenacity - 4
+1047610234 Innards of Tenacity - 5
+1047610240 Innards of Fortitude - 1
+1047610241 Innards of Fortitude - 2
+1047610242 Innards of Fortitude - 3
+1047610243 Innards of Fortitude - 4
+1047610244 Innards of Fortitude - 5
+1047610250 Innards of Reflection - 1
+1047610251 Innards of Reflection - 2
+1047610252 Innards of Reflection - 3
+1047610253 Innards of Reflection - 4
+1047610254 Innards of Reflection - 5
+1047610260 Innards of Regeneration - 1
+1047610261 Innards of Regeneration - 2
+1047610262 Innards of Regeneration - 3
+1047610270 Innards of Tranquility - 1
+1047610271 Innards of Tranquility - 2
+1047610272 Innards of Tranquility - 3
+1047610280 Innards of Endurance - 1
+1047610281 Innards of Endurance - 2
+1047610282 Innards of Endurance - 3
+1047610283 Innards of Endurance - 4
+1047610284 Innards of Endurance - 5
+1047610290 Innards of Greed - 1
+1047610291 Innards of Greed - 2
+1047610292 Innards of Greed - 3
+1047610293 Innards of Greed - 4
+1047610294 Innards of Greed - 5
+1047610300 Innards of Finesse - 1
+1047610301 Innards of Finesse - 2
+1047610302 Innards of Finesse - 3
+1047610303 Innards of Finesse - 4
+1047610304 Innards of Finesse - 5
+1047610310 Innards of Courage - 1
+1047610311 Innards of Courage - 2
+1047610312 Innards of Courage - 3
+1047610313 Innards of Courage - 4
+1047610314 Innards of Courage - 5
+1047610320 Innards of Clarity - 1
+1047610321 Innards of Clarity - 2
+1047610322 Innards of Clarity - 3
+1047610323 Innards of Clarity - 4
+1047610324 Innards of Clarity - 5
+
+# Time
+1047610400
+1047610410 Time Setting: Randomise Time on Spawn
+1047610411 Time Setting: Force Day on Spawn
+1047610412 Time Setting: Force Noon on Spawn
+1047610413 Time Setting: Force Night on Spawn
+
+# Weather
+1047610500
+1047610510 Force Weather: Default
+1047610511 Force Weather: Rain
+1047610512 Force Weather: Snow
+1047610513 Force Weather: Windy Rain
+1047610514 Force Weather: Fog
+1047610515 Force Weather: Cloudless
+1047610516 Force Weather: Flat Clouds
+1047610517 Force Weather: Puffy Clouds
+1047610518 Force Weather: Rainy Clouds
+1047610519 Force Weather: Windy Fog
+1047610520 Force Weather: Heavy Snow
+1047610521 Force Weather: Heavy Fog
+1047610522 Force Weather: Windy, Puffy Clouds
+1047610523 Force Weather: Rainy, Heavy Fog
+1047610524 Force Weather: Snowy, Heavy Fog
+1047610525 Force Weather: Scattered Rain
+
+#------------------------------------
+104762_0000 Random
+#------------------------------------
+1047620000 Random Start 
+1047620999 Random End
+
+#------------------------------------
+104963_0000 EMEVD Functions
+#------------------------------------
 
 
-75401 Game Difficulty change
-75402 Peaceful
-75403 Easy
-75404 Normal
-75405 Hard
-75406 Nightmare
-75407
-75408
-
-75010 Innards of Vitality - 1
-75011 Innards of Vitality - 2
-75012 Innards of Vitality - 3
-75013 Innards of Vitality - 4
-75014 Innards of Vitality - 5
-
-75020 Innards of Wisdom - 1
-75021 Innards of Wisdom - 2
-75022 Innards of Wisdom - 3
-75023 Innards of Wisdom - 4
-75024 Innards of Wisdom - 5
-
-75030 Innards of Tenacity - 1
-75031 Innards of Tenacity - 2
-75032 Innards of Tenacity - 3
-75033 Innards of Tenacity - 4
-75034 Innards of Tenacity - 5
-
-75040 Innards of Fortitude - 1
-75041 Innards of Fortitude - 2
-75042 Innards of Fortitude - 3
-75043 Innards of Fortitude - 4
-75044 Innards of Fortitude - 5
-
-75050 Innards of Reflection - 1
-75051 Innards of Reflection - 2
-75052 Innards of Reflection - 3
-75053 Innards of Reflection - 4
-75054 Innards of Reflection - 5
-
-75060 Innards of Regeneration - 1
-75061 Innards of Regeneration - 2
-75062 Innards of Regeneration - 3
-
-75070 Innards of Tranquility - 1
-75071 Innards of Tranquility - 2
-75072 Innards of Tranquility - 3
-
-75080 Innards of Endurance - 1
-75081 Innards of Endurance - 2
-75082 Innards of Endurance - 3
-75083 Innards of Endurance - 4
-75084 Innards of Endurance - 5
-
-75090 Innards of Greed - 1
-75091 Innards of Greed - 2
-75092 Innards of Greed - 3
-75093 Innards of Greed - 4
-75094 Innards of Greed - 5
-
-75100 Innards of Finesse - 1
-75101 Innards of Finesse - 2
-75102 Innards of Finesse - 3
-75103 Innards of Finesse - 4
-75104 Innards of Finesse - 5
-
-75110 Innards of Courage - 1
-75111 Innards of Courage - 2
-75112 Innards of Courage - 3
-75113 Innards of Courage - 4
-75114 Innards of Courage - 5
-
-75120 Innards of Clarity - 1
-75121 Innards of Clarity - 2
-75122 Innards of Clarity - 3
-75123 Innards of Clarity - 4
-75124 Innards of Clarity - 5
-
-75190 Envoy of the Great-Jar
-
-75210 Time Setting: Randomise Time on Spawn
-75211 Time Setting: Force Day on Spawn
-75212 Time Setting: Force Noon on Spawn
-75213 Time Setting: Force Night on Spawn
-
-75301 Dummy flag
-
-75310 Force Weather: Default
-75311 Force Weather: Rain
-75312 Force Weather: Snow
-75313 Force Weather: Windy Rain
-75314 Force Weather: Fog
-75315 Force Weather: Cloudless
-75316 Force Weather: Flat Clouds
-75317 Force Weather: Puffy Clouds
-75318 Force Weather: Rainy Clouds
-75319 Force Weather: Windy Fog
-75320 Force Weather: Heavy Snow
-75321 Force Weather: Heavy Fog
-75322 Force Weather: Windy, Puffy Clouds
-75323 Force Weather: Rainy, Heavy Fog
-75324 Force Weather: Snowy, Heavy Fog
-75325 Force Weather: Scattered Rain
 
 75900 -> 75999 Random Range

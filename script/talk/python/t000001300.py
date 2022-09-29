@@ -570,10 +570,10 @@ def t000001300_x40():
             call = t000001300_x50(80101010)
     
             if call.Get() == 0:
-                SetEventFlag(75210, 1)
-                SetEventFlag(75211, 0)
-                SetEventFlag(75212, 0)
-                SetEventFlag(75213, 0)
+                SetEventFlag(1047610410, 1)
+                SetEventFlag(1047610411, 0)
+                SetEventFlag(1047610412, 0)
+                SetEventFlag(1047610413, 0)
             elif call.Get() == 1:
                 pass
             return 0
@@ -582,10 +582,10 @@ def t000001300_x40():
             call = t000001300_x50(80101011)
     
             if call.Get() == 0:
-                SetEventFlag(75210, 0)
-                SetEventFlag(75211, 1)
-                SetEventFlag(75212, 0)
-                SetEventFlag(75213, 0)
+                SetEventFlag(1047610410, 0)
+                SetEventFlag(1047610411, 1)
+                SetEventFlag(1047610412, 0)
+                SetEventFlag(1047610413, 0)
             elif call.Get() == 1:
                 pass
             return 0
@@ -594,10 +594,10 @@ def t000001300_x40():
             call = t000001300_x50(80101012)
     
             if call.Get() == 0:
-                SetEventFlag(75210, 0)
-                SetEventFlag(75211, 0)
-                SetEventFlag(75212, 1)
-                SetEventFlag(75213, 0)
+                SetEventFlag(1047610410, 0)
+                SetEventFlag(1047610411, 0)
+                SetEventFlag(1047610412, 1)
+                SetEventFlag(1047610413, 0)
             elif call.Get() == 1:
                 pass
             return 0
@@ -606,10 +606,10 @@ def t000001300_x40():
             call = t000001300_x50(80101013)
     
             if call.Get() == 0:
-                SetEventFlag(75210, 0)
-                SetEventFlag(75211, 0)
-                SetEventFlag(75212, 0)
-                SetEventFlag(75213, 1)
+                SetEventFlag(1047610410, 0)
+                SetEventFlag(1047610411, 0)
+                SetEventFlag(1047610412, 0)
+                SetEventFlag(1047610413, 1)
             elif call.Get() == 1:
                 pass
             return 0
@@ -618,10 +618,10 @@ def t000001300_x40():
             call = t000001300_x50(80101014)
     
             if call.Get() == 0:
-                SetEventFlag(75210, 0)
-                SetEventFlag(75211, 0)
-                SetEventFlag(75212, 0)
-                SetEventFlag(75213, 0)
+                SetEventFlag(1047610410, 0)
+                SetEventFlag(1047610411, 0)
+                SetEventFlag(1047610412, 0)
+                SetEventFlag(1047610413, 0)
             elif call.Get() == 1:
                 pass
             return 0

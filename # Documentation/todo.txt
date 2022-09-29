@@ -9,15 +9,7 @@
 # World
 - Add lots more spiritsprings to make world traversal a bit more fun.
 - Remove (i.e. block) most of the catacombs dungeons and move the enemies and loot into the overworld.
-- Add training dummies to Roundtable Hold:
-    Assasin (Backstab, staggerable)
-    Crucible Knight (High absorption and defence)
-    Cleanrot Knight (Low elemental absorption, can be inflicted with aux)
-    
-    Have regular health, but set to noDead
-    Add asset that lets the player configure them
-        Restore Health
-        Increase Max Health
+
     
 # Bosses
 - Add statues of marika to:
@@ -27,7 +19,16 @@
 - Add method to remove Rykard's lava for non-Serpent Hunter users.
 
 #----------------------------------------
-Move Innards menu to own NPC (Envoy of the Great-Jar)
-
 Fix Visionary and Sleeping Ursine now showing their names in menu
- (Due to dupe enemy? Jar used normal enemy, they used c1000)
+ 
+Add class pictures to the new classes
+
+Add training dummies to Roundtable Hold:
+    Assasin (Backstab, staggerable)
+    Crucible Knight (High absorption and defence)
+    Cleanrot Knight (Low elemental absorption, can be inflicted with aux)
+    
+    Have regular health, but set to noDead
+    Add asset that lets the player configure them
+        Restore Health
+        Increase Max Health

@@ -4,9 +4,6 @@
 #-----------------------------------------------------
 def t000001500_1():
     """State 0,1"""
-    # Set Innard flags here
-    assert t000001500_x80()
-    
     # actionbutton:6210:"Talk"
     t000001500_x5(flag1=3223, flag2=3221, flag3=3222, val1=5, val2=10, val3=12, val4=30, val5=30, actionbutton1=6210,
                   flag4=6000, flag5=6001, flag6=6000, flag7=6000, flag8=6000, z1=1, z2=1000000, z3=1000000,
@@ -539,107 +536,76 @@ def t000001500_x36():
     """State 4"""
     return 0
 
-# Innards Flags Setup
-def t000001500_x80():
-    assert t000001500_x81(30000, 75010) # Innards of Vitality
-    assert t000001500_x81(30010, 75020) # Innards of Wisdom
-    assert t000001500_x81(30020, 75030) # Innards of Tenacity
-    assert t000001500_x81(30030, 75040) # Innards of Fortitude
-    assert t000001500_x81(30040, 75050) # Innards of Reflection
-    assert t000001500_x82(30050, 75060) # Innards of Regeneration
-    assert t000001500_x82(30060, 75070) # Innards of Tranquility
-    assert t000001500_x81(30070, 75080) # Innards of Endurance
-    assert t000001500_x81(30080, 75090) # Innards of Greed
-    assert t000001500_x81(30090, 75100) # Innards of Finesse
-    assert t000001500_x81(30100, 75110) # Innards of Courage
-    assert t000001500_x81(30110, 75120) # Innards of Clarity
-    
-    return 0
-
-# Update Innard Flags - Stack 5
-def t000001500_x81(item=_, flag=_):
-    SetEventFlag(flag, 0)
-    SetEventFlag(flag + 1, 0)
-    SetEventFlag(flag + 2, 0)
-    SetEventFlag(flag + 3, 0)
-    SetEventFlag(flag + 4, 0)
-
-    if(ComparePlayerInventoryNumber(3, item, 0, 1, 0) == 1):
-        SetEventFlag(flag, 1)
-    elif(ComparePlayerInventoryNumber(3, item, 0, 2, 0) == 1):
-        SetEventFlag(flag + 1, 1)
-    elif(ComparePlayerInventoryNumber(3, item, 0, 3, 0) == 1):
-        SetEventFlag(flag + 2, 1)
-    elif(ComparePlayerInventoryNumber(3, item, 0, 4, 0) == 1):
-        SetEventFlag(flag + 3, 1)
-    elif(ComparePlayerInventoryNumber(3, item, 0, 5, 0) == 1):
-        SetEventFlag(flag + 4, 1)
-    else:
-        pass
-        
-    return 0
-    
-# Update Innard Flags - Stack 3
-def t000001500_x82(item=_, flag=_):
-    SetEventFlag(flag, 0)
-    SetEventFlag(flag + 1, 0)
-    SetEventFlag(flag + 2, 0)
-    
-    if(ComparePlayerInventoryNumber(3, item, 0, 1, 0) == 1):
-        SetEventFlag(flag + 1, 1)
-    elif(ComparePlayerInventoryNumber(3, item, 0, 2, 0) == 1):
-        SetEventFlag(flag + 2, 1)
-    elif(ComparePlayerInventoryNumber(3, item, 0, 3, 0) == 1):
-        SetEventFlag(flag + 3, 1)
-    else:
-        pass
-        
-    return 0
-    
 #----------------------------------------------------
 # Innards     
 #----------------------------------------------------
 def t000001500_x38():
+    while True:
+        ClearTalkListData()
+        c1_110()
+        
+        # Offer Innards
+        AddTalkListData(1, 80100000, -1)
+        
+        # Leave
+        AddTalkListData(9, 20000009, -1)
+        
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # Offer Innards
+        if GetTalkListEntryResult() == 1:
+            assert t000001500_x100()
+            assert not CheckSpecificPersonGenericDialogIsOpen(0)
+        else:
+            """State 6,8"""
+            return 0
+            
+#----------------------------------------------------
+# Innards     
+#----------------------------------------------------
+def t000001500_x100():
     c1110()
     
     while True:
         ClearTalkListData()
 
         # Innards of Vitality
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30000, 3, 4, 0) == 1, 1, 80100100, -1)
+        AddTalkListData(1, 80100100, -1)
         
         # Innards of Wisdom
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30010, 3, 4, 0) == 1, 2, 80100101, -1)
+        AddTalkListData(2, 80100101, -1)
         
         # Innards of Tenacity
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30020, 3, 4, 0) == 1, 3, 80100102, -1)
+        AddTalkListData(3, 80100102, -1)
         
         # Innards of Fortitude
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30030, 3, 4, 0) == 1, 4, 80100103, -1)
+        AddTalkListData(4, 80100103, -1)
         
         # Innards of Reflection
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30040, 3, 4, 0) == 1, 5, 80100104, -1)
+        AddTalkListData(5, 80100104, -1)
         
         # Innards of Regeneration
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30050, 3, 2, 0) == 1, 6, 80100105, -1)
+        AddTalkListData(6, 80100105, -1)
         
         # Innards of Tranquility
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30050, 3, 2, 0) == 1, 7, 80100106, -1)
+        AddTalkListData(7, 80100106, -1)
         
         # Innards of Endurance
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30060, 3, 4, 0) == 1, 8, 80100107, -1)
+        AddTalkListData(8, 80100107, -1)
         
         # Innards of Greed
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30070, 3, 4, 0) == 1, 9, 80100108, -1)
+        AddTalkListData(9, 80100108, -1)
         
         # Innards of Finesse
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30080, 3, 4, 0) == 1, 10, 80100109, -1)
+        AddTalkListData(10, 80100109, -1)
         
         # Innards of Courage
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30090, 3, 4, 0) == 1, 11, 80100110, -1)
+        AddTalkListData(11, 80100110, -1)
         
         # Innards of Clarity
-        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 30100, 3, 4, 0) == 1, 12, 80100111, -1)
+        AddTalkListData(12, 80100111, -1)
         
         # Quit
         AddTalkListData(99, 80100015, -1)
@@ -650,68 +616,71 @@ def t000001500_x38():
         
         # Vitality
         if GetTalkListEntryResult() == 1:
-            assert t000001500_x120()
+            assert t000001500_x120(1047610210, 5, 80100300, 10, 80100600, 80100700)
             continue
         # Wisdom
         elif GetTalkListEntryResult() == 2:
-            assert t000001500_x121()
+            assert t000001500_x120(1047610220, 5, 80100310, 10, 80100601, 80100710)
             continue
         # Tenacity
         elif GetTalkListEntryResult() == 3:
-            assert t000001500_x122()
+            assert t000001500_x120(1047610230, 5, 80100320, 10, 80100602, 80100720)
             return 0
         # Fortitude
         elif GetTalkListEntryResult() == 4:
-            assert t000001500_x123()
+            assert t000001500_x120(1047610240, 5, 80100330, 10, 80100603, 80100730)
             return 0
         # Reflection
         elif GetTalkListEntryResult() == 5:
-            assert t000001500_x124()
+            assert t000001500_x120(1047610250, 5, 80100340, 10, 80100604, 80100740)
             return 0
         # Regeneration
         elif GetTalkListEntryResult() == 6:
-            assert t000001500_x125()
+            assert t000001500_x120(1047610260, 3, 80100350, 10, 80100605, 80100750)
             return 0
         # Tranquility
         elif GetTalkListEntryResult() == 7:
-            assert t000001500_x126()
+            assert t000001500_x120(1047610270, 3, 80100360, 10, 80100606, 80100760)
             return 0
         # Endurance
         elif GetTalkListEntryResult() == 8:
-            assert t000001500_x127()
+            assert t000001500_x120(1047610280, 5, 80100370, 10, 80100607, 80100770)
             return 0
         # Greed
         elif GetTalkListEntryResult() == 9:
-            assert t000001500_x128()
+            assert t000001500_x120(1047610290, 5, 80100380, 10, 80100608, 80100780)
             return 0
         # Finesse
         elif GetTalkListEntryResult() == 10:
-            assert t000001500_x129()
+            assert t000001500_x120(1047610300, 5, 80100390, 10, 80100609, 80100790)
             return 0
         # Courage
         elif GetTalkListEntryResult() == 11:
-            assert t000001500_x130()
+            assert t000001500_x120(1047610310, 5, 80100400, 10, 80100610, 80100800)
             return 0
         # Clarity
         elif GetTalkListEntryResult() == 12:
-            assert t000001500_x131()
+            assert t000001500_x120(1047610320, 5, 80100410, 10, 80100611, 80100810)
             return 0
         # Leave
         elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
             return 0
             
-# Innards of Vitality
-def t000001500_x120():
+# Innards of X
+def t000001500_x120(base_flag=_, max_count=_, rank_text=_, cost=_, cost_text=_, purchase_text=_):
     c1110()
     
     while True:
         ClearTalkListData()
 
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
+        # Acquire
+        AddTalkListDataIf(GetEventFlag(base_flag + (max_count - 1)) == 0, 1, 80100012, -1)
         
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
+        # View Current Effect
+        AddTalkListDataIf(GetEventFlag(base_flag) == 1, 2, 80100011, -1)
+        
+        # View Innard Effect
+        AddTalkListDataIf(GetEventFlag(base_flag) == 0, 3, 80100013, -1)
         
         # Quit
         AddTalkListData(99, 80100015, -1)
@@ -720,396 +689,91 @@ def t000001500_x120():
         
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         
-        # Purchase
+        # Acquire
         if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30000, 80100200, -10)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100300)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
-            
-# Innards of Wisdom
-def t000001500_x121():
-    c1110()
+            c1_110()
     
-    while True:
-        ClearTalkListData()
-
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
-        
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Purchase
-        if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30010, 80100201, -10)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100301)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
+            ClearTalkListData()
             
-# Innards of Tenacity
-def t000001500_x122():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
-
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
-        
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Purchase
-        if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30020, 80100202, -10)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100302)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
+            # Acquire
+            AddTalkListData(1, cost_text, -1)
             
-# Innards of Fortitude
-def t000001500_x123():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
-
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
-        
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Purchase
-        if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30030, 80100203, -10)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100303)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
+            # Cancel
+            AddTalkListData(2, 80100015, -1)
             
-# Innards of Reflection
-def t000001500_x124():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
-
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
-        
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Purchase
-        if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30040, 80100204, -10)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100304)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
+            OpenConversationChoicesMenu(0)
             
-# Innards of Regeneration
-def t000001500_x125():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
 
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
-        
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Purchase
-        if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30050, 80100205, -10)
+            # Acquire
+            if GetTalkListEntryResult() == 1:
+                if ComparePlayerInventoryNumber(3, 1290, 3, cost, 0) == 1:
+                    # Insufficient Potent Innards
+                    assert t000001500_x151(80100014)
+                else:
+                    PlayerEquipmentQuantityChange(3, 1290, ( cost * -1 ) )
+                    
+                    # None -> Rank 1
+                    if(GetEventFlag(base_flag) == 0):
+                        SetEventFlag(base_flag, 1)
+                        assert t000001500_x151(purchase_text)
+                    # Rank 4 -> Rank 5
+                    elif(GetEventFlag(base_flag + 3) == 1):
+                        SetEventFlag(base_flag + 4, 1)
+                        assert t000001500_x151(purchase_text + 4)
+                    # Rank 3 -> Rank 4
+                    elif(GetEventFlag(base_flag + 2) == 1):
+                        SetEventFlag(base_flag + 3, 1)
+                        assert t000001500_x151(purchase_text + 3)
+                    # Rank 2 -> Rank 3
+                    elif(GetEventFlag(base_flag + 1) == 1):
+                        SetEventFlag(base_flag + 2, 1)
+                        assert t000001500_x151(purchase_text + 2)
+                    # Rank 1 -> Rank 2
+                    elif(GetEventFlag(base_flag) == 1):
+                        SetEventFlag(base_flag + 1, 1)
+                        assert t000001500_x151(purchase_text + 1)
+                    else:
+                        pass
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                # Declined
+                assert t000001500_x151(80100016)
+                return 1
+            else:
+                return 2
+   
             return 0
-        # View Effect
+        # View Current Effect
         elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100305)
+            if(GetEventFlag(base_flag) == 0):
+                assert t000001500_x151(80100500)
+            elif(GetEventFlag(base_flag + 4) == 1):
+                assert t000001500_x151(rank_text + 4)
+            elif(GetEventFlag(base_flag + 3) == 1):
+                assert t000001500_x151(rank_text + 3)
+            elif(GetEventFlag(base_flag + 2) == 1):
+                assert t000001500_x151(rank_text + 2)
+            elif(GetEventFlag(base_flag + 1) == 1):
+                assert t000001500_x151(rank_text + 1)
+            elif(GetEventFlag(base_flag) == 1):
+                assert t000001500_x151(rank_text)
+            else:
+                pass
+                
+            return 0
+        # View Innard Effect
+        elif GetTalkListEntryResult() == 3:
+            assert t000001500_x151(rank_text)
+                
             return 0
         # Leave
         elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
             return 0
-            
-# Innards of Tranquility
-def t000001500_x126():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
-
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
-        
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Purchase
-        if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30060, 80100206, -10)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100306)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
-            
-# Innards of Endurance
-def t000001500_x127():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
-
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
-        
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Purchase
-        if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30070, 80100207, -10)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100307)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
-            
-# Innards of Greed
-def t000001500_x128():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
-
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
-        
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Purchase
-        if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30080, 80100208, -10)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100308)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
-            
-# Innards of Finesse
-def t000001500_x129():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
-
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
-        
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Purchase
-        if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30090, 80100209, -10)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100309)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
-            
-# Innards of Courage
-def t000001500_x130():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
-
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
-        
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Purchase
-        if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30100, 80100210, -10)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100310)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
-            
-# Innards of Clarity
-def t000001500_x131():
-    c1110()
-    
-    while True:
-        ClearTalkListData()
-
-        # Purchase
-        AddTalkListData(1, 80100012, -1)
-        
-        # View Effect
-        AddTalkListData(2, 80100011, -1)
-        
-        # Quit
-        AddTalkListData(99, 80100015, -1)
-
-        ShowShopMessage(1)
-        
-        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
-        
-        # Purchase
-        if GetTalkListEntryResult() == 1:
-            assert t000001500_x150(30110, 80100211, -10)
-            return 0
-        # View Effect
-        elif GetTalkListEntryResult() == 2:
-            assert t000001500_x151(80100311)
-            return 0
-        # Leave
-        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
-            return 0
-
-
             
 #----------------------------------------------------------
 # Utility
 #----------------------------------------------------------
-def t000001500_x150(innard_item=_, purchase_message=_, cost=_):
-    # Purchase this innard
-    call = t000001500_x151(80100013)
-    
-    if call.Get() == 0:
-        if ComparePlayerInventoryNumber(3, 1290, 3, cost, 0) == 1:
-            # Insufficient Potent Innards
-            assert t000001500_x151(80100014)
-        else:
-            PlayerEquipmentQuantityChange(3, 1290, cost)
-            PlayerEquipmentQuantityChange(3, innard_item, 1)
-            
-            # X purchased
-            assert t000001500_x151(purchase_message)
-            
-            # Update innard flags
-            assert t000001500_x80()
-    elif call.Get() == 1:
-        pass
-    return 0
-    
 def t000001500_x151(action1=_):
     """State 0,1"""
     OpenGenericDialog(7, action1, 1, 0, 1)

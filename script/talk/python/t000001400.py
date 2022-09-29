@@ -548,53 +548,53 @@ def t000001400_x38():
         # None
         AddTalkListData(1, 80101101, -1)
         
-        # Default
-        AddTalkListDataIf(not GetEventFlag(75310), 2, 80101102, -1)
+        # Clear Skies
+        AddTalkListData(2, 80101102, -1)
         
         # Rain
-        AddTalkListDataIf(not GetEventFlag(75311), 3, 80101103, -1)
+        AddTalkListData(3, 80101103, -1)
         
         # Windy Rain
-        AddTalkListDataIf(not GetEventFlag(75313), 5, 80101105, -1)
+        AddTalkListData(5, 80101105, -1)
         
         # Scattered Rain
-        AddTalkListDataIf(not GetEventFlag(75325), 16, 80101116, -1)
+        AddTalkListData(16, 80101116, -1)
         
         # Snow
-        AddTalkListDataIf(not GetEventFlag(75312), 4, 80101104, -1)
+        AddTalkListData(4, 80101104, -1)
         
         # Heavy Snow
-        AddTalkListDataIf(not GetEventFlag(75320), 11, 80101111, -1)
+        AddTalkListData(11, 80101111, -1)
         
         # Fog
-        AddTalkListDataIf(not GetEventFlag(75314), 6, 80101106, -1)
+        AddTalkListData(6, 80101106, -1)
         
         # Windy Fog
-        AddTalkListDataIf(not GetEventFlag(75319), 10, 80101110, -1)
+        AddTalkListData(10, 80101110, -1)
         
         # Heavy Fog
-        AddTalkListDataIf(not GetEventFlag(75321), 12, 80101112, -1)
+        AddTalkListData(12, 80101112, -1)
         
         # Rainy, Heavy Fog
-        AddTalkListDataIf(not GetEventFlag(75323), 14, 80101114, -1)
+        AddTalkListData(14, 80101114, -1)
         
         # Snowy, Heavy Fog
-        AddTalkListDataIf(not GetEventFlag(75324), 15, 80101115, -1)
+        AddTalkListData(15, 80101115, -1)
         
         # Cloudless
-        AddTalkListDataIf(not GetEventFlag(75315), 7, 80101107, -1)
+        AddTalkListData(7, 80101107, -1)
         
         # Flat Clouds
-        AddTalkListDataIf(not GetEventFlag(75316), 8, 80101108, -1)
+        AddTalkListData(8, 80101108, -1)
         
         # Rainy Clouds
-        AddTalkListDataIf(not GetEventFlag(75318), 17, 80101117, -1)
+        AddTalkListData(17, 80101117, -1)
         
         # Puffy Clouds
-        AddTalkListDataIf(not GetEventFlag(75317), 9, 80101109, -1)
+        AddTalkListData(9, 80101109, -1)
         
         # Windy, Puffy Clouds
-        AddTalkListDataIf(not GetEventFlag(75322), 13, 80101113, -1)
+        AddTalkListData(13, 80101113, -1)
         
         # Quit
         AddTalkListData(99, 80100015, -1)
@@ -608,7 +608,7 @@ def t000001400_x38():
             call = t000001400_x50(80101165)
     
             if call.Get() == 0:
-                assert t000001400_x51(75301)
+                assert t000001400_x51(1047610500)
             elif call.Get() == 1:
                 pass
             return 0
@@ -617,7 +617,7 @@ def t000001400_x38():
             call = t000001400_x50(80101150)
     
             if call.Get() == 0:
-                assert t000001400_x51(75310)
+                assert t000001400_x51(1047610510)
             elif call.Get() == 1:
                 pass
             return 0
@@ -626,7 +626,7 @@ def t000001400_x38():
             call = t000001400_x50(80101151)
     
             if call.Get() == 0:
-                assert t000001400_x51(75311)
+                assert t000001400_x51(1047610511)
             elif call.Get() == 1:
                 pass
             return 0
@@ -635,7 +635,7 @@ def t000001400_x38():
             call = t000001400_x50(80101152)
     
             if call.Get() == 0:
-                assert t000001400_x51(75312)
+                assert t000001400_x51(1047610512)
             elif call.Get() == 1:
                 pass
             return 0
@@ -644,7 +644,7 @@ def t000001400_x38():
             call = t000001400_x50(80101153)
     
             if call.Get() == 0:
-                assert t000001400_x51(75313)
+                assert t000001400_x51(1047610513)
             elif call.Get() == 1:
                 pass
             return 0
@@ -653,7 +653,7 @@ def t000001400_x38():
             call = t000001400_x50(80101154)
     
             if call.Get() == 0:
-                assert t000001400_x51(75314)
+                assert t000001400_x51(1047610514)
             elif call.Get() == 1:
                 pass
             return 0
@@ -662,7 +662,7 @@ def t000001400_x38():
             call = t000001400_x50(80101155)
     
             if call.Get() == 0:
-                assert t000001400_x51(75315)
+                assert t000001400_x51(1047610515)
             elif call.Get() == 1:
                 pass
             return 0
@@ -671,7 +671,7 @@ def t000001400_x38():
             call = t000001400_x50(80101156)
     
             if call.Get() == 0:
-                assert t000001400_x51(75316)
+                assert t000001400_x51(1047610516)
             elif call.Get() == 1:
                 pass
             return 0
@@ -680,7 +680,7 @@ def t000001400_x38():
             call = t000001400_x50(80101157)
     
             if call.Get() == 0:
-                assert t000001400_x51(75317)
+                assert t000001400_x51(1047610517)
             elif call.Get() == 1:
                 pass
             return 0
@@ -689,7 +689,7 @@ def t000001400_x38():
             call = t000001400_x50(80101166)
     
             if call.Get() == 0:
-                assert t000001400_x51(75318)
+                assert t000001400_x51(1047610518)
             elif call.Get() == 1:
                 pass
             return 0
@@ -698,7 +698,7 @@ def t000001400_x38():
             call = t000001400_x50(80101158)
     
             if call.Get() == 0:
-                assert t000001400_x51(75319)
+                assert t000001400_x51(1047610519)
             elif call.Get() == 1:
                 pass
             return 0
@@ -707,7 +707,7 @@ def t000001400_x38():
             call = t000001400_x50(80101159)
     
             if call.Get() == 0:
-                assert t000001400_x51(75320)
+                assert t000001400_x51(1047610520)
             elif call.Get() == 1:
                 pass
             return 0
@@ -716,7 +716,7 @@ def t000001400_x38():
             call = t000001400_x50(80101160)
     
             if call.Get() == 0:
-                assert t000001400_x51(75321)
+                assert t000001400_x51(1047610521)
             elif call.Get() == 1:
                 pass
             return 0
@@ -725,7 +725,7 @@ def t000001400_x38():
             call = t000001400_x50(80101161)
     
             if call.Get() == 0:
-                assert t000001400_x51(75322)
+                assert t000001400_x51(1047610522)
             elif call.Get() == 1:
                 pass
             return 0
@@ -734,7 +734,7 @@ def t000001400_x38():
             call = t000001400_x50(80101162)
     
             if call.Get() == 0:
-                assert t000001400_x51(75323)
+                assert t000001400_x51(1047610523)
             elif call.Get() == 1:
                 pass
             return 0
@@ -743,7 +743,7 @@ def t000001400_x38():
             call = t000001400_x50(80101163)
     
             if call.Get() == 0:
-                assert t000001400_x51(75324)
+                assert t000001400_x51(1047610524)
             elif call.Get() == 1:
                 pass
             return 0
@@ -752,7 +752,7 @@ def t000001400_x38():
             call = t000001400_x50(80101164)
     
             if call.Get() == 0:
-                assert t000001400_x51(75325)
+                assert t000001400_x51(1047610525)
             elif call.Get() == 1:
                 pass
             return 0
@@ -770,22 +770,22 @@ def t000001400_x50(action1=_):
     
 # Set Weather
 def t000001400_x51(flag=_):
-    SetEventFlag(75310, 0)
-    SetEventFlag(75311, 0)
-    SetEventFlag(75312, 0)
-    SetEventFlag(75313, 0)
-    SetEventFlag(75314, 0)
-    SetEventFlag(75315, 0)
-    SetEventFlag(75316, 0)
-    SetEventFlag(75317, 0)
-    SetEventFlag(75318, 0)
-    SetEventFlag(75319, 0)
-    SetEventFlag(75320, 0)
-    SetEventFlag(75321, 0)
-    SetEventFlag(75322, 0)
-    SetEventFlag(75323, 0)
-    SetEventFlag(75324, 0)
-    SetEventFlag(75325, 0)
+    SetEventFlag(1047610510, 0)
+    SetEventFlag(1047610511, 0)
+    SetEventFlag(1047610512, 0)
+    SetEventFlag(1047610513, 0)
+    SetEventFlag(1047610514, 0)
+    SetEventFlag(1047610515, 0)
+    SetEventFlag(1047610516, 0)
+    SetEventFlag(1047610517, 0)
+    SetEventFlag(1047610518, 0)
+    SetEventFlag(1047610519, 0)
+    SetEventFlag(1047610520, 0)
+    SetEventFlag(1047610521, 0)
+    SetEventFlag(1047610522, 0)
+    SetEventFlag(1047610523, 0)
+    SetEventFlag(1047610524, 0)
+    SetEventFlag(1047610525, 0)
     
     SetEventFlag(flag, 1)
     

@@ -598,23 +598,23 @@ def t000001200_x40():
         
         # Peaceful
         if GetTalkListEntryResult() == 1:
-            assert t000001200_x100(75402, 80102030, 80102040, 80102020)
+            assert t000001200_x100(1047610101, 80102030, 80102040, 80102020)
             return 0
         # Easy
         elif GetTalkListEntryResult() == 2:
-            assert t000001200_x100(75403, 80102031, 80102041, 80102021)
+            assert t000001200_x100(1047610102, 80102031, 80102041, 80102021)
             return 0
         # Normal
         elif GetTalkListEntryResult() == 3:
-            assert t000001200_x100(75404, 80102032, 80102042, 80102022)
+            assert t000001200_x100(1047610103, 80102032, 80102042, 80102022)
             return 0
         # Hard
         elif GetTalkListEntryResult() == 4:
-            assert t000001200_x100(75405, 80102033, 80102043, 80102023)
+            assert t000001200_x100(1047610104, 80102033, 80102043, 80102023)
             return 0
         # Nightmare
         elif GetTalkListEntryResult() == 5:
-            assert t000001200_x100(75406, 80102034, 80102044, 80102024)
+            assert t000001200_x100(1047610105, 80102034, 80102044, 80102024)
             return 0
         else:
             return 0
@@ -640,15 +640,15 @@ def t000001200_x100(flag=_, desc_text=_, prompt_text=_, switch_text=_):
     assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
 
     if GetTalkListEntryResult() == 1:
-        SetEventFlag(75402, 0)
-        SetEventFlag(75403, 0)
-        SetEventFlag(75404, 0)
-        SetEventFlag(75405, 0)
-        SetEventFlag(75406, 0)
+        SetEventFlag(1047610101, 0)
+        SetEventFlag(1047610102, 0)
+        SetEventFlag(1047610103, 0)
+        SetEventFlag(1047610104, 0)
+        SetEventFlag(1047610105, 0)
         
         SetEventFlag(flag, 1)
         
-        SetEventFlag(75401, 1)
+        SetEventFlag(1047610100, 1)
         
         # Switch
         assert t000001200_x101(switch_text)
