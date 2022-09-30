@@ -83,7 +83,7 @@
       "ProjectionNearClipDist": 0.1,
       "ProjectionFarClipDist": 10000.0,
       "Matrix_Projection": {
-        "M11": 2.6500328,
+        "M11": 2.5925088,
         "M12": 0.0,
         "M13": 0.0,
         "M14": 0.0,
@@ -101,7 +101,7 @@
         "M44": 0.0
       },
       "Matrix_Projection_Skybox": {
-        "M11": 1.490809,
+        "M11": 1.4584482,
         "M12": 0.0,
         "M13": 0.0,
         "M14": 0.0,
@@ -188,7 +188,7 @@
       "OrbitCamDistance": 2.959255,
       "ProjectionIsOrthographic": false,
       "ProjectionVerticalFovRatio": 1.0,
-      "PivotPrimVisRatio": 0.0
+      "PivotPrimVisRatio": 0.8958831
     }
   ]
 }
