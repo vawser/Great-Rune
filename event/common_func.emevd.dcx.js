@@ -3516,6 +3516,7 @@ $Event(90005616, Default, function(X0_4, X4_4) {
     DisplayBlinkingMessage(20600);
 });
 
+// Stonesword Key - Remove Dog
 $Event(90005620, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4) {
     DisableNetworkSync();
     if (EventFlag(X0_4)) {
@@ -3586,6 +3587,7 @@ L8:
     EndIf(Signed(0) == X24_4);
 });
 
+// Stonesword Key - Unlock Door automatically if unlocked previously
 $Event(90005621, Default, function(X0_4, X4_4) {
     if (EventFlag(X0_4)) {
         DisableAsset(X4_4);
@@ -6681,4 +6683,33 @@ $Event(9005990, Restart, function(X0_4) {
     WaitFixedTimeSeconds(X0_4);
 });
 
+// Great Rune - SpEffect Applied on Flag ON
+$Event(9005991, Restart, function(X0_4, X4_4, X8_4) {
+    if(EventFlag(X4_4))
+    {
+        SetSpEffect(X0_4, X8_4);
+    }
+    else
+    {
+        ClearSpEffect(X0_4, X8_4);
+    }
+    
+    WaitFixedTimeSeconds(1);
+    RestartEvent();
+});
+
+// Great Rune - SpEffect Applied on Flag OFF
+$Event(9005992, Restart, function(X0_4, X4_4, X8_4) {
+    if(EventFlag(X4_4))
+    {
+        ClearSpEffect(X0_4, X8_4);
+    }
+    else
+    {
+        SetSpEffect(X0_4, X8_4);
+    }
+    
+    WaitFixedTimeSeconds(1);
+    RestartEvent();
+});
 

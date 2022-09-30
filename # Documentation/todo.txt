@@ -50,7 +50,9 @@ Add training dummy to Roundtable Hold:
   - Skeleton (El Hueso)
   - Runebear 
 
- 21009100 Black Knife Assassin - Dummy
+ 21009100 Black Knife Assassin - Dummy # 11100790
+
+ c2100
 
 Open the lower door in Roundtable Hold once the invader has been defeated.
  - Add check for the death flag, play door open anim on door

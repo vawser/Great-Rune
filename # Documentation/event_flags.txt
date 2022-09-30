@@ -108,6 +108,89 @@
 1047610524 Force Weather: Snowy, Heavy Fog
 1047610525 Force Weather: Scattered Rain
 
+# Training Dummy
+1047610600 Dummy Setup
+1047610601 Enable HP Regeneration
+1047610602 Enable Stagger
+1047610603 Enable Hostility
+1047610604 Enable Aux Inflict
+1047610605 Enable Backstab
+
+1047610610 HP: 2000
+1047610611 HP: 5000
+1047610612 HP: 10000
+1047610613 HP: 20000
+1047610614 HP: 50000
+1047610615 HP: 100000
+
+1047610620 Standard Absorption: Standard
+1047610621 Standard Absorption: +20%
+1047610622 Standard Absorption: +40%
+1047610623 Standard Absorption: +60%
+1047610624 Standard Absorption: +80%
+1047610625 Standard Absorption: +100%
+
+1047610630 Magic Absorption: Standard
+1047610631 Magic Absorption: +20%
+1047610632 Magic Absorption: +40%
+1047610633 Magic Absorption: +60%
+1047610634 Magic Absorption: +80%
+1047610635 Magic Absorption: +100%
+
+1047610640 Fire Absorption: Standard
+1047610641 Fire Absorption: +20%
+1047610642 Fire Absorption: +40%
+1047610643 Fire Absorption: +60%
+1047610644 Fire Absorption: +80%
+1047610645 Fire Absorption: +100%
+
+1047610650 Lightning Absorption: Standard
+1047610651 Lightning Absorption: +20%
+1047610652 Lightning Absorption: +40%
+1047610653 Lightning Absorption: +60%
+1047610654 Lightning Absorption: +80%
+1047610655 Lightning Absorption: +100%
+
+1047610660 Holy Absorption: Standard
+1047610661 Holy Absorption: +20%
+1047610662 Holy Absorption: +40%
+1047610663 Holy Absorption: +60%
+1047610664 Holy Absorption: +80%
+1047610665 Holy Absorption: +100%
+
+1047610670 Slash Absorption: Standard
+1047610671 Slash Absorption: +20%
+1047610672 Slash Absorption: +40%
+1047610673 Slash Absorption: +60%
+1047610674 Slash Absorption: +80%
+1047610675 Slash Absorption: +100%
+
+1047610680 Strike Absorption: Standard
+1047610681 Strike Absorption: +20%
+1047610682 Strike Absorption: +40%
+1047610683 Strike Absorption: +60%
+1047610684 Strike Absorption: +80%
+1047610685 Strike Absorption: +100%
+
+1047610690 Thrust Absorption: Standard
+1047610691 Thrust Absorption: +20%
+1047610692 Thrust Absorption: +40%
+1047610693 Thrust Absorption: +60%
+1047610694 Thrust Absorption: +80%
+1047610695 Thrust Absorption: +100%
+
+1047610700 Location Update
+1047610701 Location: Single
+1047610702 Location: Triangle Triple
+1047610703 Location: Square Quad
+1047610704 Location: Parallel Duo
+1047610705 Location: Clustered Mass
+
+1047610710 Type Update
+1047610711 Type: Black Knife Assassin 
+1047610712 Tyoe: Runebear
+1047610713 Tyoe: Imp
+
 #------------------------------------
 104762_0000 Random
 #------------------------------------
@@ -137,6 +220,9 @@ Vanilla
 197 Great Rune of the Unborn
 
 # Progression
+110
+130
+
 3480
 3481
 3482
@@ -149,11 +235,15 @@ Vanilla
 3489 [UV] Roundhold Table is burnt
 
 # Misc
+11109656 Ensha of the Royal Remains related
 11109774
 11109775
 11109776
 11109777
 11109785 [UV] Twin Maiden Husk - Notify Player on New Items
+
+1054532702 Forge of the Giants related
+1054532703 Forge of the Giants related
 
 # Bosses
 9100 Godrick the Grafted - Stormveil Castle

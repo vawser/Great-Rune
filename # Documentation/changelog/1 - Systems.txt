@@ -16,7 +16,43 @@
  - Allows you to ressurect dead bosses to fight them again.
   - Rennala and Malenia are not available currently.
  - Costs 1 Larval Tear to ressurect a boss.
+
+# Training Dummy
+- Added a training dummy system to Roundtable Hold, in the lower hall.
+ - Appears after Mad Tongue Alberich is dead.
  
+- The main dummy hosts the Training Configuration menu, which you can use to adjust the dummy in the following ways:
+ - Toggle instant HP regen
+ - Toggle whether the dummy can be staggered
+ - Toggle whether the dummy can be backstabbed
+ - Toggle whether the dummy can be inflicted with aux effects
+ - Set the dummy max HP:
+  - 2000
+  - 5000
+  - 10000
+  - 20000
+  - 50000
+  - 100000
+ - Set the absorption for each type:
+  - None (no modifier either way)
+  - +20%
+  - +40%
+  - +60%
+  - +80%
+  - +100% (immunity)
+
+- There are also formation options, if you want to test attacks/spells with a group of enemies. 
+ - Single (1 dummy)
+ - Parallel Duo (2 dummies parallel to each other)
+ - Triple Triangle (3 dummies in a triangle shape)
+ - Square Quad (4 dummies in a square shape)
+ - Clustered Mass (8 dummies clustered close to each other) 
+
+- You can also changed the enemy type used as the dummy:
+ - Black Knife Assassin
+ - Runebear
+ - Imp
+
 # Innards
 - Added a 'perk' system to the Great-Jar. 
  - You can now spend 'Potent Innards' with the Great-Jar, purchasing unique innards that grant beneficial effects.

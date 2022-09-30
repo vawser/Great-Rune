@@ -1,0 +1,6 @@
+﻿# Item Count Check
+- Count with:
+StoreItemAmountHeldInEventValue(ItemType.Goods, <item>, <flag>, 8);
+
+- Check with:
+EventValue(<flag>, 8) >= <amount>
