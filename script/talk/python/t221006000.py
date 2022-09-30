@@ -202,7 +202,7 @@ def t221006000_x110():
         # Browse Collection
         elif GetTalkListEntryResult() == 2:
             OpenRegularShop(9201000, 9201999)
-            assert not (CheckSpecificPersonMenuIsOpen(28, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+            return 0
         else:
             """State 6,8"""
             return 0

@@ -10,7 +10,6 @@
 - Add lots more spiritsprings to make world traversal a bit more fun.
 - Remove (i.e. block) most of the catacombs dungeons and move the enemies and loot into the overworld.
 
-    
 # Bosses
 - Add statues of marika to:
     - Dragonlord Placidusax
@@ -20,15 +19,36 @@
 
 #----------------------------------------
 Fix Visionary and Sleeping Ursine now showing their names in menu
- 
-Add class pictures to the new classes
 
-Add training dummies to Roundtable Hold:
-    Assasin (Backstab, staggerable)
-    Crucible Knight (High absorption and defence)
-    Cleanrot Knight (Low elemental absorption, can be inflicted with aux)
-    
-    Have regular health, but set to noDead
-    Add asset that lets the player configure them
-        Restore Health
-        Increase Max Health
+Add trials:
+ - Use coliseum(s) as the arenas
+ - Wave based, N is for normal enemies, B is for boss
+  - N, N, B, N, N, B, N, B
+ 
+ - Round Types:
+  - <Name>
+   - <Enemies>
+   
+ - Modifiers:
+  - <Name>
+   - <Effect on enemies>
+   - <Effect on player>
+   
+Add training dummy to Roundtable Hold:
+ - Add menu to configure training parameters
+  - Absorption
+  - Base Defence
+  - HP Regen
+  - Total HP
+  - Can be Staggered
+  - Can be Backstabbed
+  - Can be inflicted with Aux
+  - Is Hostile (this will reset on respawn to Non-Hostile)
+  
+ - Add option to toggle which enemy is used as the dummy:
+  - Black Knife Assassin (default)
+  - Skeleton (El Hueso)
+  - Runebear 
+
+Open the lower door in Roundtable Hold once the invader has been defeated.
+ - Add check for the death flag, play door open anim on door
