@@ -10,11 +10,11 @@
 
 - Spirit Summon Ashes can no longer be reinforced.
  - They have the following modifiers:
-  - HP: *2 
+  - HP: *5, *8 for the Puppets, *2 for the Mimic Tear.
   - Max Stamina: *2
   - Defence %: *2
   - Resist %: *2
-  - Power %: *2 (*1 for Mimic)
+  - Power %: *2.5, *3 for the Puppets, *1 for the Mimic Tear.
   
 - Spirit Summon Ashes are now consumable.
 
