@@ -6615,6 +6615,7 @@ $Event(11005, Default, function() {
     InitializeEvent(0, 11030, 18000900); // Jar of Promise (Stranded Graveyard)
     InitializeEvent(0, 11031, 11100920, 1047610200); // Envoy of the Great-Jar
     InitializeEvent(1, 11031, 11100921, 1047610012); // Jar of Promise (Roundtable Hold)
+    InitializeEvent(2, 11031, 11100922, 11100180); // Jar of Discipline (Alberich is dead)
     
     // Hide Jar of Promise in Stranded Graveyard if moved
     if(EventFlag(1047610012))
@@ -6647,6 +6648,9 @@ $Event(11031, Default, function(X0_4, X4_4) {
         SetCharacterAIState(X0_4, Disabled);
         SetCharacterInvincibility(X0_4, Enabled);
     }
+    
+    // End early so Jar of Discipline doesn't pop in
+    EndIf(!EventFlag(X4_4));
     
     WaitFixedTimeSeconds(1.0);
     

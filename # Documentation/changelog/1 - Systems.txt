@@ -56,8 +56,8 @@
 # Training Dummy
 - Added a training dummy system to Roundtable Hold, in the lower hall.
  - Appears after Mad Tongue Alberich is dead.
- 
-- The main dummy hosts the Training Configuration menu, which you can use to adjust the dummy in the following ways:
+ - Training Paramters are configured at the Jar of Discipline, who appears by the lower hall entrance door.
+- You can configure the dummies int he following ways:
  - Toggle instant HP regen
  - Toggle whether the dummy can be staggered
  - Toggle whether the dummy can be backstabbed
