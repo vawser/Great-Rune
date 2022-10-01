@@ -537,8 +537,6 @@ def t000001200_x36():
     return 0
 
 def t000001200_x38():
-    assert t000001200_x101(80102100)
-
     """State 0,8"""
     c1_110()
     while True:
@@ -569,6 +567,8 @@ def t000001200_x38():
             return 0
         # Quickstart
         elif GetTalkListEntryResult() == 3:
+            assert t000001200_x101(80102100)
+            
             c1_110()
     
             ClearTalkListData()
@@ -599,8 +599,9 @@ def t000001200_x38():
                 SetEventFlag(11109786, 1)
                 SetEventFlag(104, 1)
                 
-                # First Step grace
-                SetEventFlag(1042361951, 1) 
+                # Graces
+                SetEventFlag(71801, 1) 
+                SetEventFlag(76101, 1)
                 return 0
             # Cancel
             elif GetTalkListEntryResult() == 2:
