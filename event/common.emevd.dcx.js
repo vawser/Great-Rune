@@ -58,7 +58,7 @@ $Event(0, Default, function() {
     InitializeEvent(4, 1630, 62008, 62050, 62051, 0, 0, 0, 0, 0, 0);
     InitializeEvent(5, 1630, 62009, 62050, 62052, 0, 0, 0, 0, 0, 0);
     EndIf(!PlayerIsInOwnWorld());
-    InitializeEvent(0, 945, 0);
+    InitializeEvent(0, 945, 0); // Player Warp - Sent to Roundtable Hold via Melina
     InitializeEvent(0, 920, 0);
     InitializeEvent(0, 921, 0);
     InitializeEvent(0, 922, 0);
@@ -1273,6 +1273,7 @@ $Event(936, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_1, X25_
     RestartEvent();
 });
 
+// Player Warp - Sent to Roundtable Hold via Melina
 $Event(945, Default, function() {
     DisableNetworkSync();
     EndIf(!PlayerIsInOwnWorld());

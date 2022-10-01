@@ -14,6 +14,7 @@
 104761_0000 Systems
 #------------------------------------
 1047610010 Default Setup flag
+1047610011 Quickstart flag
 
 # Difficulty
 1047610100 Game Difficulty change
@@ -22,6 +23,8 @@
 1047610103 Normal
 1047610104 Hard
 1047610105 Nightmare
+
+
 
 # Innards
 1047610200 Show Envoy of the Great-Jar
@@ -220,7 +223,32 @@ Vanilla
 197 Great Rune of the Unborn
 
 # Progression
+104 Visited Roundtable Hold (via Melina)
+105 
+106
+107
+108 Rold Medallion or Frenzied Flame
+109
 110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
 130
 
 3480
@@ -234,7 +262,25 @@ Vanilla
 3488 [UV] Burnt Erdtree?
 3489 [UV] Roundhold Table is burnt
 
-# Misc
+# Melina
+4653 Melina Interaction: 
+4670
+4680 
+4681 Melina Interaction: Introduction Spiel
+4698
+
+10000851 Trigger Roundtable Hold interaction with Melina
+
+11009260 Melina Interaction: Unable to enter Erdtree
+10009655 Melina Interaction: Roundtable Hold
+11009252
+11109687 
+11002745 
+11109786 Melina Interaction: Melina warped player to Roundtable Hold
+
+35009360 Melina Interaction: Left due to player joining the Frenzied Flame
+
+# Ensha
 11109656 Ensha of the Royal Remains related
 11109774
 11109775

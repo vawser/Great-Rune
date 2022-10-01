@@ -537,6 +537,8 @@ def t000001200_x36():
     return 0
 
 def t000001200_x38():
+    assert t000001200_x101(80102100)
+
     """State 0,8"""
     c1_110()
     while True:
@@ -548,6 +550,9 @@ def t000001200_x38():
         
         # Select Modifiers
         # AddTalkListData(2, 80102011, -1)
+        
+        # Quickstart
+        AddTalkListDataIf(GetEventFlag(1047610011) == 0, 3, 80102012, -1)
         
         # Leave
         AddTalkListData(99, 20000009, -1)
@@ -561,6 +566,48 @@ def t000001200_x38():
         if GetTalkListEntryResult() == 1:
             assert t000001200_x40()
             assert not CheckSpecificPersonGenericDialogIsOpen(0)
+            return 0
+        # Quickstart
+        elif GetTalkListEntryResult() == 3:
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610011, 1)
+                
+                # Torrent
+                SetEventFlag(4680, 1)
+                SetEventFlag(4681, 1)
+                SetEventFlag(1042379201, 1)
+                AwardItemLot(100000)
+                
+                # Roundtable Hold
+                SetEventFlag(10000851, 1)
+                SetEventFlag(10009655, 1)
+                SetEventFlag(11109786, 1)
+                SetEventFlag(104, 1)
+                
+                # First Step grace
+                SetEventFlag(1042361951, 1) 
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
             return 0
         else:
             """State 31"""

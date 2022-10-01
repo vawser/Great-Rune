@@ -7,7 +7,9 @@
  - Easy: boosts HP, FP, Max Stamina by 20%, and all absorptions by 10%.
  - Normal: the default, and applies no changes.
  - Hard: reduces HP, FP, Max Stamina by 20%, and all absorptions by 10%. Boosts rune gain by 100%.
- - Nightmare: reduces HP, FP, Max Stamina by 50%, and all absorptions by 25%. Boosts rune gain by 200%.
+ - Nightmare: reduces HP, FP, Max Stamina by 50%, and all absorptions by 25%. Boosts rune gain by 200
+ 
+- Added the ability to 'quickstart' at the Jar of Promise. Selecting Yes will give you Torrent immediately and teleport you to the Roundtable Hold.
 
 # Boss Rebirth
 - Added Boss Rebirth to Rennala:
