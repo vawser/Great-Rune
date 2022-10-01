@@ -62,6 +62,7 @@
  - Toggle whether the dummy can be staggered
  - Toggle whether the dummy can be backstabbed
  - Toggle whether the dummy can be inflicted with aux effects
+ - Toggle hostility (this resets on death/reload)
  - Set the dummy max HP:
   - 2000
   - 5000
@@ -100,51 +101,51 @@
 - Innards:
  - Innards of Vitality: 
   - Boost max HP by 5%. 
-  - Caps at 5 stacks.
+  - Caps at 5 ranks.
   
  - Innards of Wisdom: 
   - Boost max FP by 5%. 
-  - Caps at 5 stacks.
+  - Caps at 5 ranks.
   
  - Innards of Tenacity: 
   - Boost max Stamina by 5%. 
-  - Caps at 5 stacks.
+  - Caps at 5 ranks.
   
  - Innards of Fortitude: 
   - Boost physical absorption by 5%. 
-  - Caps at 5 stacks.
+  - Caps at 5 ranks.
   
  - Innards of Reflection: 
   - Boost elemental absorption by 5%. 
-  - Caps at 5 stacks.
+  - Caps at 5 ranks.
   
  - Innards of Regeneration: 
   - Boost HP regeneration by 1.
-  - Caps at 3 stacks.
+  - Caps at 3 ranks.
   
  - Innards of Tranquility: 
   - Boost FP regeneration by 1.
-  - Caps at 3 stacks.
+  - Caps at 3 ranks.
   
  - Innards of Endurance: 
   - Boost Stamina regeneration by 2.
-  - Caps at 5 stacks.
+  - Caps at 5 ranks.
   
  - Innards of Greed: 
   - Boost rune acquisition by 5%.
-  - Caps at 5 stacks.
+  - Caps at 5 ranks.
   
  - Innards of Finesse: 
   - Reduces weapon stamina consumption by 5%.
-  - Caps at 5 stacks.
+  - Caps at 5 ranks.
   
  - Innards of Courage: 
   - Boost melee and spell damage by 3%.
-  - Caps at 5 stacks.
+  - Caps at 5 ranks.
   
  - Innards of Clarity: 
   - Reduces spell and item FP consumption by 5%.
-  - Caps at 5 stacks.
+  - Caps at 5 ranks.
   
 # Weapon Deflect
 - Added Deflect mechanic:
