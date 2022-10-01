@@ -552,6 +552,9 @@ def t000001200_x38():
         # Quickstart
         AddTalkListDataIf(GetEventFlag(1047610011) == 0, 3, 80102012, -1)
         
+        # Move to Roundtable Hold
+        AddTalkListDataIf(GetEventFlag(1047610012) == 0 and GetEventFlag(71190) == 1, 4, 80102013, -1)
+        
         # Leave
         AddTalkListData(99, 20000009, -1)
         
@@ -602,6 +605,35 @@ def t000001200_x38():
                 # Graces
                 SetEventFlag(71801, 1) 
                 SetEventFlag(76101, 1)
+                return 0
+            # Cancel
+            elif GetTalkListEntryResult() == 2:
+                return 1
+            else:
+                return 2
+   
+            return 0
+        # Move to Roundtable Hold
+        elif GetTalkListEntryResult() == 4:
+            assert t000001200_x101(80102120)
+            
+            c1_110()
+    
+            ClearTalkListData()
+            
+            # Yes
+            AddTalkListData(1, 80102101, -1)
+            
+            # No
+            AddTalkListData(2, 80102102, -1)
+            
+            OpenConversationChoicesMenu(0)
+            
+            assert not (CheckSpecificPersonMenuIsOpen(12, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+
+            # Yes
+            if GetTalkListEntryResult() == 1:
+                SetEventFlag(1047610012, 1)
                 return 0
             # Cancel
             elif GetTalkListEntryResult() == 2:

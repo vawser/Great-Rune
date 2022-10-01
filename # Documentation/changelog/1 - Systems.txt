@@ -10,6 +10,40 @@
  - Nightmare: reduces HP, FP, Max Stamina by 50%, and all absorptions by 25%. Boosts rune gain by 200
  
 - Added the ability to 'quickstart' at the Jar of Promise. Selecting Yes will give you Torrent immediately and teleport you to the Roundtable Hold.
+- The Jar of Promise can be moved to the Roundtable Hold once it has been unlocked.
+
+# Time of Day
+- Added the ability to set how the time of day changes upon respawning at a grace (both for death and warp respawning).
+ - By default the time is set to randomise between any hour.
+ - There are options to force it to:
+  - Day (6:00)
+  - Noon (12:00)
+  - Night (20:00)
+- You can use this feature by acquiring the Gowry's Research item, which is purchasable from Gowry.
+ - Once the item is obtained, the Time Manipulation option will appear at sites of grace.
+  
+# Weather
+- Added the ability to force specific weather.
+- Grants the following options:
+ - Normal (this removes the current forced weather)
+ - Clear
+ - Rain
+ - Windy Rain
+ - Scattered Rain
+ - Snow
+ - Heavy Snow
+ - Fog
+ - Windy Fog
+ - Heavy Fog
+ - Rainy, Heavy Fog 
+ - Snowy, Heavy Fog
+ - Cloudless
+ - Flat Clouds
+ - Rainy Clouds
+ - Puffy Clouds
+ - Windy, Puffy Clouds
+- You can use this feature by acquiring the Musings of Ashi item, which is purchasable from Brother Corhyn.
+ - Once the item is obtained, the Weather Manipulation option will appear at sites of grace.
 
 # Boss Rebirth
 - Added Boss Rebirth to Rennala:

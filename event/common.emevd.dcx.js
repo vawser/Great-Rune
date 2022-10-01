@@ -6612,10 +6612,15 @@ $Event(11004, Default, function() {
 //-------------------
 $Event(11005, Default, function() {
     // NPC Setup
-    InitializeEvent(0, 11030, 18000900); // Jar of Promise
-    InitializeEvent(1, 11030, 1042360952); // Sleeping Ursine
-    InitializeEvent(2, 11030, 1038450952); // The Visionary
+    InitializeEvent(0, 11030, 18000900); // Jar of Promise (Stranded Graveyard)
     InitializeEvent(0, 11031, 11100920, 1047610200); // Envoy of the Great-Jar
+    InitializeEvent(1, 11031, 11100921, 1047610012); // Jar of Promise (Roundtable Hold)
+    
+    // Hide Jar of Promise in Stranded Graveyard if moved
+    if(EventFlag(1047610012))
+    {
+        ChangeCharacterEnableState(18000900, Disabled);
+    }
 });
 
 // Menu Entity - Always

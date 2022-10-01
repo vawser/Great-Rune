@@ -15,6 +15,7 @@
 #------------------------------------
 1047610010 Default Setup flag
 1047610011 Quickstart flag
+1047610012 Game Configuration: Moved to Roundtable Hold
 
 # Difficulty
 1047610100 Game Difficulty change

@@ -990,6 +990,13 @@ def t000001000_x31():
         """State 26"""
         assert t000001000_x52()
         """State 15"""
+        
+        # Time Manipulation
+        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 32001, 2, 0, 0) == 1, 80, 80101000, -1)
+        
+        # Weather Manipulation
+        AddTalkListDataIf(ComparePlayerInventoryNumber(3, 32002, 2, 0, 0) == 1, 81, 80101100, -1)
+        
         # action:20000009:"Leave"
         AddTalkListData(99, 20000009, -1)
         """State 6"""
@@ -1055,6 +1062,12 @@ def t000001000_x31():
         elif GetTalkListEntryResult() == 32:
             """State 23"""
             assert t000001000_x38()
+        # Time Manipulation
+        elif GetTalkListEntryResult() == 80:
+            assert t000001000_x80()
+        # Weather Manipulation
+        elif GetTalkListEntryResult() == 81:
+            assert t000001000_x81()
         elif GetTalkListEntryResult() == 41 and GetEventFlag(120) == 1 and GetEventFlag(11102790) == 1:
             """State 24"""
             assert t000001000_x42()
@@ -2045,3 +2058,354 @@ def t000001000_x71(z1=3, z2=15000371):
     """State 8"""
     return 0
 
+#----------------------------------------------------------
+# Time Selection
+#----------------------------------------------------------
+def t000001000_x80():
+    c1110()
+    
+    while True:
+        ClearTalkListData()
+
+        # Clear Adjustment
+        AddTalkListData(5, 80101006, -1)
+        
+        # Randomise Time
+        AddTalkListData(1, 80101005, -1)
+        
+        # Force Day
+        AddTalkListData(2, 80101002, -1)
+        
+        # Force Noon
+        AddTalkListData(3, 80101003, -1)
+        
+        # Force Night
+        AddTalkListData(4, 80101004, -1)
+        
+        # Quit
+        AddTalkListData(99, 80100015, -1)
+
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # Randomise Time
+        if GetTalkListEntryResult() == 1:
+            call = t000001000_x150(80101010)
+    
+            if call.Get() == 0:
+                SetEventFlag(1047610410, 1)
+                SetEventFlag(1047610411, 0)
+                SetEventFlag(1047610412, 0)
+                SetEventFlag(1047610413, 0)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Force Day
+        elif GetTalkListEntryResult() == 2:
+            call = t000001000_x150(80101011)
+    
+            if call.Get() == 0:
+                SetEventFlag(1047610410, 0)
+                SetEventFlag(1047610411, 1)
+                SetEventFlag(1047610412, 0)
+                SetEventFlag(1047610413, 0)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Force Noon
+        elif GetTalkListEntryResult() == 3:
+            call = t000001000_x150(80101012)
+    
+            if call.Get() == 0:
+                SetEventFlag(1047610410, 0)
+                SetEventFlag(1047610411, 0)
+                SetEventFlag(1047610412, 1)
+                SetEventFlag(1047610413, 0)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Force Night
+        elif GetTalkListEntryResult() == 4:
+            call = t000001000_x150(80101013)
+    
+            if call.Get() == 0:
+                SetEventFlag(1047610410, 0)
+                SetEventFlag(1047610411, 0)
+                SetEventFlag(1047610412, 0)
+                SetEventFlag(1047610413, 1)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Clear Adjustment
+        elif GetTalkListEntryResult() == 5:
+            call = t000001000_x150(80101014)
+    
+            if call.Get() == 0:
+                SetEventFlag(1047610410, 0)
+                SetEventFlag(1047610411, 0)
+                SetEventFlag(1047610412, 0)
+                SetEventFlag(1047610413, 0)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Leave
+        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
+            return 0
+            
+        assert CheckSpecificPersonTalkHasEnded(0) == 1
+
+#----------------------------------------------------------
+# Weather
+#----------------------------------------------------------
+def t000001000_x81():
+    c1110()
+    
+    while True:
+        ClearTalkListData()
+
+        # None
+        AddTalkListData(1, 80101101, -1)
+        
+        # Clear Skies
+        AddTalkListData(2, 80101102, -1)
+        
+        # Rain
+        AddTalkListData(3, 80101103, -1)
+        
+        # Windy Rain
+        AddTalkListData(5, 80101105, -1)
+        
+        # Scattered Rain
+        AddTalkListData(16, 80101116, -1)
+        
+        # Snow
+        AddTalkListData(4, 80101104, -1)
+        
+        # Heavy Snow
+        AddTalkListData(11, 80101111, -1)
+        
+        # Fog
+        AddTalkListData(6, 80101106, -1)
+        
+        # Windy Fog
+        AddTalkListData(10, 80101110, -1)
+        
+        # Heavy Fog
+        AddTalkListData(12, 80101112, -1)
+        
+        # Rainy, Heavy Fog
+        AddTalkListData(14, 80101114, -1)
+        
+        # Snowy, Heavy Fog
+        AddTalkListData(15, 80101115, -1)
+        
+        # Cloudless
+        AddTalkListData(7, 80101107, -1)
+        
+        # Flat Clouds
+        AddTalkListData(8, 80101108, -1)
+        
+        # Rainy Clouds
+        AddTalkListData(17, 80101117, -1)
+        
+        # Puffy Clouds
+        AddTalkListData(9, 80101109, -1)
+        
+        # Windy, Puffy Clouds
+        AddTalkListData(13, 80101113, -1)
+        
+        # Quit
+        AddTalkListData(99, 80100015, -1)
+
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # None
+        if GetTalkListEntryResult() == 1:
+            call = t000001000_x150(80101165)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610500)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Default
+        elif GetTalkListEntryResult() == 2:
+            call = t000001000_x150(80101150)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610510)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Rain
+        elif GetTalkListEntryResult() == 3:
+            call = t000001000_x150(80101151)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610511)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Snow
+        elif GetTalkListEntryResult() == 4:
+            call = t000001000_x150(80101152)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610512)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Windy Rain
+        elif GetTalkListEntryResult() == 5:
+            call = t000001000_x150(80101153)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610513)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Fog
+        elif GetTalkListEntryResult() == 6:
+            call = t000001000_x150(80101154)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610514)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Cloudless
+        elif GetTalkListEntryResult() == 7:
+            call = t000001000_x150(80101155)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610515)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Flat Clouds
+        elif GetTalkListEntryResult() == 8:
+            call = t000001000_x150(80101156)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610516)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Puffy Clouds
+        elif GetTalkListEntryResult() == 9:
+            call = t000001000_x150(80101157)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610517)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Rainy Clouds
+        elif GetTalkListEntryResult() == 17:
+            call = t000001000_x150(80101166)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610518)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Windy Fog
+        elif GetTalkListEntryResult() == 10:
+            call = t000001000_x150(80101158)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610519)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Heavy Snow
+        elif GetTalkListEntryResult() == 11:
+            call = t000001000_x150(80101159)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610520)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Heavy Fog
+        elif GetTalkListEntryResult() == 12:
+            call = t000001000_x150(80101160)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610521)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Windy, Puffy Clouds
+        elif GetTalkListEntryResult() == 13:
+            call = t000001000_x150(80101161)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610522)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Rainy, Heavy Fog
+        elif GetTalkListEntryResult() == 14:
+            call = t000001000_x150(80101162)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610523)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Snowy, Heavy Fog
+        elif GetTalkListEntryResult() == 15:
+            call = t000001000_x150(80101163)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610524)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Scattered Rain
+        elif GetTalkListEntryResult() == 16:
+            call = t000001000_x150(80101164)
+    
+            if call.Get() == 0:
+                assert t000001000_x151(1047610525)
+            elif call.Get() == 1:
+                pass
+            return 0
+        # Leave
+        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
+            return 0
+        
+# Utility
+def t000001000_x150(action1=_):
+    """State 0,1"""
+    OpenGenericDialog(7, action1, 1, 0, 1)
+    assert not CheckSpecificPersonGenericDialogIsOpen(0)
+    """State 2"""
+    return 0
+    
+# Set Weather
+def t000001000_x151(flag=_):
+    SetEventFlag(1047610510, 0)
+    SetEventFlag(1047610511, 0)
+    SetEventFlag(1047610512, 0)
+    SetEventFlag(1047610513, 0)
+    SetEventFlag(1047610514, 0)
+    SetEventFlag(1047610515, 0)
+    SetEventFlag(1047610516, 0)
+    SetEventFlag(1047610517, 0)
+    SetEventFlag(1047610518, 0)
+    SetEventFlag(1047610519, 0)
+    SetEventFlag(1047610520, 0)
+    SetEventFlag(1047610521, 0)
+    SetEventFlag(1047610522, 0)
+    SetEventFlag(1047610523, 0)
+    SetEventFlag(1047610524, 0)
+    SetEventFlag(1047610525, 0)
+    
+    SetEventFlag(flag, 1)
+    
+    return 0
