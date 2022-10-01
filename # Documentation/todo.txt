@@ -4,21 +4,10 @@
 # Mechanics
 - Add Note items to questlines that detail each stage, acting like a psuedo-journal.
 - Improve the Boss Respawn toggles for the major bosses, i.e. properly reset all relevant flags
-- Add in the Cinders transmog system
 
 # World
 - Add lots more spiritsprings to make world traversal a bit more fun.
 - Remove (i.e. block) most of the catacombs dungeons and move the enemies and loot into the overworld.
-
-# Bosses
-- Add statues of marika to:
-    - Dragonlord Placidusax
-    - Rennala
-- Split Radagon and Elden Beast into two bosses.
-- Add method to remove Rykard's lava for non-Serpent Hunter users.
-
-#----------------------------------------
-Fix Visionary and Sleeping Ursine now showing their names in menu
 
 Add trials:
  - Use coliseum(s) as the arenas
@@ -34,3 +23,17 @@ Add trials:
    - <Effect on enemies>
    - <Effect on player>
    
+   
+# Bosses
+- Add statues of marika to:
+    - Dragonlord Placidusax
+    - Rennala
+- Split Radagon and Elden Beast into two bosses.
+- Add method to remove Rykard's lava for non-Serpent Hunter users.
+
+# Niggles
+Fix Visionary and Sleeping Ursine not showing their names in menu
+
+#----------------------------------------
+
+- Add in the Cinders transmog system

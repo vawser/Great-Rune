@@ -654,3 +654,4 @@
 2030000 Lazuli Robe 2640
 
 # Added
+3000 Pot Helmet

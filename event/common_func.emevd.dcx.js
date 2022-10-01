@@ -3492,7 +3492,11 @@ L6:
     WaitFixedTimeSeconds(X40_4);
 });
 
+// Horse Prohibition - Visual Barrier
 $Event(900005610, Default, function(X0_4, X4_4, X8_4, X12_4) {
+    // Added for Great Rune to remove the barriers
+    EndEvent();
+    
     DisableNetworkSync();
     DeleteAssetfollowingSFX(X0_4, true);
     if (0 != X12_4) {
@@ -3507,6 +3511,7 @@ $Event(900005610, Default, function(X0_4, X4_4, X8_4, X12_4) {
     flagChr2 |= !CharacterRidingMount(10000);
     WaitFor(flagChr2);
     RestartEvent();
+    
 });
 
 $Event(90005616, Default, function(X0_4, X4_4) {
@@ -6712,4 +6717,3 @@ $Event(9005992, Restart, function(X0_4, X4_4, X8_4) {
     WaitFixedTimeSeconds(1);
     RestartEvent();
 });
-
