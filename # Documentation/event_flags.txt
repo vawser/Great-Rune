@@ -195,6 +195,17 @@
 1047610712 Tyoe: Runebear
 1047610713 Tyoe: Imp
 
+1047610800 Accolade Update
+1047610800 Accolade: Champion of the Realm
+1047610801 Accolade: Champion of the Realm - Reward
+
+1047610900 Tribulation Update
+1047610901 Tribulation: Overwhelming Odds
+1047610902 Tribulation: Unflinching Foes
+1047610903 Tribulation: Brain Fog
+1047610904 Tribulation: Crushing Blows
+1047610905 Tribulation: Undying Wish
+
 #------------------------------------
 104762_0000 Random
 #------------------------------------

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #-----------------------------------------------------
-# Banished Pate
+# Banished Outcast
 #-----------------------------------------------------
 def t000001400_1():
     """State 0,1"""
@@ -537,7 +537,7 @@ def t000001400_x36():
     return 0
 
 #----------------------------------------------------------
-# Weather
+# Menu
 #----------------------------------------------------------
 def t000001400_x38():
     c1110()
@@ -545,56 +545,94 @@ def t000001400_x38():
     while True:
         ClearTalkListData()
 
-        # None
+        # Accolades
+        # AddTalkListData(1, 80104000, -1)
+
+        # Tribulations
+        # AddTalkListData(2, 80105000, -1)
+       
+        # Quit
+        AddTalkListData(99, 80100015, -1)
+
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # Accolades
+        if GetTalkListEntryResult() == 1:
+            assert t000001400_x100()
+            continue
+        # Tribulations
+        elif GetTalkListEntryResult() == 2:
+            assert t000001400_x200()
+            continue
+        # Leave
+        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
+            return 0
+
+#----------------------------------------------------------
+# Accolades
+#----------------------------------------------------------
+def t000001400_x100():
+    c1110()
+    
+    while True:
+        ClearTalkListData()
+
+        # Champion of the Realm
         AddTalkListData(1, 80101101, -1)
+       
+        # Quit
+        AddTalkListData(99, 80100015, -1)
+
+        ShowShopMessage(1)
         
-        # Clear Skies
-        AddTalkListData(2, 80101102, -1)
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         
-        # Rain
-        AddTalkListData(3, 80101103, -1)
+        # Champion of the Realm
+        if GetTalkListEntryResult() == 1:
+            #assert t000001400_x101(1047610800, X, X, X, 1047610801, )
+            return 0
+        # Leave
+        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
+            return 0
+     
+# Accolade Check
+def t000001400_x101(flag=_, description_text=_, completion_text=_, reward_text=_, reward_flag=_, reward_lot=_):
+    if GetEventFlag(flag) == 0:
+        assert t000001400_x301(description_text)
+    elif GetEventFlag(flag) == 1 and GetEventFlag(reward_flag) == 0:
+        SetEventFlag(reward_flag, 1)
+        assert t000001400_x301(reward_text)
+        AwardItemLot(reward_lot)
+    else:
+        assert t000001400_x301(completion_text)
+    return 0
+    
+
+#----------------------------------------------------------
+# Tribulations
+#----------------------------------------------------------
+def t000001400_x200():
+    c1110()
+    
+    while True:
+        ClearTalkListData()
+
+        # Overwhelming Odds
+        AddTalkListData(1, 80101101, -1)
+       
+        # Unflinching Foes
+        AddTalkListData(2, 80101101, -1)
         
-        # Windy Rain
-        AddTalkListData(5, 80101105, -1)
+        # Brain Fog
+        AddTalkListData(3, 80101101, -1)
         
-        # Scattered Rain
-        AddTalkListData(16, 80101116, -1)
+        # Crushing Blows
+        AddTalkListData(4, 80101101, -1)
         
-        # Snow
-        AddTalkListData(4, 80101104, -1)
-        
-        # Heavy Snow
-        AddTalkListData(11, 80101111, -1)
-        
-        # Fog
-        AddTalkListData(6, 80101106, -1)
-        
-        # Windy Fog
-        AddTalkListData(10, 80101110, -1)
-        
-        # Heavy Fog
-        AddTalkListData(12, 80101112, -1)
-        
-        # Rainy, Heavy Fog
-        AddTalkListData(14, 80101114, -1)
-        
-        # Snowy, Heavy Fog
-        AddTalkListData(15, 80101115, -1)
-        
-        # Cloudless
-        AddTalkListData(7, 80101107, -1)
-        
-        # Flat Clouds
-        AddTalkListData(8, 80101108, -1)
-        
-        # Rainy Clouds
-        AddTalkListData(17, 80101117, -1)
-        
-        # Puffy Clouds
-        AddTalkListData(9, 80101109, -1)
-        
-        # Windy, Puffy Clouds
-        AddTalkListData(13, 80101113, -1)
+        # Undying Wish
+        AddTalkListData(5, 80101101, -1)
         
         # Quit
         AddTalkListData(99, 80100015, -1)
@@ -603,190 +641,56 @@ def t000001400_x38():
         
         assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
         
-        # None
+        # Overwhelming Odds
         if GetTalkListEntryResult() == 1:
-            call = t000001400_x50(80101165)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610500)
-            elif call.Get() == 1:
-                pass
+            #assert t000001400_x201(1047610901, X, X)
             return 0
-        # Default
+        # Unflinching Foes
         elif GetTalkListEntryResult() == 2:
-            call = t000001400_x50(80101150)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610510)
-            elif call.Get() == 1:
-                pass
+            #assert t000001400_x201(1047610902, X, X)
             return 0
-        # Rain
+        # Brain Fog
         elif GetTalkListEntryResult() == 3:
-            call = t000001400_x50(80101151)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610511)
-            elif call.Get() == 1:
-                pass
+            #assert t000001400_x201(1047610903, X, X)
             return 0
-        # Snow
+        # Crushing Blows
         elif GetTalkListEntryResult() == 4:
-            call = t000001400_x50(80101152)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610512)
-            elif call.Get() == 1:
-                pass
+            #assert t000001400_x201(1047610904, X, X)
             return 0
-        # Windy Rain
+        # Undying Wish
         elif GetTalkListEntryResult() == 5:
-            call = t000001400_x50(80101153)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610513)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Fog
-        elif GetTalkListEntryResult() == 6:
-            call = t000001400_x50(80101154)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610514)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Cloudless
-        elif GetTalkListEntryResult() == 7:
-            call = t000001400_x50(80101155)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610515)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Flat Clouds
-        elif GetTalkListEntryResult() == 8:
-            call = t000001400_x50(80101156)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610516)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Puffy Clouds
-        elif GetTalkListEntryResult() == 9:
-            call = t000001400_x50(80101157)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610517)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Rainy Clouds
-        elif GetTalkListEntryResult() == 17:
-            call = t000001400_x50(80101166)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610518)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Windy Fog
-        elif GetTalkListEntryResult() == 10:
-            call = t000001400_x50(80101158)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610519)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Heavy Snow
-        elif GetTalkListEntryResult() == 11:
-            call = t000001400_x50(80101159)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610520)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Heavy Fog
-        elif GetTalkListEntryResult() == 12:
-            call = t000001400_x50(80101160)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610521)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Windy, Puffy Clouds
-        elif GetTalkListEntryResult() == 13:
-            call = t000001400_x50(80101161)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610522)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Rainy, Heavy Fog
-        elif GetTalkListEntryResult() == 14:
-            call = t000001400_x50(80101162)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610523)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Snowy, Heavy Fog
-        elif GetTalkListEntryResult() == 15:
-            call = t000001400_x50(80101163)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610524)
-            elif call.Get() == 1:
-                pass
-            return 0
-        # Scattered Rain
-        elif GetTalkListEntryResult() == 16:
-            call = t000001400_x50(80101164)
-    
-            if call.Get() == 0:
-                assert t000001400_x51(1047610525)
-            elif call.Get() == 1:
-                pass
+            #assert t000001400_x201(1047610905, X, X)
             return 0
         # Leave
         elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
             return 0
+            
+# Tribulation Toggle
+def t000001400_x201(flag=_, enable_text=_, disable_text=_):
+    if GetEventFlag(flag) == 0:
+        SetEventFlag(flag, 1)
+        assert t000001400_x301(enable_text)
+    else:
+        SetEventFlag(flag, 0)
+        assert t000001400_x301(disable_text)
         
+    return 0
+    
+#----------------------------------------------------------
 # Utility
-def t000001400_x50(action1=_):
+#----------------------------------------------------------
+def t000001400_x300(action1=_):
     """State 0,1"""
     OpenGenericDialog(7, action1, 1, 0, 1)
     assert not CheckSpecificPersonGenericDialogIsOpen(0)
     """State 2"""
     return 0
     
-# Set Weather
-def t000001400_x51(flag=_):
-    SetEventFlag(1047610510, 0)
-    SetEventFlag(1047610511, 0)
-    SetEventFlag(1047610512, 0)
-    SetEventFlag(1047610513, 0)
-    SetEventFlag(1047610514, 0)
-    SetEventFlag(1047610515, 0)
-    SetEventFlag(1047610516, 0)
-    SetEventFlag(1047610517, 0)
-    SetEventFlag(1047610518, 0)
-    SetEventFlag(1047610519, 0)
-    SetEventFlag(1047610520, 0)
-    SetEventFlag(1047610521, 0)
-    SetEventFlag(1047610522, 0)
-    SetEventFlag(1047610523, 0)
-    SetEventFlag(1047610524, 0)
-    SetEventFlag(1047610525, 0)
-    
-    SetEventFlag(flag, 1)
-    
+# Description Prompt
+def t000001400_x301(action1=_):
+    """State 0,1"""
+    OpenGenericDialog(8, action1, 1, 0, 1)
+    assert not CheckSpecificPersonGenericDialogIsOpen(0)
+    """State 2"""
     return 0
+    

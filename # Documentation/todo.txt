@@ -5,10 +5,24 @@
 - Add Note items to questlines that detail each stage, acting like a psuedo-journal.
 - Improve the Boss Respawn toggles for the major bosses, i.e. properly reset all relevant flags
 
+#----------------------------------------
 # World
 - Add lots more spiritsprings to make world traversal a bit more fun.
-- Remove (i.e. block) most of the catacombs dungeons and move the enemies and loot into the overworld.
+- Change catacombs to vary the enemy type within:
+ - Imps only in one per region, the rest should be different
+ - Potentially mix up the layouts
 
+   
+#----------------------------------------
+# Bosses
+- Add statues of marika to:
+    - Dragonlord Placidusax
+    - Rennala
+- Split Radagon and Elden Beast into two bosses.
+- Add method to remove Rykard's lava for non-Serpent Hunter users.
+
+#----------------------------------------
+# Trials
 Add trials:
  - Use coliseum(s) as the arenas
  - Wave based, N is for normal enemies, B is for boss
@@ -23,14 +37,15 @@ Add trials:
    - <Effect on enemies>
    - <Effect on player>
    
-   
-# Bosses
-- Add statues of marika to:
-    - Dragonlord Placidusax
-    - Rennala
-- Split Radagon and Elden Beast into two bosses.
-- Add method to remove Rykard's lava for non-Serpent Hunter users.
-
+#----------------------------------------
+# Transformation System
+- Add in the Transformation system:
+ - Armor
+ - Body VFX
+ - Weapon VFX
+ - Camera
+ 
+#----------------------------------------
 # Accolades/Tribulations
 - Accolades
  - Champion of the Realm
@@ -60,14 +75,4 @@ Core Bosses:
   
  - Undying Wish
   - Enemies recover HP.
-
-# Transformation System
-- Add in the Transformation system:
- - Armor
- - Body VFX
- - Weapon VFX
- - Camera
- 
-#----------------------------------------
-
-30109006
+  

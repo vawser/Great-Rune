@@ -6464,6 +6464,9 @@ $Event(11000, Default, function() {
     InitializeEvent(0, 11004, 0); // Weather Change
     InitializeEvent(0, 11005, 0); // Map
     InitializeEvent(0, 11006, 0); // Whetblades
+    
+    InitializeEvent(0, 11300, 0); // Accolades
+    InitializeEvent(0, 11400, 0); // Tribulations
 });
 
 
@@ -7067,3 +7070,19 @@ $Event(11200, Default, function() {
     
     RestartEvent();
 });
+
+//-------------------
+// Accolades
+//-------------------
+$Event(11300, Default, function() {
+    
+});
+
+//-------------------
+// Tribulations
+//-------------------
+$Event(11400, Default, function() {
+    
+});
+
+
