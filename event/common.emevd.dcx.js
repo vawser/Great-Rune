@@ -6466,6 +6466,7 @@ $Event(11000, Default, function() {
     InitializeEvent(0, 11006, 0); // Whetblades
 });
 
+
 //-------------------
 // Difficulty
 //-------------------
@@ -6616,6 +6617,10 @@ $Event(11005, Default, function() {
     InitializeEvent(0, 11031, 11100920, 1047610200); // Envoy of the Great-Jar
     InitializeEvent(1, 11031, 11100921, 1047610012); // Jar of Promise (Roundtable Hold)
     InitializeEvent(2, 11031, 11100922, 11100180); // Jar of Discipline (Alberich is dead)
+    
+    // WIP
+    ChangeCharacterEnableState(11100784, Disabled);
+    //InitializeEvent(1, 11030, 11100784); // Banished Pate
     
     // Hide Jar of Promise in Stranded Graveyard if moved
     if(EventFlag(1047610012))

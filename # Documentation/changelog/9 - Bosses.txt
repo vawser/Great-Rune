@@ -1,6 +1,7 @@
 #------------------------------------------
 # Changes: Bosses
 #------------------------------------------
+# Adjustments
 - Adjusted boss rune drops.
 - Increased boss HP for various bosses to account for the reduction in area HP scaling.
 
@@ -10,3 +11,6 @@
 - Elden Beast:
  - Reduced base HP.
  
+# Changes
+- Soldier of Godrick has been replaced with the Knight of Farum Azula (a Banished Knight).
+ - Now drops the Banished Knight set (with the altered helm/armor).

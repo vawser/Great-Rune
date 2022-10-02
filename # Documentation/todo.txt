@@ -31,10 +31,43 @@ Add trials:
 - Split Radagon and Elden Beast into two bosses.
 - Add method to remove Rykard's lava for non-Serpent Hunter users.
 
-# Niggles
-Fix Visionary and Sleeping Ursine not showing their names in menu
+# Accolades/Tribulations
+- Accolades
+ - Champion of the Realm
+  - Defeat each core boss with Crushing Blows and Undying Wish active.
+  
+Core Bosses:
+9100 Godrick the Grafted
+9104 Morgott, the Omen King
+9130 Starscourge Radahn
+9122 Rykard, Lord of Blasphemy
+9107 Hoarah Loux
+9116 Maliketh
+9123 Elden Beast
 
+- Tribulations 
+ - Overwhelming Odds
+  - Adds new enemies throughout the game.
+ 
+ - Unflinching Foes
+  - Enemies no longer stagger.
+  
+ - Brain Fog
+  - FP no longer regenerates passively.
+  
+ - Crushing Blows 
+  - Enemies are tougher to kill and deal more damage.
+  
+ - Undying Wish
+  - Enemies recover HP.
+
+# Transformation System
+- Add in the Transformation system:
+ - Armor
+ - Body VFX
+ - Weapon VFX
+ - Camera
+ 
 #----------------------------------------
-- Add in the Cinders transmog system
 
-
+30109006
