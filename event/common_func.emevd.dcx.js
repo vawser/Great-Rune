@@ -6688,7 +6688,7 @@ $Event(9005990, Restart, function(X0_4) {
     WaitFixedTimeSeconds(X0_4);
 });
 
-// Great Rune - SpEffect Applied on Flag ON
+// GR - SpEffect Applied on Flag ON
 $Event(9005991, Restart, function(X0_4, X4_4, X8_4) {
     if(EventFlag(X4_4))
     {
@@ -6703,7 +6703,7 @@ $Event(9005991, Restart, function(X0_4, X4_4, X8_4) {
     RestartEvent();
 });
 
-// Great Rune - SpEffect Applied on Flag OFF
+// GR - SpEffect Applied on Flag OFF
 $Event(9005992, Restart, function(X0_4, X4_4, X8_4) {
     if(EventFlag(X4_4))
     {
@@ -6716,4 +6716,56 @@ $Event(9005992, Restart, function(X0_4, X4_4, X8_4) {
     
     WaitFixedTimeSeconds(1);
     RestartEvent();
+});
+
+// GR - Passive Friendly Entity - Loop
+$Event(9005993, Default, function(X0_4) {
+    SetCharacterAIState(X0_4, Disabled);
+    SetCharacterInvincibility(X0_4, Enabled);
+    
+    WaitFixedTimeSeconds(1.0);
+    
+    RestartEvent();
+});
+
+// GR - Passive Friendly Entity - On Load
+$Event(9005994, Default, function(X0_4) {
+    SetCharacterAIState(X0_4, Disabled);
+    SetCharacterInvincibility(X0_4, Enabled);
+});
+
+// GR - Show Friendly Entity - Loop
+$Event(9005995, Default, function(X0_4, X4_4) {
+    if(EventFlag(X4_4))
+    {
+        ChangeCharacterEnableState(X0_4, Enabled);
+        SetCharacterAIState(X0_4, Disabled);
+        SetCharacterInvincibility(X0_4, Enabled);
+    }
+    else
+    {
+        ChangeCharacterEnableState(X0_4, Disabled);
+        SetCharacterAIState(X0_4, Disabled);
+        SetCharacterInvincibility(X0_4, Enabled);
+    }
+    
+    WaitFixedTimeSeconds(1.0);
+    
+    RestartEvent();
+});
+
+// GR - Show Friendly Entity - On Load
+$Event(9005996, Default, function(X0_4, X4_4) {
+    if(EventFlag(X4_4))
+    {
+        ChangeCharacterEnableState(X0_4, Enabled);
+        SetCharacterAIState(X0_4, Disabled);
+        SetCharacterInvincibility(X0_4, Enabled);
+    }
+    else
+    {
+        ChangeCharacterEnableState(X0_4, Disabled);
+        SetCharacterAIState(X0_4, Disabled);
+        SetCharacterInvincibility(X0_4, Enabled);
+    }
 });
