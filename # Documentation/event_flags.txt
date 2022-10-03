@@ -195,9 +195,20 @@
 1047610712 Tyoe: Runebear
 1047610713 Tyoe: Imp
 
-1047610800 Accolade Update
 1047610800 Accolade: Champion of the Realm
 1047610801 Accolade: Champion of the Realm - Reward
+1047610802 Accolade: Champion of the Realm - Godrick
+1047610803 Accolade: Champion of the Realm - Morgott
+1047610804 Accolade: Champion of the Realm - Radahn
+1047610805 Accolade: Champion of the Realm - Rykard
+1047610806 Accolade: Champion of the Realm - Hoarah Loux
+1047610807 Accolade: Champion of the Realm - Maliketh
+1047610808 Accolade: Champion of the Realm - Elden Beast
+
+1047610810 Accolade: Untouchable
+1047610811 Accolade: Untouchable - Reward
+1047610812 Accolade: Untouchable - Elden Beast
+1047610813 Accolade: Untouchable - Failed
 
 1047610900 Tribulation Update
 1047610901 Tribulation: Overwhelming Odds

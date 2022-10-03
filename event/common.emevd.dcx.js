@@ -7033,6 +7033,17 @@ $Event(11200, Default, function() {
 // Accolades
 //-------------------
 $Event(11300, Default, function() {
+    // Champion of the Realm
+    // 1047610800
+    // TODO: add checks for the tribulation flags in the boss init scripts, 
+    // then add completion flags if the boss is killed with those flags present
+    
+    // Untouchable
+    // 1047610810
+    // TODO: add check in Elden Beast kill script to see if 1047610813 has not been set, 
+    // if so set 1047610810 to ON
+    // TODO: add death monitor script to check if the player has died
+    // may need exception for tutorial 'death'
     
 });
 

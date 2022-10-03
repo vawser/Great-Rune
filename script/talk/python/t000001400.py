@@ -580,8 +580,11 @@ def t000001400_x100():
         ClearTalkListData()
 
         # Champion of the Realm
-        AddTalkListData(1, 80101101, -1)
+        AddTalkListData(1, 80104010, -1)
        
+        # Untouchable
+        AddTalkListData(2, 80104011, -1)
+        
         # Quit
         AddTalkListData(99, 80100015, -1)
 
@@ -591,13 +594,17 @@ def t000001400_x100():
         
         # Champion of the Realm
         if GetTalkListEntryResult() == 1:
-            #assert t000001400_x101(1047610800, X, X, X, 1047610801, )
+            assert t000001400_x101(1047610800, 80104110, 80104001, 80104002, 1047610801, 200000)
+            return 0
+        # Untouchable
+        elif GetTalkListEntryResult() == 2:
+            assert t000001400_x102(1047610810, 80104111, 80104001, 80104002, 1047610811, 200010, 1047610813, 80104003)
             return 0
         # Leave
         elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
             return 0
      
-# Accolade Check
+# Accolade Check - Standard
 def t000001400_x101(flag=_, description_text=_, completion_text=_, reward_text=_, reward_flag=_, reward_lot=_):
     if GetEventFlag(flag) == 0:
         assert t000001400_x301(description_text)
@@ -609,7 +616,20 @@ def t000001400_x101(flag=_, description_text=_, completion_text=_, reward_text=_
         assert t000001400_x301(completion_text)
     return 0
     
-
+# Accolade Check - Failable
+def t000001400_x102(flag=_, description_text=_, completion_text=_, reward_text=_, reward_flag=_, reward_lot=_, fail_flag=_, fail_text=_):
+    if GetEventFlag(fail_flag) == 1:
+        assert t000001400_x301(fail_text)
+    elif GetEventFlag(flag) == 0:
+        assert t000001400_x301(description_text)
+    elif GetEventFlag(flag) == 1 and GetEventFlag(reward_flag) == 0:
+        SetEventFlag(reward_flag, 1)
+        assert t000001400_x301(reward_text)
+        AwardItemLot(reward_lot)
+    else:
+        assert t000001400_x301(completion_text)
+    return 0
+    
 #----------------------------------------------------------
 # Tribulations
 #----------------------------------------------------------

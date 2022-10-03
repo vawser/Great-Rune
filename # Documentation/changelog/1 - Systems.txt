@@ -91,12 +91,10 @@
  - Imp
 
 # Innards
-- Added a 'perk' system to the Great-Jar. 
- - You can now spend 'Potent Innards' with the Great-Jar, purchasing unique innards that grant beneficial effects.
- - Each unique innard can be purchased multiple times (max 5, or 3 for regeneration ones).
- - The effects of innards are applied upon resting at a grace.
- - You can purchase the 'Sage of the Great-Jar' from the Great-Jar. 
-  - This will causes a "Envoy of the Great-Jar" to appear in Roundtable Hold, allowing you to more easily purchase innards.
+- Added the ability to acquire special Innards, which work as persistent perks.
+ - You spend Potent Innards, a currency dropped by bosses and found in places that used to contain reinforcement material.
+ - You can acquire multiple ranks of each innard, increasing its effect each time.
+ - The Envoy of the Great-Jar is found in Roundtable Hold.
  
 - Innards:
  - Innards of Vitality: 
