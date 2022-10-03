@@ -6453,8 +6453,6 @@ $Event(11000, Default, function() {
     if(!EventFlag(1047610010))
     {
         SetEventFlagID(1047610103, ON); // Normal Difficulty
-        SetEventFlagID(1047610410, ON); // Randomise Time on Spawn
-        
         SetEventFlagID(1047610010, ON); // Default setup complete
     }
     
@@ -7084,5 +7082,3 @@ $Event(11300, Default, function() {
 $Event(11400, Default, function() {
     
 });
-
-
