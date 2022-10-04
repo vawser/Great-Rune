@@ -6769,3 +6769,4 @@ $Event(9005996, Default, function(X0_4, X4_4) {
         SetCharacterInvincibility(X0_4, Enabled);
     }
 });
+

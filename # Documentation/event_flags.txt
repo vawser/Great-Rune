@@ -119,6 +119,7 @@
 1047610603 Enable Hostility
 1047610604 Enable Aux Inflict
 1047610605 Enable Backstab
+1047610606 Enable Damage
 
 1047610610 HP: 2000
 1047610611 HP: 5000

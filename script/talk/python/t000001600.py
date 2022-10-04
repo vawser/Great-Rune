@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #-----------------------------------------------------
-# Training Dummy
+# Jar of Discipline
 #-----------------------------------------------------
 def t000001600_1():
     """State 0,1"""
@@ -605,6 +605,9 @@ def t000001600_x101():
         # Toggle Backstabs
         AddTalkListData(5, 80103014, -1)
         
+        # Toggle Damage
+        AddTalkListData(6, 80103015, -1)
+        
         # Toggle Hostility
         AddTalkListData(4, 80103013, -1)
         
@@ -634,6 +637,10 @@ def t000001600_x101():
         # Backstabs
         elif GetTalkListEntryResult() == 5:
             assert t000001600_x102(1047610605, 80103060, 80103061)
+            return 0
+        # Damage
+        elif GetTalkListEntryResult() == 6:
+            assert t000001600_x102(1047610606, 80103070, 80103071)
             return 0
         else:
             """State 6,8"""

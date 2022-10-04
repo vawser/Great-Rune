@@ -4,6 +4,8 @@
 # Mechanics
 - Add Note items to questlines that detail each stage, acting like a psuedo-journal.
 - Improve the Boss Respawn toggles for the major bosses, i.e. properly reset all relevant flags
+- Add weapon duplication to Hewg
+ - Check ownership via ESD, show option in big list
 
 #----------------------------------------
 # World

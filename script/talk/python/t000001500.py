@@ -557,7 +557,7 @@ def t000001500_x38():
         # Offer Innards
         if GetTalkListEntryResult() == 1:
             assert t000001500_x100()
-            assert not CheckSpecificPersonGenericDialogIsOpen(0)
+            continue
         else:
             """State 6,8"""
             return 0
@@ -616,58 +616,58 @@ def t000001500_x100():
         
         # Vitality
         if GetTalkListEntryResult() == 1:
-            assert t000001500_x120(1047610210, 5, 80100300, 10, 80100600, 80100700)
+            assert t000001500_x120(1047610210, 5, 80100300, 80100700)
             continue
         # Wisdom
         elif GetTalkListEntryResult() == 2:
-            assert t000001500_x120(1047610220, 5, 80100310, 10, 80100601, 80100710)
+            assert t000001500_x120(1047610220, 5, 80100310, 80100710)
             continue
         # Tenacity
         elif GetTalkListEntryResult() == 3:
-            assert t000001500_x120(1047610230, 5, 80100320, 10, 80100602, 80100720)
-            return 0
+            assert t000001500_x120(1047610230, 5, 80100320, 80100720)
+            continue
         # Fortitude
         elif GetTalkListEntryResult() == 4:
-            assert t000001500_x120(1047610240, 5, 80100330, 10, 80100603, 80100730)
-            return 0
+            assert t000001500_x120(1047610240, 5, 80100330, 80100730)
+            continue
         # Reflection
         elif GetTalkListEntryResult() == 5:
-            assert t000001500_x120(1047610250, 5, 80100340, 10, 80100604, 80100740)
-            return 0
+            assert t000001500_x120(1047610250, 5, 80100340, 80100740)
+            continue
         # Regeneration
         elif GetTalkListEntryResult() == 6:
-            assert t000001500_x120(1047610260, 3, 80100350, 10, 80100605, 80100750)
-            return 0
+            assert t000001500_x120(1047610260, 3, 80100350, 80100750)
+            continue
         # Tranquility
         elif GetTalkListEntryResult() == 7:
-            assert t000001500_x120(1047610270, 3, 80100360, 10, 80100606, 80100760)
-            return 0
+            assert t000001500_x120(1047610270, 3, 80100360, 80100760)
+            continue
         # Endurance
         elif GetTalkListEntryResult() == 8:
-            assert t000001500_x120(1047610280, 5, 80100370, 10, 80100607, 80100770)
-            return 0
+            assert t000001500_x120(1047610280, 5, 80100370, 80100770)
+            continue
         # Greed
         elif GetTalkListEntryResult() == 9:
-            assert t000001500_x120(1047610290, 5, 80100380, 10, 80100608, 80100780)
-            return 0
+            assert t000001500_x120(1047610290, 5, 80100380, 80100780)
+            continue
         # Finesse
         elif GetTalkListEntryResult() == 10:
-            assert t000001500_x120(1047610300, 5, 80100390, 10, 80100609, 80100790)
-            return 0
+            assert t000001500_x120(1047610300, 5, 80100390, 80100790)
+            continue
         # Courage
         elif GetTalkListEntryResult() == 11:
-            assert t000001500_x120(1047610310, 5, 80100400, 10, 80100610, 80100800)
-            return 0
+            assert t000001500_x120(1047610310, 5, 80100400, 80100800)
+            continue
         # Clarity
         elif GetTalkListEntryResult() == 12:
-            assert t000001500_x120(1047610320, 5, 80100410, 10, 80100611, 80100810)
-            return 0
+            assert t000001500_x120(1047610320, 5, 80100410, 80100810)
+            continue
         # Leave
         elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
             return 0
             
 # Innards of X
-def t000001500_x120(base_flag=_, max_count=_, rank_text=_, cost=_, cost_text=_, purchase_text=_):
+def t000001500_x120(base_flag=_, max_count=_, rank_text=_, purchase_text=_):
     c1110()
     
     while True:
@@ -695,8 +695,23 @@ def t000001500_x120(base_flag=_, max_count=_, rank_text=_, cost=_, cost_text=_, 
     
             ClearTalkListData()
             
-            # Acquire
-            AddTalkListData(1, cost_text, -1)
+            # Rank 0
+            if(GetEventFlag(base_flag) == 0):
+                AddTalkListData(1, 80100600, -1)
+            # Rank 4
+            elif(GetEventFlag(base_flag + 3) == 1):
+                AddTalkListData(1, 80100604, -1)
+            # Rank 3
+            elif(GetEventFlag(base_flag + 2) == 1):
+                AddTalkListData(1, 80100603, -1)
+            # Rank 2
+            elif(GetEventFlag(base_flag + 1) == 1):
+                AddTalkListData(1, 80100602, -1)
+            # Rank 1
+            elif(GetEventFlag(base_flag) == 1):
+                AddTalkListData(1, 80100601, -1)
+            else:
+                pass
             
             # Cancel
             AddTalkListData(2, 80100015, -1)
@@ -707,34 +722,48 @@ def t000001500_x120(base_flag=_, max_count=_, rank_text=_, cost=_, cost_text=_, 
 
             # Acquire
             if GetTalkListEntryResult() == 1:
-                if ComparePlayerInventoryNumber(3, 1290, 3, cost, 0) == 1:
-                    # Insufficient Potent Innards
-                    assert t000001500_x151(80100014)
-                else:
-                    PlayerEquipmentQuantityChange(3, 1290, ( cost * -1 ) )
-                    
-                    # None -> Rank 1
-                    if(GetEventFlag(base_flag) == 0):
+                # Rank 0
+                if(GetEventFlag(base_flag) == 0):
+                    if ComparePlayerInventoryNumber(3, 1290, 3, ( 10 - 1 ), 0) == 1:
+                        assert t000001500_x151(80100610)
+                    else:
+                        PlayerEquipmentQuantityChange(3, 1290, ( 10 * -1 ) )
                         SetEventFlag(base_flag, 1)
                         assert t000001500_x151(purchase_text)
-                    # Rank 4 -> Rank 5
-                    elif(GetEventFlag(base_flag + 3) == 1):
+                # Rank 4
+                elif(GetEventFlag(base_flag + 3) == 1):
+                    if ComparePlayerInventoryNumber(3, 1290, 3, ( 50 - 1 ), 0) == 1:
+                        assert t000001500_x151(80100614)
+                    else:
+                        PlayerEquipmentQuantityChange(3, 1290, ( 50 * -1 ) )
                         SetEventFlag(base_flag + 4, 1)
                         assert t000001500_x151(purchase_text + 4)
-                    # Rank 3 -> Rank 4
-                    elif(GetEventFlag(base_flag + 2) == 1):
+                # Rank 3
+                elif(GetEventFlag(base_flag + 2) == 1):
+                    if ComparePlayerInventoryNumber(3, 1290, 3, ( 40 - 1 ), 0) == 1:
+                        assert t000001500_x151(80100613)
+                    else:
+                        PlayerEquipmentQuantityChange(3, 1290, ( 40 * -1 ) )
                         SetEventFlag(base_flag + 3, 1)
                         assert t000001500_x151(purchase_text + 3)
-                    # Rank 2 -> Rank 3
-                    elif(GetEventFlag(base_flag + 1) == 1):
+                # Rank 2
+                elif(GetEventFlag(base_flag + 1) == 1):
+                    if ComparePlayerInventoryNumber(3, 1290, 3, ( 30 - 1 ), 0) == 1:
+                        assert t000001500_x151(80100612)
+                    else:
+                        PlayerEquipmentQuantityChange(3, 1290, ( 30 * -1 ) )
                         SetEventFlag(base_flag + 2, 1)
                         assert t000001500_x151(purchase_text + 2)
-                    # Rank 1 -> Rank 2
-                    elif(GetEventFlag(base_flag) == 1):
+                # Rank 1
+                elif(GetEventFlag(base_flag) == 1):
+                    if ComparePlayerInventoryNumber(3, 1290, 3, ( 20 - 1 ), 0) == 1:
+                        assert t000001500_x151(80100611)
+                    else:
+                        PlayerEquipmentQuantityChange(3, 1290, ( 20 * -1 ) )
                         SetEventFlag(base_flag + 1, 1)
                         assert t000001500_x151(purchase_text + 1)
-                    else:
-                        pass
+                else:
+                    pass
             # Cancel
             elif GetTalkListEntryResult() == 2:
                 # Declined
