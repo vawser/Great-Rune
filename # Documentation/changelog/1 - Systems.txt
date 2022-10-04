@@ -150,3 +150,22 @@
  - Normal Deflect will reduce stamina drain and boost guard absorption.
  - Perfect Deflect will prevent stamina drain, boost guard absorption and emit a whirlwind that staggers enemies.
  
+# Accolades
+
+# Tribulations
+- Added new tribulations mechanic:
+ - Allows you to select 'tribulations' to impose upon yourself, in exchange for a small boost in rune absorption and item discovery.
+ 
+ - Tribulations:
+  - Unflinching Foes:
+   - Enemies will no longer stagger from most blows.
+   - Boosts Rune Absorption and Item Discovery by 5%.
+  - Brain Fog:
+   - You will no longer passively regenerate FP.
+   - Boosts Rune Absorption and Item Discovery by 10%.
+  - Crushing Blows:
+   - Enemies will harm the player with more potency.
+   - Boosts Rune Absorption and Item Discovery by 20%.
+  - Undying Wish:
+   - Enemies will regenerate HP.
+   - Boosts Rune Absorption and Item Discovery by 10%.

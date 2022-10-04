@@ -549,7 +549,7 @@ def t000001400_x38():
         # AddTalkListData(1, 80104000, -1)
 
         # Tribulations
-        # AddTalkListData(2, 80105000, -1)
+        AddTalkListData(2, 80105000, -1)
        
         # Quit
         AddTalkListData(99, 80100015, -1)
@@ -640,19 +640,19 @@ def t000001400_x200():
         ClearTalkListData()
 
         # Overwhelming Odds
-        AddTalkListData(1, 80101101, -1)
+        # AddTalkListData(1, 80105100, -1)
        
         # Unflinching Foes
-        AddTalkListData(2, 80101101, -1)
+        AddTalkListData(2, 80105101, -1)
         
         # Brain Fog
-        AddTalkListData(3, 80101101, -1)
+        AddTalkListData(3, 80105102, -1)
         
         # Crushing Blows
-        AddTalkListData(4, 80101101, -1)
+        AddTalkListData(4, 80105103, -1)
         
         # Undying Wish
-        AddTalkListData(5, 80101101, -1)
+        AddTalkListData(5, 80105104, -1)
         
         # Quit
         AddTalkListData(99, 80100015, -1)
@@ -663,38 +663,71 @@ def t000001400_x200():
         
         # Overwhelming Odds
         if GetTalkListEntryResult() == 1:
-            #assert t000001400_x201(1047610901, X, X)
-            return 0
+            assert t000001400_x201(1047610901, 80105400, 80105300, 80105200, 80105250)
+            continue
         # Unflinching Foes
         elif GetTalkListEntryResult() == 2:
-            #assert t000001400_x201(1047610902, X, X)
-            return 0
+            assert t000001400_x201(1047610902, 80105401, 80105301, 80105201, 80105251)
+            continue
         # Brain Fog
         elif GetTalkListEntryResult() == 3:
-            #assert t000001400_x201(1047610903, X, X)
-            return 0
+            assert t000001400_x201(1047610903, 80105402, 80105302, 80105202, 80105252)
+            continue
         # Crushing Blows
         elif GetTalkListEntryResult() == 4:
-            #assert t000001400_x201(1047610904, X, X)
-            return 0
+            assert t000001400_x201(1047610904, 80105403, 80105303, 80105203, 80105253)
+            continue
         # Undying Wish
         elif GetTalkListEntryResult() == 5:
-            #assert t000001400_x201(1047610905, X, X)
-            return 0
+            assert t000001400_x201(1047610905, 80105404, 80105304, 80105204, 80105254)
+            continue
         # Leave
         elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
             return 0
             
-# Tribulation Toggle
-def t000001400_x201(flag=_, enable_text=_, disable_text=_):
-    if GetEventFlag(flag) == 0:
-        SetEventFlag(flag, 1)
-        assert t000001400_x301(enable_text)
-    else:
-        SetEventFlag(flag, 0)
-        assert t000001400_x301(disable_text)
+# Tribulation Menu
+def t000001400_x201(flag=_, enable_text=_, disable_text=_, debuff_text=_, buff_text=_):
+    c1110()
+    
+    while True:
+        ClearTalkListData()
+
+        # Toggle
+        AddTalkListData(1, 80105003, -1)
+       
+        # View Positive Effect
+        AddTalkListData(2, 80105001, -1)
         
-    return 0
+        # View Negative Effect
+        AddTalkListData(3, 80105002, -1)
+        
+        # Quit
+        AddTalkListData(99, 80100015, -1)
+
+        ShowShopMessage(1)
+        
+        assert not (CheckSpecificPersonMenuIsOpen(1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0))
+        
+        # Toggle
+        if GetTalkListEntryResult() == 1:
+            if GetEventFlag(flag) == 0:
+                SetEventFlag(flag, 1)
+                assert t000001400_x301(enable_text)
+            else:
+                SetEventFlag(flag, 0)
+                assert t000001400_x301(disable_text)
+            return 0
+        # View Positive Effect
+        elif GetTalkListEntryResult() == 2:
+            assert t000001400_x301(buff_text)
+            continue
+        # View Negative Effect
+        elif GetTalkListEntryResult() == 3:
+            assert t000001400_x301(debuff_text)
+            continue
+        # Leave
+        elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
+            return 0
     
 #----------------------------------------------------------
 # Utility

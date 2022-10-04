@@ -6465,6 +6465,12 @@ $Event(11000, Default, function() {
     
     InitializeEvent(0, 11300, 0); // Accolades
     InitializeEvent(0, 11400, 0); // Tribulations
+    
+    InitializeEvent(0, 11500, 0); // FP
+    
+    // Disable all dummies by default - Done here for the initial load into Roundtable Hold
+    ChangeCharacterEnableState(11105780, Disabled);
+    SetCharacterAIState(11105780, Disabled);
 });
 
 
@@ -7051,5 +7057,59 @@ $Event(11300, Default, function() {
 // Tribulations
 //-------------------
 $Event(11400, Default, function() {
+    InitializeEvent(0, 11401, 1047610901, 9504000, 9504008, 9504009); // Overwhelming Odds
+    InitializeEvent(1, 11401, 1047610902, 9504010, 9504018, 9504019); // Unflinching Foes
+    InitializeEvent(2, 11401, 1047610903, 9504020, 9504028, 9504029); // Brain Fog
+    InitializeEvent(3, 11401, 1047610904, 9504030, 9504038, 9504039); // Crushing Blows
+    InitializeEvent(4, 11401, 1047610905, 9504040, 9504048, 9504049); // Undying Wish
     
+    // Enemies
+    InitializeEvent(0, 11402, 0); // Overwhelming Odds
+});
+
+// Add Tribulation SpEffect
+$Event(11401, Default, function(X0_4, X4_4, X8_4, X12_4) {
+    if(EventFlag(X0_4))
+    {
+        SetSpEffect(10000, X4_4);
+        SetSpEffect(10000, X8_4);
+        SetSpEffect(10000, X12_4);
+    }
+    else
+    {
+        ClearSpEffect(10000, X4_4);
+        ClearSpEffect(10000, X8_4);
+        ClearSpEffect(10000, X12_4);
+    }
+    
+    RestartEvent();
+});
+
+// Overwhelming Odds
+$Event(11402, Default, function() {
+    if(EventFlag(1047610901))
+    {
+        //ChangeCharacterEnableState( GROUP_ID, Enabled);
+    }
+    else
+    {
+        //ChangeCharacterEnableState( GROUP_ID, Disabled);
+    }
+    
+    RestartEvent();
+});
+
+//-------------------
+// FP
+//-------------------
+$Event(11500, Default, function() {
+    // Brain Fog is not active
+    if(!EventFlag(1047610903))
+    {
+        SetSpEffect(10000, 9505000);
+    }
+
+    WaitFixedTimeSeconds(0.9);
+    
+    RestartEvent();
 });
