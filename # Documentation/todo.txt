@@ -1,6 +1,9 @@
 ﻿#-------------------------------------------------
 # TODO
 #-------------------------------------------------
+BOSS-START - Comment for boss start script sections
+POST-BOSS - Comment for post-boss defeat script sections
+
 # Mechanics
 - Add Note items to questlines that detail each stage, acting like a psuedo-journal.
 - Improve the Boss Respawn toggles for the major bosses, i.e. properly reset all relevant flags
@@ -52,7 +55,7 @@ Add trials:
 - Accolades
  - Champion of the Realm
   - Defeat each core boss with Crushing Blows and Undying Wish active.
-  
+
 Core Bosses:
 9100 Godrick the Grafted
 9104 Morgott, the Omen King
@@ -62,19 +65,24 @@ Core Bosses:
 9116 Maliketh
 9123 Elden Beast
 
-- Tribulations 
- - Overwhelming Odds
-  - Adds new enemies throughout the game.
+- Add new enemies for Overwhelming Odds
+ - Limgrave
+ - Weeping Penisula
+ - Liurnia
+ - Altus Plateau
+ - Leyndell
+ - Caelid
+ - Mountaintops
  
- - Unflinching Foes
-  - Enemies no longer stagger.
-  
- - Brain Fog
-  - FP no longer regenerates passively.
-  
- - Crushing Blows 
-  - Enemies are tougher to kill and deal more damage.
-  
- - Undying Wish
-  - Enemies recover HP.
-  
+Document boss start and post-boss script sections
+ 
+// GR: BOSS-START
+// GR: POST-BOSS
+
+Document NPC script sections
+90005780
+90005781
+90005782
+
+    
+    act(2001, 2)

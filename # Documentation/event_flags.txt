@@ -217,6 +217,7 @@
 1047610903 Tribulation: Brain Fog
 1047610904 Tribulation: Crushing Blows
 1047610905 Tribulation: Undying Wish
+1047610906 Tribulation: Ascetic Attitude
 
 #------------------------------------
 104762_0000 Random

@@ -837,6 +837,7 @@ L1:
     EnableCharacterAI(X0_4);
 });
 
+// Award Itemlot on Kill
 $Event(90005300, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4) {
     if (EventFlag(X0_4)) {
         if (Signed(X16_4) != 0) {
@@ -2115,6 +2116,7 @@ L9:
     RestartEvent();
 });
 
+// Lift: 
 $Event(90005501, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4) {
     if (PlayerIsInOwnWorld()) {
         SetEventFlagID(X24_4, OFF);
@@ -2215,6 +2217,7 @@ L15:
     EndEvent();
 });
 
+// Lift Lever: 
 $Event(90005502, Restart, function(X0_4, X4_4, X8_4) {
     DisableNetworkSync();
     EndIf(EventFlag(X0_4));
@@ -3185,6 +3188,7 @@ L15:
     EndEvent();
 });
 
+// Door: 
 $Event(90005510, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4) {
     EndIf(!PlayerIsInOwnWorld());
     if (!EventFlag(X0_4)) {
@@ -3200,6 +3204,7 @@ L0:
     EndEvent();
 });
 
+// Door: 
 $Event(90005511, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4) {
     if (!EventFlag(X0_4)) {
         WaitFor(ObjActEventFlag(X8_4));
@@ -3214,6 +3219,7 @@ L0:
     EndEvent();
 });
 
+// Door: 
 $Event(90005512, Default, function(X0_4, X4_4, X8_4) {
     DisableNetworkSync();
     if (!EventFlag(X0_4)) {
@@ -3331,6 +3337,7 @@ L0:
     SetEventFlagID(X0_4, ON);
 });
 
+// Destructable Asset: Enable Treasure
 $Event(90005560, Restart, function(X0_4, X4_4, X8_4) {
     if (EventFlag(X0_4)) {
         ReproduceAssetDestruction(X4_4, 1);
@@ -3351,6 +3358,7 @@ L0:
     }
 });
 
+// Item Pickup: Award Gesture
 $Event(90005570, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4) {
     EndIf(!PlayerIsInOwnWorld());
     EndIf(EventFlag(X0_4));
@@ -3625,6 +3633,7 @@ $Event(90005631, Restart, function(X0_4, X4_4) {
     RestartEvent();
 });
 
+// Painting: Award Item
 $Event(90005632, Restart, function(X0_4, X4_4, X8_4) {
     EndIf(EventFlag(X0_4));
     EndIf(!PlayerIsInOwnWorld());
@@ -4321,6 +4330,7 @@ L8:
     RestartEvent();
 });
 
+// NPC: Handle Death State
 $Event(90005702, Restart, function(X0_4, X4_4, X8_4, X12_4) {
     EndIf(!PlayerIsInOwnWorld());
     WaitFor(!EventFlag(X4_4) && CharacterDead(X0_4));
@@ -4329,6 +4339,7 @@ $Event(90005702, Restart, function(X0_4, X4_4, X8_4, X12_4) {
     SaveRequest();
 });
 
+// NPC: Handle Hostile State
 $Event(90005703, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4, X28_4) {
     EndIf(!PlayerIsInOwnWorld());
     SetEventFlagID(X12_4, OFF);
@@ -4398,6 +4409,7 @@ L9:
     RestartEvent();
 });
 
+// NPC: Handle Character Flags
 $Event(90005704, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4) {
     EndIf(!PlayerIsInOwnWorld());
     WaitFixedTimeFrames(1);
@@ -5228,6 +5240,7 @@ $Event(90005775, Restart, function(X0_4, X4_4, X8_4) {
     OpenWorldMapPoint(X0_4, X8_4);
 });
 
+// NPC Summon: Handle Summon Sign
 $Event(90005780, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4, X28_1, X32_4) {
     if (PlayerIsInOwnWorld()) {
         SetNetworkUpdateAuthority(X12_4, AuthorityLevel.Forced);
@@ -5246,6 +5259,7 @@ $Event(90005780, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4,
     EndIf(Signed(0) == X32_4);
 });
 
+// NPC Summon: Handle Character State
 $Event(90005781, Default, function(X0_4, X4_4, X8_4, X12_4) {
     DisableCharacter(X12_4);
     DisableCharacterCollision(X12_4);
@@ -5262,6 +5276,7 @@ $Event(90005781, Default, function(X0_4, X4_4, X8_4, X12_4) {
     DisableCharacterDefaultBackread(X12_4);
 });
 
+// NPC Summon: Handle Character AI
 $Event(90005782, Default, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4) {
     EndIf(!PlayerIsInOwnWorld());
     WaitFor(EventFlag(X0_4) && EventFlag(X4_4));
@@ -5330,6 +5345,7 @@ S1:
     EndEvent();
 });
 
+// NPC Summon: Handle Automatic Dismissal
 $Event(90005785, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4) {
     EndIf(EventFlag(X0_4));
     flag = EventFlag(X0_4) && EventFlag(X4_4);
@@ -5490,6 +5506,7 @@ $Event(90005797, Restart, function(X0_4, X4_4, X8_1, X12_4, X16_4) {
     IssueEndOfPseudoMultiplayerNotification(true);
 });
 
+// Common Boss Setup: Handle Player Entrance to Arena
 $Event(9005800, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4, X28_4) {
     if (!EventFlag(X0_4)) {
         WaitFixedTimeFrames(1);
@@ -5549,6 +5566,7 @@ L10:
     RestartEvent();
 });
 
+// Common Boss Setup: Handle Client on Player Entrance to Arena
 $Event(9005801, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4) {
     DisableNetworkSync();
     EndIf(EventFlag(X0_4));
@@ -5566,6 +5584,7 @@ $Event(9005801, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4) {
     RestartEvent();
 });
 
+// Grace Unlock: 
 $Event(9005810, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4) {
     if (!EventFlag(X0_4)) {
         DisableCharacter(X8_4);
@@ -5581,6 +5600,7 @@ L0:
     RegisterBonfire(X4_4, X12_4, 5, 180, 0, X16_4);
 });
 
+// Common Boss Setup: Handle Invaders on Player Entrance to Arena
 $Event(9005811, Restart, function(X0_4, X4_4, X8_4, X12_4) {
     DisableNetworkSync();
     DisableAsset(X4_4);
@@ -5737,6 +5757,7 @@ L0:
     RestartEvent();
 });
 
+// Common Boss Setup: Handle Boss Music on Player Entrance to Arena
 $Event(9005822, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4, X28_4) {
     DisableNetworkSync();
     if (EventFlag(X0_4)) {
@@ -6294,6 +6315,7 @@ $Event(91005600, Restart, function(X0_4, X4_4, X8_4) {
     WaitFor(EventFlag(X0_4));
 });
 
+// Grace VFX: 
 $Event(90005100, Restart, function(X0_4, X4_4, X8_4, X12_4, X16_4, X20_4, X24_4, X28_4, X32_4, X36_4, X40_4, X44_4, X48_4, X52_4, X56_4) {
     if (!EventFlag(9000)) {
         DeleteAssetfollowingSFX(X8_4, false);
@@ -6769,4 +6791,3 @@ $Event(9005996, Default, function(X0_4, X4_4) {
         SetCharacterInvincibility(X0_4, Enabled);
     }
 });
-

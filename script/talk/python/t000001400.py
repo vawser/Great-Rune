@@ -663,43 +663,40 @@ def t000001400_x200():
         
         # Overwhelming Odds
         if GetTalkListEntryResult() == 1:
-            assert t000001400_x201(1047610901, 80105400, 80105300, 80105200, 80105250)
+            assert t000001400_x201(1047610901, 80105400, 80105300, 80105200)
             continue
         # Unflinching Foes
         elif GetTalkListEntryResult() == 2:
-            assert t000001400_x201(1047610902, 80105401, 80105301, 80105201, 80105251)
+            assert t000001400_x201(1047610902, 80105401, 80105301, 80105201)
             continue
         # Brain Fog
         elif GetTalkListEntryResult() == 3:
-            assert t000001400_x201(1047610903, 80105402, 80105302, 80105202, 80105252)
+            assert t000001400_x201(1047610903, 80105402, 80105302, 80105202)
             continue
         # Crushing Blows
         elif GetTalkListEntryResult() == 4:
-            assert t000001400_x201(1047610904, 80105403, 80105303, 80105203, 80105253)
+            assert t000001400_x201(1047610904, 80105403, 80105303, 80105203)
             continue
         # Undying Wish
         elif GetTalkListEntryResult() == 5:
-            assert t000001400_x201(1047610905, 80105404, 80105304, 80105204, 80105254)
+            assert t000001400_x201(1047610905, 80105404, 80105304, 80105204)
             continue
         # Leave
         elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
             return 0
             
 # Tribulation Menu
-def t000001400_x201(flag=_, enable_text=_, disable_text=_, debuff_text=_, buff_text=_):
+def t000001400_x201(flag=_, enable_text=_, disable_text=_, effect_text=_):
     c1110()
     
     while True:
         ClearTalkListData()
 
         # Toggle
-        AddTalkListData(1, 80105003, -1)
+        AddTalkListData(1, 80105001, -1)
        
-        # View Positive Effect
-        AddTalkListData(2, 80105001, -1)
-        
-        # View Negative Effect
-        AddTalkListData(3, 80105002, -1)
+        # View Effect
+        AddTalkListData(2, 80105002, -1)
         
         # Quit
         AddTalkListData(99, 80100015, -1)
@@ -717,13 +714,9 @@ def t000001400_x201(flag=_, enable_text=_, disable_text=_, debuff_text=_, buff_t
                 SetEventFlag(flag, 0)
                 assert t000001400_x301(disable_text)
             return 0
-        # View Positive Effect
+        # View Effect
         elif GetTalkListEntryResult() == 2:
-            assert t000001400_x301(buff_text)
-            continue
-        # View Negative Effect
-        elif GetTalkListEntryResult() == 3:
-            assert t000001400_x301(debuff_text)
+            assert t000001400_x301(effect_text)
             continue
         # Leave
         elif not (CheckSpecificPersonMenuIsOpen(-1, 0) == 1 and not CheckSpecificPersonGenericDialogIsOpen(0)):
